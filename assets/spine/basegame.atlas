@@ -1,0 +1,26 @@
+basegame.webp
+size:968,968
+filter:Linear,Linear
+BulletDown
+bounds:145,205,99,215
+BulletUp
+bounds:2,66,141,354
+Partical
+bounds:85,49,14,15
+Partical 2
+bounds:346,272,18,16
+Partical 3
+bounds:145,100,19,20
+bg
+bounds:2,422,961,541
+diamond1
+bounds:404,342,47,78
+diamond2
+bounds:2,8,56,81
+rotate:90
+star 0
+bounds:145,122,98,81
+star 1
+bounds:246,207,98,81
+star 2
+bounds:246,290,156,130

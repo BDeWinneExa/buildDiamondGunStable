@@ -1,0 +1,349 @@
+{
+"skeleton": {
+	"hash": "IwdK2WIDW9g",
+	"spine": "4.1.24",
+	"x": -957.06,
+	"y": -559.11,
+	"width": 1920,
+	"height": 1080,
+	"images": "./Save to spine/",
+	"audio": "D:/Pankaj Projects/Slots/Diamond Gun/Graphics/Symbols/Save to Spine/lowpay"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "Main", "parent": "root" },
+	{ "name": "Move", "parent": "Main", "y": -16.27 },
+	{ "name": "Basewin Effect", "parent": "root", "scaleX": 0.7, "scaleY": 0.7 }
+],
+"slots": [
+	{ "name": "Diamond Gun Ref", "bone": "root" },
+	{ "name": "winEffect", "bone": "Basewin Effect", "attachment": "SymbolWinEffect/winEffect_00000" },
+	{ "name": "winEffectAdd", "bone": "Basewin Effect", "attachment": "SymbolWinEffect/winEffect_00000", "blend": "additive" },
+	{ "name": "low_payout_2Glow", "bone": "Main", "attachment": "low_payout_2Glow" },
+	{ "name": "low_payout_2", "bone": "Main", "attachment": "low_payout_2" },
+	{ "name": "low_payout_2Add", "bone": "Main", "attachment": "low_payout_2", "blend": "additive" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"low_payout_2": {
+				"low_payout_2": {
+					"type": "mesh",
+					"uvs": [ 0.52114, 1.0E-5, 0.89762, 0.28828, 0.96484, 0.42712, 1, 0.49975, 0.95463, 0.69458, 0.52278, 0.99999, 0.46817, 0.99999, 0.05717, 0.6905, 1.0E-5, 0.55203, 0, 0.42333, 0.08022, 0.30823, 0.46306, 5.0E-5, 0.27784, 0.43108, 0.49963, 0.54897, 0.71217, 0.43868, 0.49648, 0.72331, 0.77896, 0.56109, 0.21137, 0.55974 ],
+					"triangles": [ 16, 13, 14, 13, 17, 12, 16, 15, 13, 15, 17, 13, 4, 16, 3, 7, 8, 17, 16, 2, 3, 16, 14, 2, 10, 12, 17, 10, 17, 9, 9, 17, 8, 13, 12, 0, 13, 0, 14, 0, 12, 11, 14, 1, 2, 14, 0, 1, 12, 10, 11, 15, 6, 17, 6, 15, 5, 17, 6, 7, 16, 5, 15, 16, 4, 5 ],
+					"vertices": [ 2, 1, 2.76, 52, 0.85, 2, 2.76, 68.27, 0.15, 2, 1, 43.05, 22.02, 0.85, 2, 43.05, 38.29, 0.15, 2, 1, 50.24, 7.58, 0.85, 2, 50.24, 23.85, 0.15, 2, 1, 54, 0.03, 0.85, 2, 54, 16.3, 0.15, 2, 1, 49.14, -20.24, 0.85, 2, 49.14, -3.96, 0.15, 2, 1, 2.94, -52, 0.85, 2, 2.94, -35.73, 0.15, 2, 1, -2.91, -52, 0.85, 2, -2.91, -35.73, 0.15, 2, 1, -46.88, -19.81, 0.85, 2, -46.88, -3.54, 0.15, 2, 1, -53, -5.41, 0.85, 2, -53, 10.86, 0.15, 2, 1, -53, 7.97, 0.85, 2, -53, 24.25, 0.15, 2, 1, -44.42, 19.94, 0.85, 2, -44.42, 36.22, 0.15, 2, 1, -3.45, 51.99, 0.85, 2, -3.45, 68.27, 0.15, 2, 1, -23.27, 7.17, 0.5, 2, -23.27, 23.44, 0.5, 2, 1, 0.46, -5.09, 0.3, 2, 0.46, 11.18, 0.7, 2, 1, 23.2, 6.38, 0.5, 2, 23.2, 22.65, 0.5, 2, 1, 0.12, -23.22, 0.3, 2, 0.12, -6.95, 0.7, 2, 1, 30.35, -6.35, 0.5, 2, 30.35, 9.92, 0.5, 2, 1, -30.38, -6.21, 0.5, 2, -30.38, 10.06, 0.5 ],
+					"hull": 12,
+					"edges": [ 0, 22, 0, 2, 6, 8, 8, 10, 10, 12, 12, 14, 18, 20, 20, 22, 14, 16, 16, 18, 22, 24, 24, 26, 26, 28, 28, 0, 26, 30, 30, 32, 28, 32, 24, 34, 34, 30, 34, 12, 10, 32, 32, 8, 34, 18, 34, 14, 2, 4, 4, 6, 32, 4, 24, 20, 28, 2 ],
+					"width": 107,
+					"height": 104
+				}
+			},
+			"low_payout_2Add": {
+				"low_payout_2": {
+					"type": "mesh",
+					"uvs": [ 0.52114, 1.0E-5, 0.89762, 0.28828, 0.96484, 0.42712, 1, 0.49975, 0.95463, 0.69458, 0.52278, 0.99999, 0.46817, 0.99999, 0.05717, 0.6905, 1.0E-5, 0.55203, 0, 0.42333, 0.08022, 0.30823, 0.46306, 5.0E-5, 0.27784, 0.43108, 0.49963, 0.54897, 0.71217, 0.43868, 0.49648, 0.72331, 0.77896, 0.56109, 0.21137, 0.55974 ],
+					"triangles": [ 16, 13, 14, 13, 17, 12, 16, 15, 13, 15, 17, 13, 4, 16, 3, 7, 8, 17, 16, 2, 3, 16, 14, 2, 10, 12, 17, 10, 17, 9, 9, 17, 8, 13, 12, 0, 13, 0, 14, 0, 12, 11, 14, 1, 2, 14, 0, 1, 12, 10, 11, 15, 6, 17, 6, 15, 5, 17, 6, 7, 16, 5, 15, 16, 4, 5 ],
+					"vertices": [ 2, 1, 2.76, 52, 0.85, 2, 2.76, 68.27, 0.15, 2, 1, 43.05, 22.02, 0.85, 2, 43.05, 38.29, 0.15, 2, 1, 50.24, 7.58, 0.85, 2, 50.24, 23.85, 0.15, 2, 1, 54, 0.03, 0.85, 2, 54, 16.3, 0.15, 2, 1, 49.14, -20.24, 0.85, 2, 49.14, -3.96, 0.15, 2, 1, 2.94, -52, 0.85, 2, 2.94, -35.73, 0.15, 2, 1, -2.91, -52, 0.85, 2, -2.91, -35.73, 0.15, 2, 1, -46.88, -19.81, 0.85, 2, -46.88, -3.54, 0.15, 2, 1, -53, -5.41, 0.85, 2, -53, 10.86, 0.15, 2, 1, -53, 7.97, 0.85, 2, -53, 24.25, 0.15, 2, 1, -44.42, 19.94, 0.85, 2, -44.42, 36.22, 0.15, 2, 1, -3.45, 51.99, 0.85, 2, -3.45, 68.27, 0.15, 2, 1, -23.27, 7.17, 0.5, 2, -23.27, 23.44, 0.5, 2, 1, 0.46, -5.09, 0.3, 2, 0.46, 11.18, 0.7, 2, 1, 23.2, 6.38, 0.5, 2, 23.2, 22.65, 0.5, 2, 1, 0.12, -23.22, 0.3, 2, 0.12, -6.95, 0.7, 2, 1, 30.35, -6.35, 0.5, 2, 30.35, 9.92, 0.5, 2, 1, -30.38, -6.21, 0.5, 2, -30.38, 10.06, 0.5 ],
+					"hull": 12,
+					"edges": [ 0, 22, 0, 2, 6, 8, 8, 10, 10, 12, 12, 14, 18, 20, 20, 22, 14, 16, 16, 18, 22, 24, 24, 26, 26, 28, 28, 0, 26, 30, 30, 32, 28, 32, 24, 34, 34, 30, 34, 12, 10, 32, 32, 8, 34, 18, 34, 14, 2, 4, 4, 6, 32, 4, 24, 20, 28, 2 ],
+					"width": 107,
+					"height": 104
+				}
+			},
+			"low_payout_2Glow": {
+				"low_payout_2Glow": {
+					"type": "mesh",
+					"uvs": [ 0.63632, 2.4E-4, 1, 0.28691, 1, 0.74031, 0.69311, 0.99826, 0.37094, 1, 0, 0.66178, 0, 0.31298, 0.37103, 0, 0.50991, 0.50458 ],
+					"triangles": [ 8, 7, 0, 8, 0, 1, 6, 7, 8, 5, 6, 8, 8, 1, 2, 3, 8, 2, 4, 5, 8, 4, 8, 3 ],
+					"vertices": [ 2, 1, 17.81, 60.97, 0.85, 2, 17.81, 77.24, 0.15, 2, 1, 64, 26, 0.85, 2, 64, 42.27, 0.15, 2, 1, 64, -29.32, 0.85, 2, 64, -13.04, 0.15, 2, 1, 25.03, -60.79, 0.85, 2, 25.03, -44.51, 0.15, 2, 1, -15.89, -61, 0.85, 2, -15.89, -44.73, 0.15, 2, 1, -63, -19.74, 0.85, 2, -63, -3.46, 0.15, 2, 1, -63, 22.82, 0.85, 2, -63, 39.09, 0.15, 2, 1, -15.88, 61, 0.85, 2, -15.88, 77.27, 0.15, 2, 1, 1.76, -0.56, 0.4, 2, 1.76, 15.71, 0.6 ],
+					"hull": 8,
+					"edges": [ 0, 14, 0, 2, 2, 4, 4, 6, 6, 8, 8, 10, 12, 14, 10, 12, 10, 16, 16, 14, 16, 6, 16, 2 ],
+					"width": 127,
+					"height": 122
+				}
+			},
+			"winEffect": {
+				"SymbolWinEffect/winEffect_00000": { "width": 250, "height": 250 },
+				"SymbolWinEffect/winEffect_00002": { "width": 250, "height": 250 },
+				"SymbolWinEffect/winEffect_00004": { "width": 250, "height": 250 },
+				"SymbolWinEffect/winEffect_00006": { "width": 250, "height": 250 },
+				"SymbolWinEffect/winEffect_00008": { "width": 250, "height": 250 },
+				"SymbolWinEffect/winEffect_00010": { "width": 250, "height": 250 },
+				"SymbolWinEffect/winEffect_00012": { "width": 250, "height": 250 },
+				"SymbolWinEffect/winEffect_00014": { "width": 250, "height": 250 },
+				"SymbolWinEffect/winEffect_00016": { "width": 250, "height": 250 },
+				"SymbolWinEffect/winEffect_00018": { "width": 250, "height": 250 },
+				"SymbolWinEffect/winEffect_00020": { "width": 250, "height": 250 },
+				"SymbolWinEffect/winEffect_00022": { "width": 250, "height": 250 }
+			},
+			"winEffectAdd": {
+				"SymbolWinEffect/winEffect_00000": { "width": 250, "height": 250 },
+				"SymbolWinEffect/winEffect_00002": { "width": 250, "height": 250 },
+				"SymbolWinEffect/winEffect_00004": { "width": 250, "height": 250 },
+				"SymbolWinEffect/winEffect_00006": { "width": 250, "height": 250 },
+				"SymbolWinEffect/winEffect_00008": { "width": 250, "height": 250 },
+				"SymbolWinEffect/winEffect_00010": { "width": 250, "height": 250 },
+				"SymbolWinEffect/winEffect_00012": { "width": 250, "height": 250 },
+				"SymbolWinEffect/winEffect_00014": { "width": 250, "height": 250 },
+				"SymbolWinEffect/winEffect_00016": { "width": 250, "height": 250 },
+				"SymbolWinEffect/winEffect_00018": { "width": 250, "height": 250 },
+				"SymbolWinEffect/winEffect_00020": { "width": 250, "height": 250 },
+				"SymbolWinEffect/winEffect_00022": { "width": 250, "height": 250 }
+			}
+		}
+	}
+],
+"animations": {
+	"destroy": {
+		"slots": {
+			"low_payout_2": {
+				"rgba": [
+					{ "time": 0.1667, "color": "ffffffff" },
+					{ "time": 0.2333, "color": "ffffff00" }
+				]
+			},
+			"low_payout_2Add": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.1667, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.2333, "color": "ffffff00" }
+				]
+			},
+			"low_payout_2Glow": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.1667, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.2333, "color": "ffffff00" }
+				]
+			},
+			"winEffect": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"winEffectAdd": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"Move": {
+				"translate": [
+					{
+						"curve": [ 0.056, 0, 0.111, -11.08, 0.056, 0, 0.111, 19.21 ]
+					},
+					{ "time": 0.1667, "x": -7.9, "y": 17.98 }
+				]
+			},
+			"Main": {
+				"rotate": [
+					{}
+				],
+				"scale": [
+					{},
+					{ "time": 0.1667, "x": 1.15, "y": 1.15 },
+					{ "time": 0.2333, "x": 0.1, "y": 0.1 }
+				]
+			}
+		}
+	},
+	"match": {
+		"slots": {
+			"low_payout_2Add": {
+				"rgba": [
+					{ "color": "ffffff00" },
+					{ "time": 0.3333, "color": "ffffff6d", "curve": "stepped" },
+					{ "time": 0.6667, "color": "ffffff6d" },
+					{ "time": 1, "color": "ffffff00" }
+				]
+			},
+			"low_payout_2Glow": {
+				"rgba": [
+					{ "color": "ffffff00" },
+					{ "time": 0.5, "color": "ffffffff" },
+					{ "time": 1, "color": "ffffff00" }
+				]
+			},
+			"winEffect": {
+				"rgba": [
+					{ "color": "ffffff00" },
+					{ "time": 0.1667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.8333, "color": "ffffffff" },
+					{ "time": 1, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "name": "SymbolWinEffect/winEffect_00000" },
+					{ "time": 0.0667, "name": "SymbolWinEffect/winEffect_00002" },
+					{ "time": 0.1333, "name": "SymbolWinEffect/winEffect_00004" },
+					{ "time": 0.2, "name": "SymbolWinEffect/winEffect_00006" },
+					{ "time": 0.2667, "name": "SymbolWinEffect/winEffect_00008" },
+					{ "time": 0.3333, "name": "SymbolWinEffect/winEffect_00010" },
+					{ "time": 0.4, "name": "SymbolWinEffect/winEffect_00012" },
+					{ "time": 0.4667, "name": "SymbolWinEffect/winEffect_00014" },
+					{ "time": 0.5333, "name": "SymbolWinEffect/winEffect_00016" },
+					{ "time": 0.6, "name": "SymbolWinEffect/winEffect_00018" },
+					{ "time": 0.6667, "name": "SymbolWinEffect/winEffect_00020" },
+					{ "time": 0.7333, "name": "SymbolWinEffect/winEffect_00022" },
+					{ "time": 0.8, "name": "SymbolWinEffect/winEffect_00000" },
+					{ "time": 0.8667, "name": "SymbolWinEffect/winEffect_00002" },
+					{ "time": 0.9333, "name": "SymbolWinEffect/winEffect_00004" },
+					{ "time": 1, "name": "SymbolWinEffect/winEffect_00006" }
+				]
+			},
+			"winEffectAdd": {
+				"rgba": [
+					{ "color": "ffffff00" },
+					{ "time": 0.1667, "color": "ffffff5c", "curve": "stepped" },
+					{ "time": 0.8333, "color": "ffffff5c" },
+					{ "time": 1, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "name": "SymbolWinEffect/winEffect_00000" },
+					{ "time": 0.0667, "name": "SymbolWinEffect/winEffect_00002" },
+					{ "time": 0.1333, "name": "SymbolWinEffect/winEffect_00004" },
+					{ "time": 0.2, "name": "SymbolWinEffect/winEffect_00006" },
+					{ "time": 0.2667, "name": "SymbolWinEffect/winEffect_00008" },
+					{ "time": 0.3333, "name": "SymbolWinEffect/winEffect_00010" },
+					{ "time": 0.4, "name": "SymbolWinEffect/winEffect_00012" },
+					{ "time": 0.4667, "name": "SymbolWinEffect/winEffect_00014" },
+					{ "time": 0.5333, "name": "SymbolWinEffect/winEffect_00016" },
+					{ "time": 0.6, "name": "SymbolWinEffect/winEffect_00018" },
+					{ "time": 0.6667, "name": "SymbolWinEffect/winEffect_00020" },
+					{ "time": 0.7333, "name": "SymbolWinEffect/winEffect_00022" },
+					{ "time": 0.8, "name": "SymbolWinEffect/winEffect_00000" },
+					{ "time": 0.8667, "name": "SymbolWinEffect/winEffect_00002" },
+					{ "time": 0.9333, "name": "SymbolWinEffect/winEffect_00004" },
+					{ "time": 1, "name": "SymbolWinEffect/winEffect_00006" }
+				]
+			}
+		},
+		"bones": {
+			"Move": {
+				"translate": [
+					{
+						"curve": [ 0.056, 0, 0.111, 3.14, 0.056, 0, 0.111, -5.5 ]
+					},
+					{
+						"time": 0.1667,
+						"x": 6.33,
+						"y": -6.73,
+						"curve": [ 0.225, 9.67, 0.278, 12.6, 0.222, -7.96, 0.278, -5.08 ]
+					},
+					{
+						"time": 0.3333,
+						"x": 12.66,
+						"curve": [ 0.389, 12.71, 0.445, 5.66, 0.389, 5.12, 0.444, 16.2 ]
+					},
+					{
+						"time": 0.5,
+						"x": -1.75,
+						"y": 16.16,
+						"curve": [ 0.557, -9.43, 0.61, -16.28, 0.557, 16.12, 0.61, 0.32 ]
+					},
+					{
+						"time": 0.6667,
+						"x": -16.16,
+						"curve": [ 0.723, -16.03, 0.778, -12.39, 0.723, -0.32, 0.778, -3.16 ]
+					},
+					{
+						"time": 0.8333,
+						"x": -8.08,
+						"y": -3.5,
+						"curve": [ 0.889, -3.74, 0.944, 0, 0.89, -3.85, 0.944, 0 ]
+					},
+					{ "time": 1 }
+				]
+			},
+			"Main": {
+				"rotate": [
+					{
+						"curve": [ 0.111, 0, 0.222, 7.35 ]
+					},
+					{
+						"time": 0.3333,
+						"value": 7.35,
+						"curve": [ 0.444, 7.35, 0.559, -9.56 ]
+					},
+					{
+						"time": 0.6667,
+						"value": -9.36,
+						"curve": [ 0.778, -9.15, 0.889, 0 ]
+					},
+					{ "time": 1 }
+				],
+				"scale": [
+					{
+						"curve": [ 0.056, 1, 0.111, 0.9, 0.056, 1, 0.111, 0.9 ]
+					},
+					{
+						"time": 0.1667,
+						"x": 0.9,
+						"y": 0.9,
+						"curve": [ 0.278, 0.9, 0.389, 1.139, 0.278, 0.9, 0.389, 1.148 ]
+					},
+					{
+						"time": 0.5,
+						"x": 1.15,
+						"y": 1.15,
+						"curve": [ 0.611, 1.161, 0.722, 0.911, 0.612, 1.152, 0.722, 0.983 ]
+					},
+					{
+						"time": 0.8333,
+						"x": 0.9,
+						"y": 0.9,
+						"curve": [ 0.889, 0.894, 0.944, 1, 0.889, 0.858, 0.944, 1 ]
+					},
+					{ "time": 1 }
+				]
+			}
+		}
+	},
+	"static": {
+		"slots": {
+			"low_payout_2Add": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"low_payout_2Glow": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"winEffect": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "name": "SymbolWinEffect/winEffect_00000" }
+				]
+			},
+			"winEffectAdd": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "name": "SymbolWinEffect/winEffect_00000" }
+				]
+			}
+		},
+		"bones": {
+			"Move": {
+				"translate": [
+					{}
+				]
+			},
+			"Main": {
+				"rotate": [
+					{}
+				],
+				"scale": [
+					{}
+				]
+			}
+		}
+	}
+}
+}

@@ -1,0 +1,43 @@
+logo.webp
+size:1272,1272
+filter:Linear,Linear
+Gunn 1
+bounds:523,53,230,314
+offsets:1,1,232,316
+rotate:90
+Gunn 1 Light
+bounds:369,453,150,211
+offsets:1,1,152,213
+Logo Gun Effect/GunEff_00000
+bounds:271,61,314,250
+offsets:0,19,400,300
+rotate:90
+Logo Gun Effect/GunEff_00001
+bounds:839,79,377,296
+offsets:0,4,400,300
+Logo Gun Effect/GunEff_00002
+bounds:523,285,379,297
+offsets:0,3,400,300
+rotate:90
+Logo Gun Effect/GunEff_00003
+bounds:833,678,398,297
+offsets:0,3,400,300
+Logo Gun Effect/GunEff_00004
+bounds:833,377,397,299
+offsets:0,1,400,300
+Logo Gun Effect/GunEff_00005
+bounds:907,977,363,293
+offsets:32,7,400,300
+Logo Gun Effect/GunEff_00006
+bounds:2,378,365,286
+offsets:32,14,400,300
+Logo Gun Effect/GunEff_00007
+bounds:2,9,366,267
+offsets:32,26,400,300
+rotate:90
+diamond
+bounds:2,1022,903,248
+offsets:1,1,905,250
+gunText
+bounds:2,666,829,354
+offsets:1,1,831,356

@@ -1,0 +1,30 @@
+diamond_gun.webp
+	size: 2048, 2048
+	filter: Linear, Linear
+	scale: 0.6
+BG
+	bounds: 2, 1393, 1153, 649
+coin1
+	bounds: 1261, 830, 68, 57
+coin2
+	bounds: 1157, 793, 102, 94
+coin3
+	bounds: 2, 2, 89, 87
+coin4
+	bounds: 850, 674, 68, 66
+coin5
+	bounds: 1157, 742, 49, 53
+	rotate: 90
+coin6
+	bounds: 1808, 1454, 64, 68
+light green
+	bounds: 2, 742, 1153, 649
+light line
+	bounds: 570, 91, 278, 649
+light perpule
+	bounds: 1808, 1524, 208, 518
+light1
+	bounds: 2, 91, 566, 649
+light2
+	bounds: 1157, 889, 1153, 649
+	rotate: 90

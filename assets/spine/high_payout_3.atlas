@@ -1,0 +1,41 @@
+high_payout_3.webp
+size:1012,1012
+filter:Linear,Linear
+SymbolWinEffect/winEffect_00000
+bounds:2,760,250,250
+SymbolWinEffect/winEffect_00002
+bounds:2,508,250,250
+SymbolWinEffect/winEffect_00004
+bounds:254,760,250,250
+SymbolWinEffect/winEffect_00006
+bounds:2,256,250,250
+SymbolWinEffect/winEffect_00008
+bounds:254,508,250,250
+SymbolWinEffect/winEffect_00010
+bounds:506,760,250,250
+SymbolWinEffect/winEffect_00012
+bounds:2,4,250,250
+SymbolWinEffect/winEffect_00014
+bounds:254,256,250,250
+SymbolWinEffect/winEffect_00016
+bounds:506,508,250,250
+SymbolWinEffect/winEffect_00018
+bounds:758,760,250,250
+SymbolWinEffect/winEffect_00020
+bounds:254,4,250,250
+SymbolWinEffect/winEffect_00022
+bounds:506,256,250,250
+high_payout_3
+bounds:506,11,125,122
+high_payout_3 Diamond
+bounds:944,711,66,47
+hp3Base
+bounds:758,301,107,111
+hp3Frame
+bounds:758,414,124,122
+ray Back
+bounds:758,662,184,96
+ray Front
+bounds:506,135,150,119
+star 2
+bounds:758,538,146,122

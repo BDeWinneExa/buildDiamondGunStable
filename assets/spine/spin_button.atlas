@@ -1,0 +1,54 @@
+spin_button.webp
+size:372,372
+filter:Linear,Linear
+Base
+bounds:2,202,166,166
+offsets:1,1,168,168
+M_Base
+bounds:2,202,166,166
+offsets:1,1,168,168
+M_HoldForAutospin
+bounds:277,165,95,30
+offsets:1,1,97,32
+rotate:90
+M_Spin Glow
+bounds:170,262,111,106
+offsets:2,2,115,110
+M_Spin icon
+bounds:283,279,89,84
+offsets:1,1,91,86
+rotate:90
+Spin Glow
+bounds:2,78,127,122
+offsets:2,2,131,126
+Spin Icon
+bounds:170,160,105,100
+offsets:1,1,107,102
+Stop Glow
+bounds:131,66,92,92
+offsets:2,2,96,96
+Stop icon
+bounds:225,88,70,70
+offsets:1,1,72,72
+auto_spin_Placeholder
+bounds:309,201,76,43
+offsets:1,1,78,45
+rotate:90
+auto_spin_Stop Icon
+bounds:131,170,30,30
+offsets:1,1,32,32
+infinity_stop
+bounds:131,170,30,30
+offsets:1,1,32,32
+auto_spin_Stop Icon Glow
+bounds:226,34,52,52
+offsets:2,2,56,56
+infinity_stop Glow
+bounds:226,34,52,52
+offsets:2,2,56,56
+infinity_icon
+bounds:124,11,100,53
+offsets:1,1,102,55
+infinity_icon Glow
+bounds:2,2,120,74
+offsets:2,2,124,78

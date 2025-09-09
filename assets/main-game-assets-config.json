@@ -1,0 +1,380 @@
+{
+  "layouts": [
+    {
+      "name": "intro-screen",
+      "url": "./layouts/intro-screen.json"
+    },
+    {
+      "name": "main-screen",
+      "url": "./layouts/main-screen.json"
+    },
+    {
+      "name": "ui",
+      "url": "./layouts/ui.json"
+    },
+    {
+      "name": "popups",
+      "url": "./layouts/popups.json"
+    },
+    {
+			"name": "settingPortrait",
+			"url": "./layouts/settingPortrait.json"
+		},
+    {
+			"name": "settingsLandscape",
+			"url": "./layouts/settingsLandscape.json"
+		},
+    {
+      "name": "uiHorizontal",
+      "url": "./layouts/uiHorizontal.json"
+    },
+    {
+      "name": "uiPortrait",
+      "url": "./layouts/uiPortrait.json"
+    },
+    {
+      "name": "betPanelMobile",
+      "url": "./layouts/betPanelMobile.json"
+    },
+    {
+      "name": "betPanelMobileDesktop",
+      "url": "./layouts/betPanelMobileDesktop.json"
+    },
+    {
+      "name": "autoplayLandscape",
+      "url": "./layouts/autoplayLandscape.json"
+    },
+    {
+      "name": "autoplayPortrait",
+      "url": "./layouts/autoplayPortrait.json"
+    }
+  ],
+  "textures": [
+    {
+      "name": "main-screen-0",
+      "url": "./images/main-screen-0.json"
+    },
+    {
+      "name": "main-screen-1",
+      "url": "./images/main-screen-1.json"
+    },
+    {
+      "name": "main-screen-2",
+      "url": "./images/main-screen-2.json"
+    },
+    {
+      "name": "main-screen-background",
+      "url": "./images/main-game-screen.jpg"
+    },
+    {
+      "name": "newUI",
+      "url": "./images/newUI-0-0.json"
+    },
+    {
+      "name": "ui",
+      "url": "./images/ui.json"
+    },
+    {
+      "name": "uiPanelBG-landscape",
+      "url": "./images/uiPanelBG-landscape.png"
+    }
+  ],
+  "spine": [
+    {
+      "name": "symbol-00",
+      "url": "./spine/low_payout_1.json"
+    },
+    {
+      "name": "symbol-01",
+      "url": "./spine/low_payout_2.json"
+    },
+    {
+      "name": "symbol-02",
+      "url": "./spine/low_payout_3.json"
+    },
+    {
+      "name": "symbol-03",
+      "url": "./spine/low_payout_4.json"
+    },
+    {
+      "name": "symbol-05",
+      "url": "./spine/high_payout_1.json"
+    },
+    {
+      "name": "symbol-06",
+      "url": "./spine/high_payout_2.json"
+    },
+    {
+      "name": "symbol-07",
+      "url": "./spine/high_payout_3.json"
+    },
+    {
+      "name": "symbol-scatter",
+      "url": "./spine/scatter.json"
+    },
+    {
+      "name": "main-screen-background",
+      "url": "./spine/basegame.json"
+    },
+    {
+      "name": "reel-frame",
+      "url": "./spine/reel_background.json"
+    },
+    {
+      "name": "free-spin-popup",
+      "url": "./spine/free_spin_popups.json"
+    },
+    {
+      "name": "button-spin",
+      "url": "./spine/spin_btn.json"
+    },
+    {
+      "name": "character",
+      "url": "./spine/character.json"
+    },
+    {
+      "name": "celebrational_wins",
+      "url": "./spine/winning_animation.json"
+    },
+    {
+      "name": "logo",
+      "url": "./spine/logo.json"
+    },
+    {
+      "name": "freespins-popup",
+      "url": "./spine/free_spin_popups.json"
+    },
+    {
+      "name": "symbol-destroy-animation",
+      "url": "./spine/symbol_destroy.json"
+    },
+    {
+      "name": "transition-animation",
+      "url": "./spine/transition.json"
+    },
+    {
+      "name": "win-frame-animation",
+      "url": "./spine/frame_win.json"
+    },
+    {
+      "name": "coins-shower-animation",
+      "url": "./spine/winning_coins.json"
+    }
+  ],
+  "sounds": [
+
+    {
+      "name": "big_win",
+      "url": [
+        "./sounds/big_win.mp3"      ]
+    },
+    {
+      "name": "super_win",
+      "url": [
+        "./sounds/super_win.mp3"      ]
+    },
+    {
+      "name": "ultra_win",
+      "url": [
+        "./sounds/ultra_win.mp3"      ]
+    },
+    {
+      "name": "mega_win",
+      "url": [
+        "./sounds/mega_win.mp3"      ]
+    },
+    {
+      "name": "basegame_loop",
+      "url": [
+        "./sounds/basegame_loop.mp3"      ],
+      "channel": "ambient"
+    },
+    {
+      "name": "freegame_loop",
+      "url": [
+        "./sounds/freegame_loop.mp3"      ],
+      "channel": "ambient"
+    },
+    {
+      "name": "introgame_loop",
+      "url": [
+        "./sounds/intro_game_ambiance.mp3"
+      ],
+      "channel": "ambient"
+    },
+    {
+      "name": "symbol_lp1_win",
+      "url": [
+        "./sounds/high_payout_4.mp3"      ]
+    },
+    {
+      "name": "symbol_lp2_win",
+      "url": [
+        "./sounds/high_payout_5.mp3"      ]
+    },
+    {
+      "name": "symbol_lp3_win",
+      "url": [
+        "./sounds/high_payout_6.mp3"      ]
+    },
+    {
+      "name": "symbol_lp4_win",
+      "url": [
+        "./sounds/high_payout_7.mp3"      ]
+    },
+    {
+      "name": "symbol_hp1_win",
+      "url": [
+        "./sounds/high_payout_1.mp3"      ]
+    },
+    {
+      "name": "symbol_hp2_win",
+      "url": [
+        "./sounds/high_payout_2.mp3"      ]
+    },
+    {
+      "name": "symbol_hp3_win",
+      "url": [
+        "./sounds/high_payout_3.mp3"      ]
+    },
+    
+    {
+      "name": "symbol_scatter_win",
+      "url": [
+        "./sounds/symbol_scatter_win.mp3"      ]
+    },
+    {
+      "name": "button_spin_start",
+      "url": [
+        "./sounds/spin_btn.mp3"      ]
+    },
+    {
+      "name": "reel_spin",
+      "url": [
+        "./sounds/reel_spin.mp3"      ]
+    },
+    {
+      "name": "reel_stop",
+      "url": [
+        "./sounds/reel_stop.mp3"      ]
+    },
+    {
+      "name": "error_appearance",
+      "url": [
+        "./sounds/error_appearance.mp3"      ]
+    },
+    {
+      "name": "common_popup_window",
+      "url": [
+        "./sounds/common_popup_windows.mp3"      ]
+    },
+    {
+      "name": "button_click",
+      "url": [
+        "./sounds/button_click.mp3"      ]
+    },
+    {
+      "name": "counter_loop",
+      "url": [
+        "./sounds/counter_loop.mp3"      ]
+    },
+    {
+      "name": "symbol_scatter_land",
+      "url": [
+        "./sounds/scatter_landing.mp3"
+      ]
+    },
+    {
+      "name": "freespin_trigger",
+      "url": [
+        "./sounds/freespin_triggered.mp3"
+      ]
+    },
+    {
+      "name": "freespin_cong",
+      "url": [
+        "./sounds/congratulations_screen.mp3"
+      ]
+    },
+    {
+      "name": "reel_multiplier",
+      "url": [
+        "./sounds/multiplier.mp3"
+      ]
+    },
+    {
+      "name": "popup_hide",
+      "url": [
+        "./sounds/popup_hide.mp3"      ]
+    },
+    {
+      "name": "transition",
+      "url": [
+        "./sounds/lazer_shoot.mp3"      ]
+    },
+    {
+      "name": "freespin_trigger",
+      "url": [
+        "./sounds/freespin_triggered.mp3"      ]
+    },
+    {
+      "name": "freespin_cong",
+      "url": [
+        "./sounds/congratulations_screen.mp3"      ]
+    },
+    {
+      "name": "multiplier",
+      "url": [
+        "./sounds/multiplier.mp3"      ]
+    },
+    {
+      "name": "show_popup",
+      "url": [
+        "./sounds/show_popup.mp3"      ]
+    },
+    {
+      "name": "bet_panel_inside_amount_increase",
+      "url": [
+        "./sounds/bet_panel_inside_amount_increase.mp3"
+      ]
+    },
+    {
+      "name": "bet_panel_inside_amount_decrease",
+      "url": [
+        "./sounds/bet_panel_inside_amount_decrease.mp3"
+      ]
+    },
+    {
+      "name": "intro_spin_start_button_click",
+      "url": [
+        "./sounds/intro_spin_start_button_click.mp3"
+      ]
+    },
+    {
+      "name": "buy_freespin",
+      "url": [
+        "./sounds/buy_freespin.mp3"
+      ]
+    },
+    {
+      "name": "bet_panel_turbo_icon_click",
+      "url": [
+        "./sounds/bet_panel_turbo_icon_click.mp3"
+      ]
+    }
+  ],
+  "fonts": [
+    {
+      "name": "Alexandria",
+      "url": "./fonts/Alexandria-Medium.ttf"
+    },
+    {
+      "name": "LuckiestGuy",
+      "url": "./fonts/LuckiestGuy-Regular.ttf"
+    },
+    {
+      "name": "Inter",
+      "url": "./fonts/Inter-Variable.ttf"
+    }
+  ]
+}

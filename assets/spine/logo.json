@@ -1,0 +1,531 @@
+{
+"skeleton": {
+	"hash": "dv6Z3ydU7mQ",
+	"spine": "4.1.24",
+	"x": -701.47,
+	"y": -229,
+	"width": 1388.86,
+	"height": 707.18,
+	"images": "../../Graphics/Logo/Save for Spine/",
+	"audio": "D:/Pankaj Projects/Slots/Diamond Gun/Graphics/Logo/Save for Spine"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "diamond", "parent": "root", "x": 29.5, "y": 141 },
+	{ "name": "gunText", "parent": "root", "x": 21.5, "y": -51 },
+	{ "name": "Gun 1", "parent": "root", "x": -431, "y": -34 },
+	{ "name": "Gun 2", "parent": "root", "x": 430.71, "y": -34, "scaleX": -1 },
+	{ "name": "GunEff", "parent": "Gun 1", "rotation": 111.26, "x": -4.64, "y": 134.52 },
+	{ "name": "GunEff2", "parent": "Gun 2", "rotation": 108.45, "x": -4.35, "y": 129.51 }
+],
+"slots": [
+	{ "name": "diamond", "bone": "diamond", "attachment": "diamond" },
+	{ "name": "diamondAdd", "bone": "diamond", "attachment": "diamond", "blend": "additive" },
+	{ "name": "Gun 1", "bone": "Gun 1", "attachment": "Gunn 1" },
+	{ "name": "Gun Add", "bone": "Gun 1", "attachment": "Gunn 1", "blend": "additive" },
+	{ "name": "Gun 2", "bone": "Gun 2", "attachment": "Gunn 1" },
+	{ "name": "Gun 2 Add", "bone": "Gun 2", "attachment": "Gunn 1", "blend": "additive" },
+	{ "name": "Gunn 1 Light", "bone": "Gun 1", "attachment": "Gunn 1 Light", "blend": "additive" },
+	{ "name": "Gunn 1 Light2", "bone": "Gun 2", "attachment": "Gunn 1 Light", "blend": "additive" },
+	{ "name": "gunText", "bone": "gunText", "attachment": "gunText" },
+	{ "name": "gunTextAdd", "bone": "gunText", "attachment": "gunText", "blend": "additive" },
+	{ "name": "GunEff", "bone": "GunEff", "attachment": "Logo Gun Effect/GunEff_00000" },
+	{ "name": "GunEff2", "bone": "GunEff2", "attachment": "Logo Gun Effect/GunEff_00000" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"diamond": {
+				"diamond": { "width": 905, "height": 250 }
+			},
+			"diamondAdd": {
+				"diamond": { "width": 905, "height": 250 }
+			},
+			"Gun 1": {
+				"Gunn 1": { "width": 232, "height": 316 }
+			},
+			"Gun 2": {
+				"Gunn 1": { "width": 232, "height": 316 }
+			},
+			"Gun 2 Add": {
+				"Gunn 1": { "width": 232, "height": 316 }
+			},
+			"Gun Add": {
+				"Gunn 1": { "width": 232, "height": 316 }
+			},
+			"GunEff": {
+				"Logo Gun Effect/GunEff_00000": { "x": 146.97, "y": 0.23, "width": 400, "height": 300 },
+				"Logo Gun Effect/GunEff_00001": { "x": 146.97, "y": 0.23, "width": 400, "height": 300 },
+				"Logo Gun Effect/GunEff_00002": { "x": 146.97, "y": 0.23, "width": 400, "height": 300 },
+				"Logo Gun Effect/GunEff_00003": { "x": 146.97, "y": 0.23, "width": 400, "height": 300 },
+				"Logo Gun Effect/GunEff_00004": { "x": 146.97, "y": 0.23, "width": 400, "height": 300 },
+				"Logo Gun Effect/GunEff_00005": { "x": 146.97, "y": 0.23, "width": 400, "height": 300 },
+				"Logo Gun Effect/GunEff_00006": { "x": 146.97, "y": 0.23, "width": 400, "height": 300 },
+				"Logo Gun Effect/GunEff_00007": { "x": 146.97, "y": 0.23, "width": 400, "height": 300 }
+			},
+			"GunEff2": {
+				"Logo Gun Effect/GunEff_00000": { "x": 146.97, "y": 0.23, "width": 400, "height": 300 },
+				"Logo Gun Effect/GunEff_00001": { "x": 146.97, "y": 0.23, "width": 400, "height": 300 },
+				"Logo Gun Effect/GunEff_00002": { "x": 146.97, "y": 0.23, "width": 400, "height": 300 },
+				"Logo Gun Effect/GunEff_00003": { "x": 146.97, "y": 0.23, "width": 400, "height": 300 },
+				"Logo Gun Effect/GunEff_00004": { "x": 146.97, "y": 0.23, "width": 400, "height": 300 },
+				"Logo Gun Effect/GunEff_00005": { "x": 146.97, "y": 0.23, "width": 400, "height": 300 },
+				"Logo Gun Effect/GunEff_00006": { "x": 146.97, "y": 0.23, "width": 400, "height": 300 },
+				"Logo Gun Effect/GunEff_00007": { "x": 146.97, "y": 0.23, "width": 400, "height": 300 }
+			},
+			"Gunn 1 Light": {
+				"Gunn 1 Light": { "x": -15, "y": -51.5, "width": 152, "height": 213 }
+			},
+			"Gunn 1 Light2": {
+				"Gunn 1 Light": { "x": -15, "y": -51.5, "width": 152, "height": 213 }
+			},
+			"gunText": {
+				"gunText": { "width": 831, "height": 356 }
+			},
+			"gunTextAdd": {
+				"gunText": { "width": 831, "height": 356 }
+			}
+		}
+	}
+],
+"animations": {
+	"idle": {
+		"slots": {
+			"diamondAdd": {
+				"rgba": [
+					{
+						"color": "ffffff00",
+						"curve": [ 0.447, 1, 0.895, 1, 0.447, 1, 0.895, 1, 0.447, 1, 0.895, 1, 0.447, 0, 0.895, 0.2 ]
+					},
+					{
+						"time": 1.3333,
+						"color": "ffffff33",
+						"curve": [ 1.784, 1, 2.225, 1, 1.784, 1, 2.225, 1, 1.784, 1, 2.225, 1, 1.784, 0.2, 2.225, 0 ]
+					},
+					{ "time": 2.6667, "color": "ffffff00" }
+				]
+			},
+			"Gun 2 Add": {
+				"rgba": [
+					{ "color": "ffffff00" },
+					{ "time": 1.3333, "color": "ffffff33" },
+					{ "time": 2.6667, "color": "ffffff00" }
+				]
+			},
+			"Gun Add": {
+				"rgba": [
+					{ "color": "ffffff00" },
+					{ "time": 1.3333, "color": "ffffff33" },
+					{ "time": 2.6667, "color": "ffffff00" }
+				]
+			},
+			"GunEff": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"GunEff2": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"Gunn 1 Light": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.6667, "color": "ffffff00" }
+				]
+			},
+			"Gunn 1 Light2": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.6667, "color": "ffffff00" }
+				]
+			},
+			"gunTextAdd": {
+				"rgba": [
+					{
+						"color": "ffffff00",
+						"curve": [ 0.447, 1, 0.895, 1, 0.447, 1, 0.895, 1, 0.447, 1, 0.895, 1, 0.447, 0, 0.895, 0.2 ]
+					},
+					{
+						"time": 1.3333,
+						"color": "ffffff33",
+						"curve": [ 1.784, 1, 2.225, 1, 1.784, 1, 2.225, 1, 1.784, 1, 2.225, 1, 1.784, 0.2, 2.225, 0 ]
+					},
+					{ "time": 2.6667, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"diamond": {
+				"translate": [
+					{
+						"curve": [ 0.444, 0, 0.889, 0, 0.444, 0, 0.889, 32.72 ]
+					},
+					{
+						"time": 1.3333,
+						"y": 32.72,
+						"curve": [ 1.778, 0, 2.222, 0, 1.778, 32.72, 2.222, 0 ]
+					},
+					{ "time": 2.6667 }
+				],
+				"scale": [
+					{ "curve": "stepped" },
+					{ "time": 2.6667 }
+				]
+			},
+			"gunText": {
+				"translate": [
+					{
+						"curve": [ 0.444, 0, 0.889, 0, 0.444, 0, 0.889, -50.23 ]
+					},
+					{
+						"time": 1.3333,
+						"y": -50.23,
+						"curve": [ 1.778, 0, 2.222, 0, 1.778, -50.23, 2.222, 0 ]
+					},
+					{ "time": 2.6667 }
+				]
+			},
+			"Gun 1": {
+				"rotate": [
+					{
+						"curve": [ 0.444, 0, 0.889, 10.33 ]
+					},
+					{
+						"time": 1.3333,
+						"value": 10.33,
+						"curve": [ 1.778, 10.33, 2.222, 0 ]
+					},
+					{ "time": 2.6667 }
+				],
+				"translate": [
+					{
+						"curve": [ 0.444, 0, 0.889, -76.35, 0.444, 0, 0.889, 71.98 ]
+					},
+					{
+						"time": 1.3333,
+						"x": -76.35,
+						"y": 71.98,
+						"curve": [ 1.778, -76.35, 2.222, 0, 1.778, 71.98, 2.222, 0 ]
+					},
+					{ "time": 2.6667 }
+				]
+			},
+			"Gun 2": {
+				"rotate": [
+					{
+						"curve": [ 0.444, 0, 0.889, -14.38 ]
+					},
+					{
+						"time": 1.3333,
+						"value": -14.38,
+						"curve": [ 1.778, -14.38, 2.222, 0 ]
+					},
+					{ "time": 2.6667 }
+				],
+				"translate": [
+					{
+						"curve": [ 0.444, 0, 0.889, 100.32, 0.444, 0, 0.889, 64.33 ]
+					},
+					{
+						"time": 1.3333,
+						"x": 100.32,
+						"y": 64.33,
+						"curve": [ 1.778, 100.32, 2.222, 0, 1.778, 64.33, 2.222, 0 ]
+					},
+					{ "time": 2.6667 }
+				]
+			}
+		}
+	},
+	"match": {
+		"slots": {
+			"diamondAdd": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{
+						"time": 1.0667,
+						"color": "ffffff00",
+						"curve": [ 1.1, 1, 1.133, 1, 1.1, 1, 1.133, 1, 1.1, 1, 1.133, 1, 1.1, 0, 1.133, 0.26 ]
+					},
+					{
+						"time": 1.1667,
+						"color": "ffffff42",
+						"curve": [ 1.2, 1, 1.233, 1, 1.2, 1, 1.233, 1, 1.2, 1, 1.233, 1, 1.2, 0.26, 1.233, 0 ]
+					},
+					{
+						"time": 1.2667,
+						"color": "ffffff00",
+						"curve": [ 1.3, 1, 1.333, 1, 1.3, 1, 1.333, 1, 1.3, 1, 1.333, 1, 1.301, 0, 1.332, 0.29 ]
+					},
+					{
+						"time": 1.3667,
+						"color": "ffffff4d",
+						"curve": [ 1.4, 1, 1.433, 1, 1.4, 1, 1.433, 1, 1.4, 1, 1.433, 1, 1.401, 0.32, 1.431, 0.01 ]
+					},
+					{
+						"time": 1.4667,
+						"color": "ffffff00",
+						"curve": [ 1.5, 1, 1.533, 1, 1.5, 1, 1.533, 1, 1.5, 1, 1.533, 1, 1.502, -0.01, 1.532, 0.3 ]
+					},
+					{
+						"time": 1.5667,
+						"color": "ffffff4d",
+						"curve": [ 1.6, 1, 1.633, 1, 1.6, 1, 1.633, 1, 1.6, 1, 1.633, 1, 1.602, 0.31, 1.629, 0 ]
+					},
+					{ "time": 1.6667, "color": "ffffff00" }
+				]
+			},
+			"Gun 2 Add": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.6667, "color": "ffffff00" },
+					{ "time": 1, "color": "ffffff82", "curve": "stepped" },
+					{ "time": 1.1667, "color": "ffffff82" },
+					{ "time": 1.6667, "color": "ffffff00" }
+				]
+			},
+			"Gun Add": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.6667, "color": "ffffff00" },
+					{ "time": 1, "color": "ffffff82", "curve": "stepped" },
+					{ "time": 1.1667, "color": "ffffff82" },
+					{ "time": 1.6667, "color": "ffffff00" }
+				]
+			},
+			"GunEff": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1, "color": "ffffff00" },
+					{ "time": 1.0667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.2667, "color": "ffffffff" },
+					{ "time": 1.3333, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 1.0333, "name": "Logo Gun Effect/GunEff_00000" },
+					{ "time": 1.0667, "name": "Logo Gun Effect/GunEff_00001" },
+					{ "time": 1.1, "name": "Logo Gun Effect/GunEff_00002" },
+					{ "time": 1.1333, "name": "Logo Gun Effect/GunEff_00003" },
+					{ "time": 1.1667, "name": "Logo Gun Effect/GunEff_00004" },
+					{ "time": 1.2, "name": "Logo Gun Effect/GunEff_00005" },
+					{ "time": 1.2333, "name": "Logo Gun Effect/GunEff_00006" },
+					{ "time": 1.2667, "name": "Logo Gun Effect/GunEff_00007" }
+				]
+			},
+			"GunEff2": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1, "color": "ffffff00" },
+					{ "time": 1.0667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.2667, "color": "ffffffff" },
+					{ "time": 1.3333, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 1.0333, "name": "Logo Gun Effect/GunEff_00000" },
+					{ "time": 1.0667, "name": "Logo Gun Effect/GunEff_00001" },
+					{ "time": 1.1, "name": "Logo Gun Effect/GunEff_00002" },
+					{ "time": 1.1333, "name": "Logo Gun Effect/GunEff_00003" },
+					{ "time": 1.1667, "name": "Logo Gun Effect/GunEff_00004" },
+					{ "time": 1.2, "name": "Logo Gun Effect/GunEff_00005" },
+					{ "time": 1.2333, "name": "Logo Gun Effect/GunEff_00006" },
+					{ "time": 1.2667, "name": "Logo Gun Effect/GunEff_00007" }
+				]
+			},
+			"Gunn 1 Light": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.6667, "color": "ffffff00" },
+					{ "time": 1, "color": "ffffff97" },
+					{ "time": 1.3333, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2, "color": "ffffff00" }
+				]
+			},
+			"Gunn 1 Light2": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.6667, "color": "ffffff00" },
+					{ "time": 1, "color": "ffffff97" },
+					{ "time": 1.3333, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2, "color": "ffffff00" }
+				]
+			},
+			"gunTextAdd": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{
+						"time": 1.0667,
+						"color": "ffffff00",
+						"curve": [ 1.1, 1, 1.133, 1, 1.1, 1, 1.133, 1, 1.1, 1, 1.133, 1, 1.1, 0, 1.133, 0.26 ]
+					},
+					{
+						"time": 1.1667,
+						"color": "ffffff42",
+						"curve": [ 1.2, 1, 1.233, 1, 1.2, 1, 1.233, 1, 1.2, 1, 1.233, 1, 1.2, 0.26, 1.233, 0 ]
+					},
+					{
+						"time": 1.2667,
+						"color": "ffffff00",
+						"curve": [ 1.3, 1, 1.333, 1, 1.3, 1, 1.333, 1, 1.3, 1, 1.333, 1, 1.301, 0, 1.332, 0.31 ]
+					},
+					{
+						"time": 1.3667,
+						"color": "ffffff4d",
+						"curve": [ 1.4, 1, 1.433, 1, 1.4, 1, 1.433, 1, 1.4, 1, 1.433, 1, 1.403, 0.3, 1.433, 0 ]
+					},
+					{
+						"time": 1.4667,
+						"color": "ffffff00",
+						"curve": [ 1.5, 1, 1.533, 1, 1.5, 1, 1.533, 1, 1.5, 1, 1.533, 1, 1.502, 0, 1.532, 0.32 ]
+					},
+					{
+						"time": 1.5667,
+						"color": "ffffff4d",
+						"curve": [ 1.6, 1, 1.633, 1, 1.6, 1, 1.633, 1, 1.6, 1, 1.633, 1, 1.6, 0.29, 1.625, 0 ]
+					},
+					{ "time": 1.6667, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"diamond": {
+				"translate": [
+					{
+						"curve": [ 0.222, 0, 0.444, 0, 0.222, 0, 0.439, 88.58 ]
+					},
+					{
+						"time": 0.6667,
+						"y": 116.68,
+						"curve": [ 0.8, 0, 0.933, 0, 0.799, 132.95, 0.933, 115.45 ]
+					},
+					{ "time": 1.0667, "y": 116.68 },
+					{ "time": 1.1667, "y": 141.44 },
+					{
+						"time": 1.2667,
+						"y": 116.68,
+						"curve": [ 1.3, 0, 1.333, 0, 1.3, 116.68, 1.333, 141.44 ]
+					},
+					{
+						"time": 1.3667,
+						"y": 141.44,
+						"curve": [ 1.4, 0, 1.433, 0, 1.4, 141.44, 1.433, 123.47 ]
+					},
+					{
+						"time": 1.4667,
+						"y": 123.47,
+						"curve": [ 1.5, 0, 1.533, 0, 1.5, 123.47, 1.533, 141.44 ]
+					},
+					{
+						"time": 1.5667,
+						"y": 141.44,
+						"curve": [ 1.6, 0, 1.633, 0, 1.6, 141.44, 1.633, 131.22 ]
+					},
+					{
+						"time": 1.6667,
+						"y": 131.22,
+						"curve": [ 1.7, 0, 1.733, 0, 1.7, 131.22, 1.725, 139.97 ]
+					},
+					{
+						"time": 1.7667,
+						"y": 141.44,
+						"curve": [ 1.844, 0, 1.922, 0, 1.844, 144.2, 1.922, 0 ]
+					},
+					{ "time": 2 }
+				],
+				"scale": [
+					{}
+				]
+			},
+			"gunText": {
+				"translate": [
+					{
+						"curve": [ 0.222, 0, 0.444, 0, 0.222, 0, 0.444, -84.86 ]
+					},
+					{
+						"time": 0.6667,
+						"y": -84.86,
+						"curve": [ 0.8, 0, 0.933, 0, 0.8, -84.86, 0.931, -50.03 ]
+					},
+					{
+						"time": 1.0667,
+						"y": -84.86,
+						"curve": [ 1.1, 0, 1.133, 0, 1.102, -93.85, 1.133, -120.22 ]
+					},
+					{ "time": 1.1667, "y": -120.22 },
+					{ "time": 1.2667, "y": -84.86 },
+					{
+						"time": 1.3667,
+						"y": -120.22,
+						"curve": [ 1.4, 0, 1.433, 0, 1.4, -120.22, 1.433, -93.89 ]
+					},
+					{
+						"time": 1.4667,
+						"y": -93.89,
+						"curve": [ 1.5, 0, 1.533, 0, 1.5, -93.89, 1.533, -120.22 ]
+					},
+					{
+						"time": 1.5667,
+						"y": -120.22,
+						"curve": [ 1.6, 0, 1.633, 0, 1.6, -120.22, 1.633, -102.92 ]
+					},
+					{
+						"time": 1.6667,
+						"y": -102.92,
+						"curve": [ 1.7, 0, 1.733, 0, 1.7, -102.92, 1.717, -118.03 ]
+					},
+					{
+						"time": 1.7667,
+						"y": -120.22,
+						"curve": [ 1.844, 0, 1.922, 0, 1.844, -123.67, 1.922, 0 ]
+					},
+					{ "time": 2 }
+				]
+			},
+			"Gun 1": {
+				"rotate": [
+					{},
+					{ "time": 0.6667, "value": 69.85, "curve": "stepped" },
+					{ "time": 1, "value": 69.85 },
+					{ "time": 1.1667, "value": 56.63 },
+					{ "time": 1.3333, "value": 57.83 },
+					{ "time": 1.6667, "value": 94.71 },
+					{ "time": 2 }
+				],
+				"translate": [
+					{},
+					{ "time": 0.3333, "x": 103.42, "y": 236.9 },
+					{ "time": 0.6667, "x": 215.69, "y": 167.95 },
+					{ "time": 1, "x": 206.85, "y": 180.33 },
+					{ "time": 1.0667, "x": 275.07, "y": 167.95 },
+					{ "time": 1.3333, "x": 224.53, "y": 180.33 },
+					{ "time": 1.6667, "x": 205.08, "y": 164.42 },
+					{ "time": 2 }
+				]
+			},
+			"Gun 2": {
+				"rotate": [
+					{},
+					{ "time": 0.6667, "value": -74.69, "curve": "stepped" },
+					{ "time": 1, "value": -74.69 },
+					{ "time": 1.1667, "value": -56.44 },
+					{ "time": 1.3333, "value": -61.17 },
+					{ "time": 1.6667, "value": -102.5 },
+					{ "time": 2 }
+				],
+				"translate": [
+					{},
+					{ "time": 0.3333, "x": -101.66, "y": 235.14 },
+					{ "time": 0.6667, "x": -215.69, "y": 183.87 },
+					{ "time": 1, "x": -203.31, "y": 176.79 },
+					{ "time": 1.0667, "x": -276.84, "y": 160.88 },
+					{ "time": 1.3333, "x": -226.3, "y": 176.79 },
+					{ "time": 1.6667, "x": -208.62, "y": 155.58 },
+					{ "time": 2 }
+				]
+			}
+		}
+	}
+}
+}

@@ -1,0 +1,9 @@
+winning_coins.webp
+size:424,424
+filter:Linear,Linear
+winning_coins/coin2
+bounds:2,83,344,339
+winning_coins/coin_side2
+bounds:2,2,79,339
+offsets:2,0,83,339
+rotate:90

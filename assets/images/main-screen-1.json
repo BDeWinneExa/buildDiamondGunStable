@@ -1,0 +1,87 @@
+{
+  "frames": {
+    "panel-background": {
+      "frame": {
+        "x": 4,
+        "y": 4,
+        "w": 1264,
+        "h": 825
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 1264,
+        "h": 825
+      },
+      "sourceSize": {
+        "w": 1264,
+        "h": 825
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "buy-freespins-bcg-frame": {
+      "frame": {
+        "x": 4,
+        "y": 837,
+        "w": 1081,
+        "h": 842
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 1081,
+        "h": 842
+      },
+      "sourceSize": {
+        "w": 1081,
+        "h": 842
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "buy-freespins-background": {
+      "frame": {
+        "x": 1276,
+        "y": 4,
+        "w": 863,
+        "h": 572
+      },
+      "rotated": true,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 863,
+        "h": 572
+      },
+      "sourceSize": {
+        "w": 863,
+        "h": 572
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  "meta": {
+    "app": "http://free-tex-packer.com",
+    "version": "0.6.7",
+    "image": "main-screen-1.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 2048,
+      "h": 2048
+    },
+    "scale": 1
+  }
+}

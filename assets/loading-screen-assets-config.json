@@ -1,0 +1,34 @@
+{
+  "layouts": [
+    {
+      "name": "loading-screen",
+      "url": "./layouts/loading-screen.json"
+    }
+  ],
+  "textures": [
+    {
+      "name": "loading",
+      "url": "./images/loading-screen/loading.json"
+    }
+  ],
+  "sounds": [
+
+  ],
+  "spine": [
+    {
+      "name": "loader",
+      "url": "./spine/loader.json"
+    },
+    {
+      "name": "loading-screen-desktop",
+      "url": "./spine/loading/desktop/diamond_gun.json"
+    },
+    {
+      "name": "loading-screen-mobile",
+      "url": "./spine/loading/mobile/diamond_gun.json"
+    }
+  ],
+  "fonts": [
+
+  ]
+}

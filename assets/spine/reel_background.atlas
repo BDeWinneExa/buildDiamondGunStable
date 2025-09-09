@@ -1,0 +1,18 @@
+reel_background.webp
+size:1456,1456
+filter:Linear,Linear
+BG
+bounds:2,523,1355,929
+LPillar
+bounds:2,308,159,973
+rotate:90
+Light
+bounds:977,377,92,90
+RPillar
+bounds:2,147,159,973
+rotate:90
+Sifi Bullet
+bounds:1359,1212,240,81
+rotate:90
+upPillar
+bounds:2,469,1450,52

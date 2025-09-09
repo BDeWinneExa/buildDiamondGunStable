@@ -1,0 +1,114 @@
+{
+"skeleton": {
+	"hash": "LLjcUyM+Kas",
+	"spine": "4.1.24",
+	"x": -957.06,
+	"y": -559.11,
+	"width": 1920,
+	"height": 1080,
+	"images": "../../Graphics/Symbols/",
+	"audio": "D:/Pankaj Projects/Slots/Diamond Gun/Graphics/Symbols/Save to Spine/lowpay"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "Destroy eff", "parent": "root", "scaleX": 0.8, "scaleY": 0.8 }
+],
+"slots": [
+	{ "name": "Diamond Gun Ref", "bone": "root" },
+	{ "name": "destroy Eff", "bone": "Destroy eff", "attachment": "Save to Spine/lowpay/Destroy eff/destroy Eff_00000", "blend": "additive" },
+	{ "name": "destroy Eff2Add", "bone": "Destroy eff", "attachment": "Save to Spine/lowpay/Destroy eff/destroy Eff_00000", "blend": "additive" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"destroy Eff": {
+				"Save to Spine/lowpay/Destroy eff/destroy Eff_00000": { "width": 250, "height": 250 },
+				"Save to Spine/lowpay/Destroy eff/destroy Eff_00001": { "width": 250, "height": 250 },
+				"Save to Spine/lowpay/Destroy eff/destroy Eff_00002": { "width": 250, "height": 250 },
+				"Save to Spine/lowpay/Destroy eff/destroy Eff_00003": { "width": 250, "height": 250 },
+				"Save to Spine/lowpay/Destroy eff/destroy Eff_00004": { "width": 250, "height": 250 },
+				"Save to Spine/lowpay/Destroy eff/destroy Eff_00006": { "width": 250, "height": 250 },
+				"Save to Spine/lowpay/Destroy eff/destroy Eff_00008": { "width": 250, "height": 250 },
+				"Save to Spine/lowpay/Destroy eff/destroy Eff_00010": { "width": 250, "height": 250 },
+				"Save to Spine/lowpay/Destroy eff/destroy Eff_00012": { "width": 250, "height": 250 },
+				"Save to Spine/lowpay/Destroy eff/destroy Eff_00014": { "width": 250, "height": 250 },
+				"Save to Spine/lowpay/Destroy eff/destroy Eff_00016": { "width": 250, "height": 250 },
+				"Save to Spine/lowpay/Destroy eff/destroy Eff_00018": { "width": 250, "height": 250 },
+				"Save to Spine/lowpay/Destroy eff/destroy Eff_00020": { "width": 250, "height": 250 },
+				"Save to Spine/lowpay/Destroy eff/destroy Eff_00022": { "width": 250, "height": 250 }
+			},
+			"destroy Eff2Add": {
+				"Save to Spine/lowpay/Destroy eff/destroy Eff_00000": { "width": 250, "height": 250 },
+				"Save to Spine/lowpay/Destroy eff/destroy Eff_00001": { "width": 250, "height": 250 },
+				"Save to Spine/lowpay/Destroy eff/destroy Eff_00002": { "width": 250, "height": 250 },
+				"Save to Spine/lowpay/Destroy eff/destroy Eff_00003": { "width": 250, "height": 250 },
+				"Save to Spine/lowpay/Destroy eff/destroy Eff_00004": { "width": 250, "height": 250 },
+				"Save to Spine/lowpay/Destroy eff/destroy Eff_00006": { "width": 250, "height": 250 },
+				"Save to Spine/lowpay/Destroy eff/destroy Eff_00008": { "width": 250, "height": 250 },
+				"Save to Spine/lowpay/Destroy eff/destroy Eff_00010": { "width": 250, "height": 250 },
+				"Save to Spine/lowpay/Destroy eff/destroy Eff_00012": { "width": 250, "height": 250 },
+				"Save to Spine/lowpay/Destroy eff/destroy Eff_00014": { "width": 250, "height": 250 },
+				"Save to Spine/lowpay/Destroy eff/destroy Eff_00016": { "width": 250, "height": 250 },
+				"Save to Spine/lowpay/Destroy eff/destroy Eff_00018": { "width": 250, "height": 250 },
+				"Save to Spine/lowpay/Destroy eff/destroy Eff_00020": { "width": 250, "height": 250 },
+				"Save to Spine/lowpay/Destroy eff/destroy Eff_00022": { "width": 250, "height": 250 }
+			}
+		}
+	}
+],
+"animations": {
+	"destroy": {
+		"slots": {
+			"destroy Eff": {
+				"rgba": [
+					{ "color": "ffffff00" },
+					{ "time": 0.2, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.4333, "color": "ffffffff" },
+					{ "time": 0.5667, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 0.1333, "name": "Save to Spine/lowpay/Destroy eff/destroy Eff_00000" },
+					{ "time": 0.1667, "name": "Save to Spine/lowpay/Destroy eff/destroy Eff_00001" },
+					{ "time": 0.2, "name": "Save to Spine/lowpay/Destroy eff/destroy Eff_00002" },
+					{ "time": 0.2333, "name": "Save to Spine/lowpay/Destroy eff/destroy Eff_00003" },
+					{ "time": 0.2667, "name": "Save to Spine/lowpay/Destroy eff/destroy Eff_00004" },
+					{ "time": 0.3, "name": "Save to Spine/lowpay/Destroy eff/destroy Eff_00006" },
+					{ "time": 0.3333, "name": "Save to Spine/lowpay/Destroy eff/destroy Eff_00008" },
+					{ "time": 0.3667, "name": "Save to Spine/lowpay/Destroy eff/destroy Eff_00010" },
+					{ "time": 0.4, "name": "Save to Spine/lowpay/Destroy eff/destroy Eff_00012" },
+					{ "time": 0.4333, "name": "Save to Spine/lowpay/Destroy eff/destroy Eff_00014" },
+					{ "time": 0.4667, "name": "Save to Spine/lowpay/Destroy eff/destroy Eff_00016" },
+					{ "time": 0.5, "name": "Save to Spine/lowpay/Destroy eff/destroy Eff_00018" },
+					{ "time": 0.5333, "name": "Save to Spine/lowpay/Destroy eff/destroy Eff_00020" },
+					{ "time": 0.5667, "name": "Save to Spine/lowpay/Destroy eff/destroy Eff_00022" }
+				]
+			},
+			"destroy Eff2Add": {
+				"rgba": [
+					{ "color": "ffffff00" },
+					{ "time": 0.2, "color": "ffffff6a", "curve": "stepped" },
+					{ "time": 0.4333, "color": "ffffff6a" },
+					{ "time": 0.5667, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 0.1333, "name": "Save to Spine/lowpay/Destroy eff/destroy Eff_00000" },
+					{ "time": 0.1667, "name": "Save to Spine/lowpay/Destroy eff/destroy Eff_00001" },
+					{ "time": 0.2, "name": "Save to Spine/lowpay/Destroy eff/destroy Eff_00002" },
+					{ "time": 0.2333, "name": "Save to Spine/lowpay/Destroy eff/destroy Eff_00003" },
+					{ "time": 0.2667, "name": "Save to Spine/lowpay/Destroy eff/destroy Eff_00004" },
+					{ "time": 0.3, "name": "Save to Spine/lowpay/Destroy eff/destroy Eff_00006" },
+					{ "time": 0.3333, "name": "Save to Spine/lowpay/Destroy eff/destroy Eff_00008" },
+					{ "time": 0.3667, "name": "Save to Spine/lowpay/Destroy eff/destroy Eff_00010" },
+					{ "time": 0.4, "name": "Save to Spine/lowpay/Destroy eff/destroy Eff_00012" },
+					{ "time": 0.4333, "name": "Save to Spine/lowpay/Destroy eff/destroy Eff_00014" },
+					{ "time": 0.4667, "name": "Save to Spine/lowpay/Destroy eff/destroy Eff_00016" },
+					{ "time": 0.5, "name": "Save to Spine/lowpay/Destroy eff/destroy Eff_00018" },
+					{ "time": 0.5333, "name": "Save to Spine/lowpay/Destroy eff/destroy Eff_00020" },
+					{ "time": 0.5667, "name": "Save to Spine/lowpay/Destroy eff/destroy Eff_00022" }
+				]
+			}
+		}
+	}
+}
+}

@@ -1,0 +1,115 @@
+{
+  "layout":{
+    "children":[
+      {
+        "children":[
+          {
+            "children":[],
+            "cls":"starling.display.Sprite",
+            "customParams":{},
+            "params":{
+              "name":"coinShowerAnimation"
+            }
+          },
+          {
+            "children":[],
+            "cls":"starling.display.Sprite",
+            "customParams":{
+              "customComponentClass":"BigWinAnimation"
+            },
+            "params":{
+              "name":"animation"
+            }
+          }
+        ],
+        "cls":"starling.display.Sprite",
+        "customParams":{
+          "customComponentClass":"PopupBigWin"
+        },
+        "params":{
+          "name":"PopupBigWin",
+          "x":540,
+          "y":960
+        }
+      },
+      {
+        "children":[
+          {
+            "children":[],
+            "cls":"starling.display.Sprite",
+            "customParams":{
+              "customComponentClass":"FreespinsAnimation"
+            },
+            "params":{
+              "name":"animation"
+            }
+          }
+        ],
+        "cls":"starling.display.Sprite",
+        "customParams":{
+          "customComponentClass":"PopupFreespins"
+        },
+        "params":{
+          "name":"PopupFreespins",
+          "x":540,
+          "y":930
+        }
+      },
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "cls": "starling.display.Image",
+                "constructorParams": [
+                  {
+                    "cls": "starling.textures.Texture",
+                    "textureName": "popup-freespin"
+                  }
+                ],
+                "customParams": {
+                  "forEditor": true
+                },
+                "params": {
+                  "name": "popup-freespin",
+                  "pivotX": 1500,
+                  "pivotY": 1500,
+                  "scaleX": 0.4,
+                  "scaleY": 0.4
+                }
+              }
+            ],
+            "cls": "starling.display.Sprite",
+            "customParams": {},
+            "params": {
+              "name": "animation"
+            }
+          }
+        ],
+        "cls": "starling.display.Sprite",
+        "customParams": {
+          "customComponentClass": "PopupFreeSpinWinning"
+        },
+        "params": {
+          "name": "PopupFreeSpinWinning",
+          "x": 540,
+          "y": 960
+        }
+      }
+    ],
+    "cls":"starling.display.Sprite",
+    "customParams":{},
+    "params":{
+      "name":"root"
+    }
+  },
+  "setting":{
+    "canvasColor":0,
+    "canvasSize":{
+      "x":1080,
+      "y":1920
+    },
+    "lock":"0000100"
+  },
+  "version":"2.0"
+}
