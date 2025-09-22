@@ -1,0 +1,25 @@
+background.webp
+	size: 1024, 1024
+	filter: Linear, Linear
+BulletDown
+	bounds: 145, 263, 99, 215
+BulletUp
+	bounds: 2, 124, 141, 354
+Partical
+	bounds: 102, 107, 14, 15
+Partical 2
+	bounds: 2, 23, 18, 16
+Partical 3
+	bounds: 404, 458, 19, 20
+bg
+	bounds: 2, 480, 961, 541
+diamond1
+	bounds: 246, 268, 47, 78
+diamond2
+	bounds: 965, 940, 56, 81
+star 0
+	bounds: 2, 41, 98, 81
+star 1
+	bounds: 145, 180, 98, 81
+star 2
+	bounds: 246, 348, 156, 130

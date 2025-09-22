@@ -3707,7 +3707,7 @@ class DiamondGun extends BrowserApplication_1.BrowserApplication {
     onFeaturePresentationScreenContinue() {
         new ControlEvent_1.default(ApplicationEvent_1.ApplicationEvent.LOADING_COMPLETE).dispatch();
     }
-    onSlotMachineStateChanged(currentState, previousState) {
+    onSlotMachineStateChanged(currentState) {
         var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p, _q, _r, _s, _t, _u, _v;
         switch (currentState) {
             case SlotMachineState_1.SlotMachineState.IDLE:
@@ -4010,7 +4010,6 @@ class DiamondGun extends BrowserApplication_1.BrowserApplication {
         let popupHorizontal = null;
         let popupVertical = null;
         let showSound = SoundListExtended_1.default.UI_POPUP_COMMON_WINDOW;
-        let reloadOnClick = false;
         switch (popupState.activePopup.type) {
             case PopupState_1.PopupType.NOT_ENOUGH_BALANCE:
                 popupHorizontal = (_a = this.popupBalanceVertical) !== null && _a !== void 0 ? _a : (this.popupBalanceVertical = new PopupNotEnoughBalance_1.default());
@@ -4019,7 +4018,6 @@ class DiamondGun extends BrowserApplication_1.BrowserApplication {
             case PopupState_1.PopupType.CONNECTION_LOST:
                 popupHorizontal = (_c = this.popupConnectionLostVertical) !== null && _c !== void 0 ? _c : (this.popupConnectionLostVertical = new PopupConnectionLost_1.default(sm.currentError));
                 popupVertical = (_d = this.popupConnectionLostHorizontal) !== null && _d !== void 0 ? _d : (this.popupConnectionLostHorizontal = new PopupConnectionLost_1.default(sm.currentError));
-                reloadOnClick = true;
                 showSound = SoundListExtended_1.default.UI_ERROR_APPEARANCE;
                 break;
             case PopupState_1.PopupType.WARNING_POPUP:
@@ -9306,81 +9304,232 @@ exports.QuadraticUtils = QuadraticUtils;
 
 "use strict";
 
+/* eslint-disable @typescript-eslint/no-explicit-any */
+// IntroScreen.ts
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-const pixi_js_1 = __webpack_require__(95894);
+const ButtonSpin_1 = __importDefault(__webpack_require__(79619));
 const IntroScreenEvent_1 = __webpack_require__(81616);
 const SoundManager_1 = __importDefault(__webpack_require__(6881));
-const SoundList_1 = __importDefault(__webpack_require__(27310));
+const SoundListExtended_1 = __importDefault(__webpack_require__(8434));
 const LayoutBuilder_1 = __importDefault(__webpack_require__(98744));
 const AssetsManager_1 = __importDefault(__webpack_require__(36353));
 const AdjustableLayoutContainer_1 = __importDefault(__webpack_require__(66961));
 const IntroScreenBackground_1 = __importDefault(__webpack_require__(5026));
-const ButtonSpin_1 = __importDefault(__webpack_require__(79619));
-const ScreenOrientation_1 = __webpack_require__(81827);
-const ButtonSpinAnimation_1 = __importDefault(__webpack_require__(58553));
+const Logo_1 = __importDefault(__webpack_require__(22452));
+const ToggleButton_1 = __webpack_require__(19838);
+const Utils_1 = __webpack_require__(63948);
+const Translation_1 = __importDefault(__webpack_require__(62231));
 const engineTween_1 = __webpack_require__(50381);
-const SoundListExtended_1 = __importDefault(__webpack_require__(8434));
+const ScreenOrientation_1 = __webpack_require__(81827);
+const GamePlayIntro_1 = __webpack_require__(67510);
+const Character_1 = __importDefault(__webpack_require__(24207));
 class IntroScreen extends AdjustableLayoutContainer_1.default {
     constructor() {
         super(AssetsManager_1.default.layouts.get('intro-screen'));
+        this.messages = [
+            'WIN UP TO 5000X BET',
+            'RANDOM MULTIPLIERS UP TO 500X',
+            'SYMBOL PAY ANYWHERE ON THE SCREEN',
+        ];
+        this.currentMessageIndex = 0;
         LayoutBuilder_1.default.create(this.layout, this, (le) => {
             return this.customClassElementCreate(le);
         });
-        this.tfIntroText.style.align = 'center';
-        this.tfClickAnyWhere.style.align = 'center';
-        this.btnGetStarted.on('pointerup', this.onGetStartedClicked, this);
-        this.on('pointerup', this.onGetStartedClicked, this);
+        if (this.textBG) {
+            this.textBG.alpha = 0;
+        }
+        this.startTextInterval();
+        if (this.background) {
+            this.background.anchor.set(0.5, 0.5);
+        }
+        if (this.backgroundMobile) {
+            this.backgroundMobile.anchor.set(0.5, 0.5);
+        }
+        if (this.gradient) {
+            this.gradient.anchor.set(0.5, 1);
+        }
+        // Instantiate GamePlayIntro
+        this.tfDoNotShowAgain.anchor.set(0.5, 0.5);
+        this.tfDoNotShowAgain.style.align = 'center';
+        if (this.volatility) {
+            this.volatility.anchor.set(0.5, 0.5);
+        }
+        // Add event listeners
         this.on('added', this.onAdded, this);
         this.on('removed', this.onRemoved, this);
+        window.addEventListener('click', this.boundOnGetStartedClicked);
+        // Handle button click
+        if (this.btnGetStarted) {
+            this.btnGetStarted.on('pointerup', this.onGetStartedClicked, this);
+        }
+        this.tfDoNotShowAgain.text = Translation_1.default.t('tfDoNotShowAgain');
+        (0, Utils_1.autoscaleText)(this.tfDoNotShowAgain, 36, 450, 100);
+        if (this.doNotShowAgainCheckbox) {
+            if (this.doNotShowAgainCheckbox.onState) {
+                this.doNotShowAgainCheckbox.onState.removeAllListeners('pointerup');
+                this.doNotShowAgainCheckbox.onState.once('pointerup', () => {
+                    this.doNotShowAgainCheckbox.changeState(false);
+                });
+            }
+            if (this.doNotShowAgainCheckbox.offState) {
+                this.doNotShowAgainCheckbox.offState.removeAllListeners('pointerup');
+                this.doNotShowAgainCheckbox.offState.once('pointerup', () => {
+                    this.doNotShowAgainCheckbox.changeState(true);
+                });
+            }
+            this.doNotShowAgainCheckbox.removeAllListeners(ToggleButton_1.ToggleButton.STATE_CHANGED);
+            this.doNotShowAgainCheckbox.on(ToggleButton_1.ToggleButton.STATE_CHANGED, () => {
+                this.onCheckboxClicked(this.doNotShowAgainCheckbox.getIsStateOn());
+            }, this);
+        }
+        // Set up text animations
+        setTimeout(() => {
+            if (this.tfDoNotShowAgain) {
+                engineTween_1.Tweener.addTween(this.tfDoNotShowAgain, {
+                    alpha: 1,
+                    transition: 'easeInSine',
+                    time: 0.5,
+                });
+            }
+            if (this.textBG) {
+                engineTween_1.Tweener.addTween(this.textBG, {
+                    alpha: 0.7,
+                    transition: 'easeInSine',
+                    time: 0.5,
+                });
+            }
+        }, 4000);
+    }
+    startTextInterval() {
+        const updateText = () => {
+            if (this.xScatter) {
+                // Update to the next message
+                this.currentMessageIndex = (this.currentMessageIndex + 1) % this.messages.length;
+                this.xScatter.text = this.messages[this.currentMessageIndex];
+                // this.xScatter.x = desc.baseWidth / 2 - this.xScatter.width / 2;
+            }
+            if (this.xScatter2) {
+                this.xScatter2.text = this.messages[this.currentMessageIndex];
+            }
+        };
+        // Change text every 4 seconds
+        this.textInterval = setInterval(updateText, 4000);
+        // Update immediately for the first time
+        updateText();
     }
     updateLayout(desc) {
         super.updateLayout(desc);
-        const introTextMobilePos = 540;
-        const introTextDesktopPos = 960;
-        this.tfIntroText.pivot.set(this.tfIntroText.width / 2, this.tfIntroText.height / 2);
-        this.tfClickAnyWhere.pivot.set(this.tfClickAnyWhere.width / 2, this.tfClickAnyWhere.height / 2);
-        if (desc.orientation == ScreenOrientation_1.ScreenOrientation.VERTICAL) {
-            this.tfClickAnyWhere.x = introTextMobilePos;
-            this.tfIntroTextBcg.height = 200;
-            this.interactive = true;
+        if (desc.orientation === ScreenOrientation_1.ScreenOrientation.HORIZONTAL) {
+            this.background.visible = true;
+            this.backgroundMobile.visible = false;
         }
         else {
-            this.interactive = false;
-            this.tfIntroText.x = introTextDesktopPos;
+            this.background.visible = false;
+            this.backgroundMobile.visible = true;
+        }
+        if (this.fade) {
+            this.fade.width = desc.currentWidth;
+            this.fade.height = desc.currentHeight;
+        }
+        if (this.tfDoNotShowAgain) {
+            this.doNotShowAgainCheckbox.x = this.tfDoNotShowAgain.x - 260;
         }
     }
-    // PRIVATE API
+    onAdded() {
+        if (this.btnGetStarted) {
+            // this.btnGetStarted.buttonAnimator.setAnimation("spin_Idle");
+        }
+        if (this.tfDoNotShowAgain) {
+            this.doNotShowAgainCheckbox.x = this.tfDoNotShowAgain.x - 260;
+        }
+        this.backgroundSound = SoundManager_1.default.loop({
+            id: SoundListExtended_1.default.BASEGAME_BACKGROUND,
+            volume: 0.3,
+            channel: 'ambient',
+        });
+        if (this.gamePlayIntro) {
+            this.gamePlayIntro.updateTransform();
+        }
+        if (this.reelBackground) {
+            this.reelBackground.anchor.set(0.5, 0.5);
+        }
+        this.logo.state.setEmptyAnimations(0);
+        this.logo.state.setAnimation(0, 'idle', true);
+        // this.reelFrame.state.setEmptyAnimations(0);
+        // this.reelFrame.state.setAnimation(0, 'idle', true);
+        if (this.textFrame) {
+            this.textFrame.anchor.set(0.5, 0.5);
+            this.textFrame.scale.set(1.5, 1.5);
+        }
+        this.gamePlayIntro.startSimulation();
+    }
     onRemoved() {
+        SoundManager_1.default.mute = false;
         engineTween_1.Tweener.removeTweens(this);
-        this.btnGetStarted.removeTweens();
+        if (this.btnGetStarted) {
+            // this.btnGetStarted.buttonAnimator.state.setEmptyAnimations(0);
+            // this.btnGetStarted.buttonAnimator.visible = false;
+        }
+        // Remove GamePlayIntro if needed
+        if (this.gamePlayIntro && this.gamePlayIntro.parent) {
+            this.gamePlayIntro.parent.removeChild(this.gamePlayIntro);
+            this.gamePlayIntro.destroy();
+        }
+        if (this.doNotShowAgainCheckbox) {
+            this.doNotShowAgainCheckbox.destroy();
+        }
+        window.removeEventListener('click', this.boundOnGetStartedClicked);
+        if (this.btnGetStarted) {
+            this.btnGetStarted.destroy();
+        }
+        this.gamePlayIntro.stopIntroSimulation();
     }
     customClassElementCreate(le) {
         let instance = null;
         switch (le.customClass) {
             case 'ButtonGetStarted':
                 instance = new ButtonSpin_1.default(le);
-                const btn = instance;
-                btn.hitArea = new pixi_js_1.Circle(0, 0, 110);
                 break;
             case 'IntroScreenBackground':
                 instance = new IntroScreenBackground_1.default();
                 break;
+            case 'Logo':
+                instance = new Logo_1.default();
+                break;
+            case 'ToggleButton':
+                instance = new ToggleButton_1.ToggleButton(le);
+                break;
+            case 'GamePlayIntro':
+                instance = new GamePlayIntro_1.GamePlayIntro();
+                break;
+            case 'Character':
+                instance = new Character_1.default();
+                break;
+            // Add other custom classes if needed
         }
         return instance;
     }
-    onAdded() {
-        this.btnGetStarted.waitAnimation(ButtonSpinAnimation_1.default.WAIT);
-        this.backgroundSound = SoundManager_1.default.loop({ id: SoundListExtended_1.default.INTROGAME_BACKGROUND, volume: 0.3, channel: "ambient" });
-    }
-    // USER INTERACTION
     onGetStartedClicked() {
-        // this.backgroundSound.stop();
-        this.btnGetStarted.enabled = false;
-        SoundManager_1.default.play(SoundList_1.default.INTRO_SPIN_START_BUTTON_CLICK);
+        if (this.backgroundSound) {
+            this.backgroundSound.stop();
+        }
+        if (this.btnGetStarted) {
+            this.btnGetStarted.enabled = false;
+        }
+        // SoundManager.play(SoundListExtended.INTRO_SPIN_BTN);
         this.emit(IntroScreenEvent_1.IntroScreenEvent.ON_GET_STARTED_CLICKED);
+        if (this.doNotShowAgainCheckbox) {
+            this.doNotShowAgainCheckbox.offState.removeAllListeners();
+            this.doNotShowAgainCheckbox.onState.removeAllListeners();
+            this.doNotShowAgainCheckbox.removeAllListeners();
+            this.doNotShowAgainCheckbox.destroy();
+        }
+    }
+    onCheckboxClicked(value) {
+        localStorage.setItem('skipScreen', value ? 'true' : 'false');
     }
 }
 exports["default"] = IntroScreen;
@@ -27589,7 +27738,7 @@ let GameService = class GameService extends eventemitter3_1.default {
     operatorLogin() {
         return __awaiter(this, void 0, void 0, function* () {
             const res = yield this.ax.post('https://operator1-staging.exagaming.com/api/v1/auth/login', {
-                userName: 'demo2',
+                userName: 'demo1',
                 currencyCode: 'EUR',
             });
             return res.data.accessToken;
@@ -37221,6 +37370,7 @@ var LayoutElementType;
     LayoutElementType["TEXT_FIELD"] = "starling.text.TextField";
     LayoutElementType["QUAD"] = "starling.display.Quad";
     LayoutElementType["MOVIE_CLIP"] = "starling.display.MovieClip";
+    LayoutElementType["SPINE"] = "starling.display.Spine";
 })(LayoutElementType || (exports.LayoutElementType = LayoutElementType = {}));
 
 
@@ -46294,6 +46444,27 @@ exports.BoneData = BoneData;
 
 /***/ }),
 
+/***/ 54034:
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const LayoutElement_1 = __importDefault(__webpack_require__(81453));
+class LayoutElementSpine extends LayoutElement_1.default {
+    constructor(name, texture) {
+        super(name);
+        this.texture = texture;
+    }
+}
+exports["default"] = LayoutElementSpine;
+
+
+/***/ }),
+
 /***/ 54572:
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
@@ -49351,7 +49522,7 @@ MainScreenBackground.DEFAULT_BACKGROUND_CHANNEL = 'ambient';
 exports["default"] = MainScreenBackground;
 var BackgroundType;
 (function (BackgroundType) {
-    BackgroundType["NORMAL"] = "main-screen-background";
+    BackgroundType["NORMAL"] = "background";
     BackgroundType["FREEGAME"] = "freegame-screen-background";
 })(BackgroundType || (exports.BackgroundType = BackgroundType = {}));
 
@@ -51611,6 +51782,7 @@ const EffectFactory_1 = __importDefault(__webpack_require__(18302));
 const LayoutDescription_1 = __webpack_require__(44359);
 const AnimationFactory_1 = __importDefault(__webpack_require__(21854));
 const Translation_1 = __importDefault(__webpack_require__(62231));
+const LayoutElementSpine_1 = __importDefault(__webpack_require__(54034));
 class LayoutElementFactory {
     static create(descriptionObject) {
         var _a, _b;
@@ -51642,6 +51814,14 @@ class LayoutElementFactory {
                         tileGridParams.y = 0;
                     }
                     le.tileGrid = new pixi_js_1.Rectangle(parseInt(tileGridParams.x), parseInt(tileGridParams.y), parseInt(tileGridParams.width), parseInt(tileGridParams.height));
+                }
+                break;
+            case LayoutDescription_1.LayoutElementType.SPINE:
+                le = new LayoutElementSpine_1.default(descriptionObject.params.name, descriptionObject.constructorParams[0].textureName);
+                if (descriptionObject.hasOwnProperty('customParams')) {
+                    if (descriptionObject.customParams.hasOwnProperty('customComponentClass')) {
+                        le.customClass = descriptionObject.customParams.customComponentClass;
+                    }
                 }
                 break;
             case LayoutDescription_1.LayoutElementType.TEXT_FIELD:
@@ -58229,6 +58409,609 @@ exports.TYPES_TO_BYTES_PER_COMPONENT = parseKTX.TYPES_TO_BYTES_PER_COMPONENT;
 exports.TYPES_TO_BYTES_PER_PIXEL = parseKTX.TYPES_TO_BYTES_PER_PIXEL;
 exports.parseKTX = parseKTX.parseKTX;
 //# sourceMappingURL=index.js.map
+
+
+/***/ }),
+
+/***/ 67510:
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.GamePlayIntro = exports.desc = void 0;
+const AssetsManager_1 = __importDefault(__webpack_require__(36353));
+const ScreenOrientation_1 = __webpack_require__(81827);
+const pixi_js_1 = __webpack_require__(95894);
+const engineTween_1 = __webpack_require__(50381);
+const pixi_spine_1 = __webpack_require__(15091);
+const Logger_1 = __importDefault(__webpack_require__(82669));
+// Tile mappings
+const tileMappings = [
+    { id: 101, key: "1", spineFile: "symbol-00" },
+    { id: 102, key: "2", spineFile: "symbol-01" },
+    { id: 103, key: "3", spineFile: "symbol-02" },
+    { id: 104, key: "4", spineFile: "symbol-03" },
+    { id: 201, key: "5", spineFile: "symbol-05" },
+    { id: 202, key: "6", spineFile: "symbol-06" },
+    { id: 203, key: "7", spineFile: "symbol-07" },
+    // Add mappings for other multipliers as needed
+    // { id: 102, type: "multiplier", value: "100", key: "11", spineFile: "symbol-multiplier-orange" },
+];
+class GamePlayIntro extends pixi_js_1.Container {
+    constructor() {
+        super();
+        this.simulationRunning = false;
+        this.spineDataMap = new Map();
+        this.desc = {
+            baseWidth: 1920, baseHeight: 1080,
+            orientation: ScreenOrientation_1.ScreenOrientation.HORIZONTAL,
+            currentWidth: 0,
+            currentHeight: 0
+        };
+    }
+    startSimulation() {
+        return __awaiter(this, void 0, void 0, function* () {
+            if (GamePlayIntro.isSimulationRunning) {
+                return;
+            }
+            GamePlayIntro.isSimulationRunning = true;
+            yield this.init();
+            setTimeout(() => {
+                this.playIntroSimulation();
+            }, 2500);
+        });
+    }
+    playIntroSimulation() {
+        return __awaiter(this, void 0, void 0, function* () {
+            Logger_1.default.debug('playIntroSimulation');
+            this.simulationRunning = true;
+            while (this.simulationRunning) {
+                yield this.simulateGameCycle();
+            }
+        });
+    }
+    simulateGameCycle() {
+        return __awaiter(this, void 0, void 0, function* () {
+            // Step 1: Detect matches
+            const matches = this.detectMatches();
+            if (matches.length > 0) {
+                // Step 2: Process matches
+                yield this.processUpdatesSequentially(matches, false);
+                // Step 3: Apply gravity
+                yield this.applyGravity();
+                // Step 4: Add new pieces to empty spots
+                const newPieces = this.generateNewPieces();
+                yield this.handleNewPieces(newPieces);
+                // Add a small delay before the next cycle
+                yield this.delay(500);
+            }
+            else {
+                // No matches detected, end cycle
+                this.simulationRunning = false; // End simulation if no matches are found
+            }
+        });
+    }
+    detectMatches() {
+        const keyCounts = {};
+        const keyPositions = {};
+        // Count occurrences of each key and store their positions
+        for (let y = 0; y < this.gridRows; y++) {
+            for (let x = 0; x < this.gridCols; x++) {
+                const piece = this.grid[y][x];
+                if (piece) {
+                    const key = piece.key;
+                    if (!keyCounts[key]) {
+                        keyCounts[key] = 0;
+                        keyPositions[key] = [];
+                    }
+                    keyCounts[key]++;
+                    keyPositions[key].push({ x, y });
+                }
+            }
+        }
+        // Find the key with the highest count
+        let highestKey = null;
+        let highestCount = 0;
+        for (const key in keyCounts) {
+            if (keyCounts[key] > highestCount) {
+                highestCount = keyCounts[key];
+                highestKey = key;
+            }
+        }
+        if (!highestKey) {
+            // No matches found
+            return [];
+        }
+        // Collect all positions for the highest key
+        const matches = keyPositions[highestKey].map(pos => ({
+            location_x: pos.x,
+            location_y: pos.y,
+            action: "match",
+        }));
+        return matches;
+    }
+    generateNewPieces() {
+        const newPieces = [];
+        for (let y = 0; y < this.gridRows; y++) {
+            for (let x = 0; x < this.gridCols; x++) {
+                if (this.grid[y][x] === null) {
+                    newPieces.push({
+                        location_x: x,
+                        location_y: y,
+                        item_id: this.getRandomTileId(),
+                    });
+                }
+            }
+        }
+        return newPieces;
+    }
+    stopIntroSimulation() {
+        this.simulationRunning = false;
+    }
+    getRandomTileId() {
+        // @ts-ignore
+        const tiles = tileMappings.filter(tile => tile.type !== "multiplier");
+        if (Math.random() < 0.003) {
+            this.numOfMultiplierLanded += 1;
+            // @ts-ignore
+            const multipliers = tileMappings.filter(tile => tile.type === "multiplier");
+            if (multipliers.length > 0) {
+                return multipliers[Math.floor(Math.random() * multipliers.length)].id;
+            }
+        }
+        return tiles[Math.floor(Math.random() * tiles.length)].id;
+    }
+    init() {
+        return __awaiter(this, void 0, void 0, function* () {
+            this.desc.baseWidth = 1920;
+            this.desc.baseHeight = 1080;
+            this.heightReductionFactor = 0.07;
+            this.margin = 50;
+            this.dividerSprite = [];
+            this.gridRows = 7;
+            this.gridCols = 7;
+            this.grid = Array.from({ length: this.gridRows }, () => Array(this.gridCols).fill(null));
+            const appHeight = this.desc.baseHeight;
+            const heightReduction = appHeight * this.heightReductionFactor;
+            this.sortableChildren = true;
+            this.borderRadiusMask = new pixi_js_1.Graphics();
+            this.updateBackgroundAndMask();
+            // this.addChild(this.background);
+            this.gridContainer = new pixi_js_1.Container();
+            this.dividerContainer = new pixi_js_1.Container();
+            this.gridContainer.x = this.margin;
+            this.gridContainer.y = this.margin + heightReduction;
+            this.dividerContainer.x = this.margin;
+            this.dividerContainer.y = this.margin + heightReduction;
+            this.backgroundContainer = new pixi_js_1.Container();
+            this.addChild(this.backgroundContainer);
+            this.addChild(this.gridContainer);
+            this.addChild(this.dividerContainer);
+            // Spin button event listener
+            this.spinButton = document.getElementById('spin-button');
+            // Load initial assets and data
+            yield this.loadInitialData();
+        });
+    }
+    updateBackgroundAndMask() {
+        const appWidth = this.desc.baseWidth;
+        const appHeight = this.desc.baseHeight;
+        const heightReduction = appHeight * this.heightReductionFactor;
+        // Clear and redraw the mask
+        this.borderRadiusMask.clear();
+        this.borderRadiusMask.beginFill(0xFFFFFF);
+        this.borderRadiusMask.drawRoundedRect(0, 0, 1881.6, 928.8, 20);
+        this.borderRadiusMask.endFill();
+        this.borderRadiusMask.position.set(10, 113);
+        this.borderRadiusMask.alpha = 0;
+        // Apply the mask to the background
+        // this.background.mask = this.borderRadiusMask;
+        if (!this.borderRadiusMask.parent) {
+            this.addChild(this.borderRadiusMask);
+        }
+    }
+    loadInitialData() {
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                // Generate random initial board data
+                this.initialBoardData = this.generateRandomBoard();
+                // Load assets after generating the initial data
+                yield this.loadAssets();
+            }
+            catch (err) {
+                console.error('Error loading initial data:', err);
+            }
+        });
+    }
+    generateRandomBoard() {
+        const board = [];
+        // @ts-ignore
+        const tiles = tileMappings;
+        const tileIds = tiles.map(mapping => mapping.id);
+        for (let x = 0; x < this.gridCols; x++) {
+            board[x] = [];
+            for (let y = 0; y < this.gridRows; y++) {
+                const randomId = tileIds[Math.floor(Math.random() * tileIds.length)];
+                board[x][y] = randomId;
+            }
+        }
+        return board;
+    }
+    loadAssets() {
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                // Collect unique spine keys from tileMappings
+                const spineKeys = Array.from(new Set(tileMappings.map(mapping => mapping.spineFile)));
+                // Load all spines using AssetsManager
+                for (const key of spineKeys) {
+                    const spineData = AssetsManager_1.default.spine.get(key);
+                    if (!spineData) {
+                        console.warn(`Failed to load spine for key: ${key}`);
+                    }
+                    else {
+                        this.spineDataMap.set(key, spineData);
+                    }
+                }
+                this.calculateTileSizeAndSpacing();
+                this.createGrid(this.initialBoardData);
+                this.createGridMask();
+                // this.addBorder();
+            }
+            catch (err) {
+                console.error('Error loading spine data:', err);
+            }
+        });
+    }
+    calculateTileSizeAndSpacing() {
+        const appWidth = this.desc.baseWidth;
+        const appHeight = this.desc.baseHeight;
+        const heightReduction = appHeight * this.heightReductionFactor;
+        const availableWidth = appWidth - 2 * this.margin;
+        const availableHeight = appHeight - 2 * this.margin - heightReduction;
+        this.spacing = Math.min(availableWidth / 50, availableHeight / 50);
+        this.tileSize = {
+            width: (availableWidth - (this.gridCols - 1) * this.spacing) / this.gridCols,
+            height: (availableHeight - (this.gridRows - 1) * this.spacing) / this.gridRows,
+        };
+    }
+    createGridMask() {
+        const gridWidth = (this.tileSize.width + this.spacing) * this.gridCols - this.spacing;
+        const gridHeight = (this.tileSize.height + this.spacing) * this.gridRows - this.spacing;
+        if (this.gridMask) {
+            this.gridMask.clear();
+        }
+        else {
+            this.gridMask = new pixi_js_1.Graphics();
+        }
+        this.gridMask.beginFill(0xFFFFFF);
+        this.gridMask.drawRect(0, 0, gridWidth, gridHeight);
+        this.gridMask.endFill();
+        this.gridMask.x = this.gridContainer.x;
+        this.gridMask.y = this.gridContainer.y;
+        this.gridContainer.mask = this.gridMask;
+        if (!this.gridMask.parent) {
+            this.addChild(this.gridMask);
+        }
+    }
+    createGrid(boardData) {
+        this.gridContainer.removeChildren().forEach(child => {
+            child.destroy({ children: true, texture: true, baseTexture: true });
+        });
+        this.grid = Array.from({ length: this.gridRows }, () => Array(this.gridCols).fill(null));
+        for (let y = 0; y < this.gridRows; y++) {
+            for (let x = 0; x < this.gridCols; x++) {
+                const itemId = boardData[x][y];
+                if (itemId !== null) {
+                    const mapping = tileMappings.find(mapping => mapping.id === itemId);
+                    if (mapping) {
+                        const spineData = this.spineDataMap.get(mapping.spineFile);
+                        // Log for debugging purposes
+                        if (!spineData) {
+                        }
+                        else {
+                        }
+                        if (!spineData) {
+                            continue; // Skip invalid or missing spine data
+                        }
+                        try {
+                            const piece = new Piece(this.desc, spineData, mapping.id, mapping.key, this.tileSize, 
+                            // @ts-ignore
+                            mapping.type || '', 
+                            // @ts-ignore
+                            mapping.value || '');
+                            piece.container.x = x * (this.tileSize.width + this.spacing);
+                            piece.container.y = y * (this.tileSize.height + this.spacing);
+                            this.gridContainer.addChild(piece.container);
+                            this.grid[y][x] = piece;
+                        }
+                        catch (err) {
+                            console.error(`Error creating piece for id: ${mapping.id}, key: ${mapping.key}`, err);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    processUpdatesSequentially(updates, endBoard) {
+        return __awaiter(this, void 0, void 0, function* () {
+            // Detect matches
+            const matches = updates.filter(update => typeof update.action === 'string' && update.action.toLowerCase() === "match");
+            // Handle matches
+            const matchPromises = matches.map(match => this.handleMatch(match.location_x, match.location_y, endBoard));
+            yield Promise.all(matchPromises);
+            if (this.numOfMultiplierLanded >= 3) {
+                this.stopIntroSimulation();
+            }
+            // Apply gravity and drop new pieces
+            if (matches.length > 0) {
+                yield this.applyGravity();
+            }
+        });
+    }
+    handleNewPieces(newPieces) {
+        return __awaiter(this, void 0, void 0, function* () {
+            // Sort new pieces by their y-coordinate in descending order (bottom to top)
+            newPieces.sort((a, b) => b.location_y - a.location_y);
+            const dropPromises = [];
+            for (const newPiece of newPieces) {
+                const { location_x: x, location_y: y, item_id } = newPiece;
+                // Ensure the target position is empty
+                if (this.grid[y][x] === null) {
+                    const dropPromise = this.handleNew(x, y, item_id);
+                    dropPromises.push(dropPromise);
+                }
+                else {
+                    console.warn(`Position (${x}, ${y}) is not empty for new piece.`);
+                }
+            }
+            // Wait for all drop animations to complete
+            yield Promise.all(dropPromises);
+        });
+    }
+    handleMatch(x_1, y_1, endBoard_1, reward_1) {
+        return __awaiter(this, arguments, void 0, function* (x, y, endBoard, reward, showReward = false) {
+            const piece = this.grid[y][x];
+            if (piece) {
+                if (showReward && piece.type !== 'multiplier') {
+                    if (reward) {
+                        this.showRewardText(piece.container.x, piece.container.y, `${reward}`);
+                    }
+                }
+                yield piece.onMatch();
+                // Handle multiplier animation
+                if (piece.type === 'multiplier' && piece.overlaySprite) {
+                    if (endBoard) {
+                        // Convert overlay sprite's position to the stage's coordinate space
+                        const globalOverlayPosition = piece.overlaySprite.parent.toGlobal(piece.overlaySprite.position);
+                        this.addChild(piece.overlaySprite);
+                        piece.overlaySprite.position.set(globalOverlayPosition.x, globalOverlayPosition.y);
+                        const tumbleCenterPosition = this.tumbleSprite.getGlobalPosition();
+                        yield engineTween_1.Tweener.addTween(piece.overlaySprite, {
+                            x: tumbleCenterPosition.x,
+                            y: tumbleCenterPosition.y,
+                            alpha: 1,
+                            duration: 1.0,
+                            ease: 'power2.out',
+                            onStart: () => {
+                                engineTween_1.Tweener.addTween(piece.overlaySprite.scale, {
+                                    x: piece.overlaySprite.scale.x,
+                                    y: piece.overlaySprite.scale.y,
+                                    duration: 1.0,
+                                    ease: 'power2.out',
+                                    repeat: 1,
+                                    yoyo: true,
+                                });
+                            }
+                        });
+                        yield engineTween_1.Tweener.addTween(piece.overlaySprite, {
+                            alpha: 0,
+                            duration: 0.5,
+                        });
+                        if (piece.overlaySprite.parent) {
+                            engineTween_1.Tweener.removeTweens(piece.overlaySprite);
+                            engineTween_1.Tweener.removeTweens(piece.overlaySprite.scale);
+                            piece.overlaySprite.parent.removeChild(piece.overlaySprite);
+                        }
+                        piece.overlaySprite = null;
+                    }
+                }
+                if (piece.container.parent && piece.type !== 'multiplier') {
+                    piece.container.parent.removeChild(piece.container);
+                    piece.container = null;
+                }
+                this.grid[y][x] = null;
+            }
+            else {
+                console.warn(`No piece found at (${x}, ${y}) to match.`);
+            }
+        });
+    }
+    showRewardText(x, y, text) {
+        const rewardText = new pixi_js_1.Text(text, {
+            fontFamily: 'Foo',
+            fontSize: 35,
+            fill: 0xffffff, // Gold color
+            align: 'center',
+            fontWeight: '400',
+        });
+        rewardText.anchor.set(0.5);
+        rewardText.position.set(x, y);
+        rewardText.alpha = 1;
+        rewardText.zIndex = 10;
+        this.gridContainer.addChild(rewardText);
+        // Animate the text to move up and fade out
+        engineTween_1.Tweener.addTween(rewardText, {
+            y: y - 50,
+            alpha: 0,
+            duration: 1.5,
+            ease: 'power1.out',
+            onComplete: () => {
+                // Remove the text from the stage after animation
+                if (rewardText.parent) {
+                    engineTween_1.Tweener.removeTweens(rewardText);
+                    rewardText.destroy();
+                }
+            }
+        });
+    }
+    handleNew(x, y, itemId) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const mapping = tileMappings.find(mapping => mapping.id === itemId);
+            if (mapping) {
+                const spineData = this.spineDataMap.get(mapping.spineFile);
+                const piece = new Piece(this.desc, spineData, mapping.id, mapping.key, this.tileSize, 
+                // @ts-ignore
+                (mapping === null || mapping === void 0 ? void 0 : mapping.type) || '', 
+                // @ts-ignore
+                (mapping === null || mapping === void 0 ? void 0 : mapping.value) || '');
+                const posX = x * (this.tileSize.width + this.spacing);
+                const startY = -this.tileSize.height;
+                const targetY = y * (this.tileSize.height + this.spacing);
+                piece.container.x = posX;
+                piece.container.y = startY;
+                this.gridContainer.addChild(piece.container);
+                this.grid[y][x] = piece;
+                // Animate the drop
+                yield engineTween_1.Tweener.addTween(piece.container, {
+                    y: targetY,
+                    time: 0.3,
+                    ease: "power2.out",
+                });
+            }
+            else {
+                console.warn(`No mapping found for new item ID: ${itemId}`);
+                return Promise.resolve();
+            }
+        });
+    }
+    delay(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+    applyGravity() {
+        return __awaiter(this, void 0, void 0, function* () {
+            const fallPromises = [];
+            for (let x = 0; x < this.gridCols; x++) {
+                for (let y = this.gridRows - 1; y >= 0; y--) {
+                    if (this.grid[y][x] === null) {
+                        // Find the nearest piece above
+                        for (let k = y - 1; k >= 0; k--) {
+                            if (this.grid[k][x]) {
+                                // Move piece down to current empty spot
+                                const piece = this.grid[k][x];
+                                this.grid[k][x] = null;
+                                this.grid[y][x] = piece;
+                                const posY = y * (this.tileSize.height + this.spacing);
+                                const fallPromise = new Promise((resolve) => {
+                                    engineTween_1.Tweener.addTween(piece.container, {
+                                        y: posY,
+                                        time: 0.3,
+                                        ease: "power1.inOut",
+                                        onComplete: resolve
+                                    });
+                                });
+                                fallPromises.push(fallPromise);
+                                break;
+                            }
+                        }
+                    }
+                }
+            }
+            yield Promise.all(fallPromises);
+        });
+    }
+}
+exports.GamePlayIntro = GamePlayIntro;
+GamePlayIntro.isSimulationRunning = false;
+/**
+ * Class representing each piece in the game grid.
+ */
+class Piece {
+    constructor(desc, spineData, id, key, tileSize, type = '', value = '') {
+        if (!spineData) {
+            throw new Error(`Invalid spine data for id: ${id}, key: ${key}`);
+        }
+        this.container = new pixi_js_1.Container();
+        this.id = id;
+        this.key = key;
+        this.type = type;
+        this.value = value;
+        this.overlaySprite = null;
+        this.spine = new pixi_spine_1.Spine(spineData);
+        let scaleFactor;
+        if (desc.orientation == "vertical") {
+            scaleFactor = Math.min(tileSize.width / this.spine.width, tileSize.height / this.spine.height) * (this.type === 'multiplier' ? .58 : 1.17);
+            this.spine.scale.set(scaleFactor * 2, scaleFactor * 4);
+        }
+        else {
+            this.spine.scale.set(1.65, 1.2);
+        }
+        this.spine.x = tileSize.width / 2;
+        this.spine.y = tileSize.height / 2;
+        this.container.addChild(this.spine);
+        if (this.type === 'multiplier') {
+            const multiplierText = new pixi_js_1.BitmapText('X500', {
+                fontName: 'DragonCurseGoldFont',
+                fontSize: 30,
+                align: 'center'
+            });
+            multiplierText.anchor.set(0.5);
+            multiplierText.x = tileSize.width / 2;
+            multiplierText.y = tileSize.height / 2;
+            this.overlaySprite = multiplierText;
+            this.container.addChild(this.overlaySprite);
+        }
+        this.playAnimation('');
+    }
+    playAnimation(animationName) {
+        return new Promise((resolve) => {
+            const anim = animationName ? `${animationName}` : `static`;
+            const track = this.spine.state.setAnimation(0, anim, false);
+            this.spine.state.timeScale = 1.5;
+            // Listen for the 'complete' event
+            const listener = {
+                complete: (entry) => {
+                    var _a, _b;
+                    // @ts-ignore
+                    if (entry.trackIndex === track.trackIndex &&
+                        // @ts-ignore
+                        ((_a = entry.animation) === null || _a === void 0 ? void 0 : _a.name) === ((_b = track.animation) === null || _b === void 0 ? void 0 : _b.name)) {
+                        // Remove the listener after it fires
+                        this.spine.state.removeListener(listener);
+                        resolve();
+                    }
+                },
+            };
+            this.spine.state.addListener(listener);
+        });
+    }
+    onMatch() {
+        return __awaiter(this, void 0, void 0, function* () {
+            const animationName = this.type === 'multiplier' ? 'win' : 'match';
+            yield this.playAnimation(animationName);
+            // Remove the spine animation
+            if (this.spine.parent) {
+                this.container.removeChild(this.spine);
+                this.container.destroy();
+                this.spine.state.clearTracks();
+                this.spine.destroy({ children: true });
+                this.spine = null;
+            }
+        });
+    }
+}
 
 
 /***/ }),

@@ -1,0 +1,5800 @@
+{
+"skeleton": {
+	"hash": "FQBhomSoB/Y",
+	"spine": "4.1.24",
+	"x": -959.99,
+	"y": -539.78,
+	"width": 1920.02,
+	"height": 1079.72,
+	"images": "./Save to Spine/",
+	"audio": "D:/Pankaj Projects/Slots/Diamond Gun/Graphics/BG/Save to Spine"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "all", "parent": "root" },
+	{ "name": "4Maindiamond", "parent": "all", "x": 0.5 },
+	{ "name": "7MainPartical", "parent": "all", "y": -0.5 },
+	{ "name": "Partical", "parent": "7MainPartical", "y": 0.5 },
+	{ "name": "Partical2", "parent": "7MainPartical", "x": -614.71, "y": 0.5 },
+	{ "name": "Partical3", "parent": "7MainPartical", "x": 485.48, "y": 0.5 },
+	{ "name": "Partical4", "parent": "7MainPartical", "x": 782.36, "y": 0.5 },
+	{ "name": "Partical5", "parent": "7MainPartical", "x": -199.08, "y": 0.5 },
+	{ "name": "Partical6", "parent": "7MainPartical", "x": -806.8, "y": 0.5 },
+	{ "name": "Partical7", "parent": "7MainPartical", "x": -719.49, "y": 0.5 },
+	{ "name": "7MainPartical2", "parent": "all", "x": 97.79, "y": 58.88, "scaleX": -1 },
+	{ "name": "Partical8", "parent": "7MainPartical2", "y": 0.5 },
+	{ "name": "Partical9", "parent": "7MainPartical2", "x": -614.71, "y": 0.5 },
+	{ "name": "Partical10", "parent": "7MainPartical2", "x": 485.48, "y": 0.5 },
+	{ "name": "Partical11", "parent": "7MainPartical2", "x": 782.36, "y": 0.5 },
+	{ "name": "Partical12", "parent": "7MainPartical2", "x": -199.08, "y": 0.5 },
+	{ "name": "Partical13", "parent": "7MainPartical2", "x": -806.8, "y": 0.5 },
+	{ "name": "Partical14", "parent": "7MainPartical2", "x": -719.49, "y": 0.5 },
+	{ "name": "7MainPartical3", "parent": "all", "x": 171.14, "y": 6.49 },
+	{ "name": "Partical15", "parent": "7MainPartical3", "x": -986.92, "y": 0.5 },
+	{ "name": "Partical16", "parent": "7MainPartical3", "x": -1054.53, "y": 0.5 },
+	{ "name": "Partical17", "parent": "7MainPartical3", "x": 485.48, "y": 0.5 },
+	{ "name": "Partical18", "parent": "7MainPartical3", "x": 782.36, "y": 0.5 },
+	{ "name": "Partical19", "parent": "7MainPartical3", "x": -199.08, "y": 0.5 },
+	{ "name": "Partical20", "parent": "7MainPartical3", "x": -454.05, "y": 0.5 },
+	{ "name": "Partical21", "parent": "7MainPartical3", "x": -719.49, "y": 0.5 },
+	{ "name": "diamond2", "parent": "4Maindiamond" },
+	{ "name": "diamond3", "parent": "4Maindiamond", "x": -838.33 },
+	{ "name": "diamond4", "parent": "4Maindiamond", "x": -562.21 },
+	{ "name": "diamond5", "parent": "4Maindiamond", "x": 385.9 },
+	{ "name": "diamond6", "parent": "4Maindiamond", "x": 835 },
+	{ "name": "MainParticalC", "parent": "all", "y": 0.5 },
+	{ "name": "ParticalC2", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC3", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC4", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC5", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC6", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC7", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC8", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC9", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC10", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC11", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC12", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC13", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC14", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC15", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC16", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC17", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC18", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC19", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC20", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC21", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC22", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC23", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC24", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC25", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC26", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC27", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC28", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC29", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC30", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC31", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC32", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC33", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC34", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC35", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC36", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC37", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC38", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC39", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC40", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC41", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC42", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC43", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC44", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC45", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC46", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC47", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC48", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC49", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC50", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC51", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC52", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC53", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC54", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC55", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC56", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC57", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC58", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC59", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC60", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC61", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC62", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC63", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC64", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC65", "parent": "MainParticalC", "x": -964.77, "y": -543.15 },
+	{ "name": "MainParticalC2", "parent": "all", "y": 0.5, "scaleX": -1 },
+	{ "name": "ParticalC66", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC67", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC68", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC69", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC70", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC71", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC72", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC73", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC74", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC75", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC76", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC77", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC78", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC79", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC80", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC81", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC82", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC83", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC84", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC85", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC86", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC87", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC88", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC89", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC90", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC91", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC92", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC93", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC94", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC95", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC96", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC97", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC98", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC99", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC100", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC101", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC102", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC103", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC104", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC105", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC106", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC107", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC108", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC109", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC110", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC111", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC112", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC113", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC114", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC115", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC116", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC117", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC118", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC119", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC120", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC121", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC122", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC123", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC124", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC125", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC126", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC127", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC128", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "ParticalC129", "parent": "MainParticalC2", "x": -964.77, "y": -543.15 },
+	{ "name": "bg", "parent": "all", "scaleX": 2, "scaleY": 2 }
+],
+"slots": [
+	{ "name": "Mask", "bone": "root", "attachment": "Mask" },
+	{ "name": "bg", "bone": "bg", "attachment": "bg" },
+	{ "name": "bgAdd", "bone": "bg", "attachment": "bg", "blend": "additive" },
+	{ "name": "Partical", "bone": "Partical", "attachment": "Partical 3", "blend": "additive" },
+	{ "name": "Partical8", "bone": "Partical8", "attachment": "Partical 2", "blend": "additive" },
+	{ "name": "Partical15", "bone": "Partical15", "attachment": "Partical", "blend": "additive" },
+	{ "name": "Partical2", "bone": "Partical2", "attachment": "Partical 2", "blend": "additive" },
+	{ "name": "Partical9", "bone": "Partical9", "attachment": "Partical", "blend": "additive" },
+	{ "name": "Partical16", "bone": "Partical16", "attachment": "Partical", "blend": "additive" },
+	{ "name": "Partical3", "bone": "Partical3", "attachment": "Partical 2", "blend": "additive" },
+	{ "name": "Partical10", "bone": "Partical10", "attachment": "Partical", "blend": "additive" },
+	{ "name": "Partical17", "bone": "Partical17", "attachment": "Partical", "blend": "additive" },
+	{ "name": "Partical4", "bone": "Partical4", "attachment": "Partical 2", "blend": "additive" },
+	{ "name": "Partical11", "bone": "Partical11", "attachment": "Partical", "blend": "additive" },
+	{ "name": "Partical18", "bone": "Partical18", "attachment": "Partical", "blend": "additive" },
+	{ "name": "Partical5", "bone": "Partical5", "attachment": "Partical 2", "blend": "additive" },
+	{ "name": "Partical12", "bone": "Partical12", "attachment": "Partical", "blend": "additive" },
+	{ "name": "Partical19", "bone": "Partical19", "attachment": "Partical", "blend": "additive" },
+	{ "name": "Partical6", "bone": "Partical6", "attachment": "Partical 3", "blend": "additive" },
+	{ "name": "Partical13", "bone": "Partical13", "attachment": "Partical", "blend": "additive" },
+	{ "name": "Partical20", "bone": "Partical20", "attachment": "Partical", "blend": "additive" },
+	{ "name": "Partical7", "bone": "Partical7", "attachment": "Partical 2", "blend": "additive" },
+	{ "name": "Partical14", "bone": "Partical14", "attachment": "Partical", "blend": "additive" },
+	{ "name": "Partical21", "bone": "Partical21", "attachment": "Partical", "blend": "additive" },
+	{ "name": "diamond1", "bone": "diamond2", "attachment": "diamond1" },
+	{ "name": "diamond2", "bone": "diamond3", "attachment": "diamond2" },
+	{ "name": "diamond3", "bone": "diamond4", "attachment": "diamond1" },
+	{ "name": "diamond4", "bone": "diamond5", "attachment": "diamond2" },
+	{ "name": "diamond5", "bone": "diamond6", "attachment": "diamond1" },
+	{ "name": "BulletDown", "bone": "all" },
+	{ "name": "BulletDownAdd", "bone": "all", "blend": "additive" },
+	{ "name": "BulletUp", "bone": "all" },
+	{ "name": "BulletUpAdd", "bone": "all", "blend": "additive" },
+	{ "name": "ParticalC1", "bone": "ParticalC2", "attachment": "star 2", "blend": "additive" },
+	{ "name": "ParticalC65", "bone": "ParticalC66", "attachment": "star 2", "blend": "additive" },
+	{ "name": "ParticalC33", "bone": "ParticalC34", "attachment": "Partical 2", "blend": "additive" },
+	{ "name": "ParticalC97", "bone": "ParticalC98", "attachment": "Partical 2", "blend": "additive" },
+	{ "name": "ParticalC32", "bone": "ParticalC33", "attachment": "star 1", "blend": "additive" },
+	{ "name": "ParticalC96", "bone": "ParticalC97", "attachment": "star 1", "blend": "additive" },
+	{ "name": "ParticalC64", "bone": "ParticalC65", "attachment": "star 1", "blend": "additive" },
+	{ "name": "ParticalC128", "bone": "ParticalC129", "attachment": "star 1", "blend": "additive" },
+	{ "name": "ParticalC16", "bone": "ParticalC17", "attachment": "Partical 2", "blend": "additive" },
+	{ "name": "ParticalC80", "bone": "ParticalC81", "attachment": "Partical 2", "blend": "additive" },
+	{ "name": "ParticalC48", "bone": "ParticalC49", "attachment": "Partical", "blend": "additive" },
+	{ "name": "ParticalC112", "bone": "ParticalC113", "attachment": "Partical", "blend": "additive" },
+	{ "name": "ParticalC17", "bone": "ParticalC18", "attachment": "star 1", "blend": "additive" },
+	{ "name": "ParticalC81", "bone": "ParticalC82", "attachment": "star 1", "blend": "additive" },
+	{ "name": "ParticalC49", "bone": "ParticalC50", "attachment": "star 1", "blend": "additive" },
+	{ "name": "ParticalC113", "bone": "ParticalC114", "attachment": "star 1", "blend": "additive" },
+	{ "name": "ParticalC5", "bone": "ParticalC6", "attachment": "star 2", "blend": "additive" },
+	{ "name": "ParticalC69", "bone": "ParticalC70", "attachment": "star 2", "blend": "additive" },
+	{ "name": "ParticalC37", "bone": "ParticalC38", "attachment": "star 2", "blend": "additive" },
+	{ "name": "ParticalC101", "bone": "ParticalC102", "attachment": "star 2", "blend": "additive" },
+	{ "name": "ParticalC28", "bone": "ParticalC29", "attachment": "Partical 3", "blend": "additive" },
+	{ "name": "ParticalC92", "bone": "ParticalC93", "attachment": "Partical 3", "blend": "additive" },
+	{ "name": "ParticalC60", "bone": "ParticalC61", "attachment": "star 2", "blend": "additive" },
+	{ "name": "ParticalC124", "bone": "ParticalC125", "attachment": "star 2", "blend": "additive" },
+	{ "name": "ParticalC12", "bone": "ParticalC13", "attachment": "Partical", "blend": "additive" },
+	{ "name": "ParticalC76", "bone": "ParticalC77", "attachment": "Partical", "blend": "additive" },
+	{ "name": "ParticalC44", "bone": "ParticalC45", "attachment": "star 2", "blend": "additive" },
+	{ "name": "ParticalC108", "bone": "ParticalC109", "attachment": "star 2", "blend": "additive" },
+	{ "name": "ParticalC21", "bone": "ParticalC22", "attachment": "star 2", "blend": "additive" },
+	{ "name": "ParticalC85", "bone": "ParticalC86", "attachment": "star 2", "blend": "additive" },
+	{ "name": "ParticalC53", "bone": "ParticalC54", "attachment": "Partical", "blend": "additive" },
+	{ "name": "ParticalC117", "bone": "ParticalC118", "attachment": "Partical", "blend": "additive" },
+	{ "name": "ParticalC3", "bone": "ParticalC4", "attachment": "star 0", "blend": "additive" },
+	{ "name": "ParticalC67", "bone": "ParticalC68", "attachment": "Partical", "blend": "additive" },
+	{ "name": "ParticalC35", "bone": "ParticalC36", "attachment": "Partical 2", "blend": "additive" },
+	{ "name": "ParticalC99", "bone": "ParticalC100", "attachment": "Partical 2", "blend": "additive" },
+	{ "name": "ParticalC30", "bone": "ParticalC31", "attachment": "Partical 3", "blend": "additive" },
+	{ "name": "ParticalC94", "bone": "ParticalC95", "attachment": "Partical 3", "blend": "additive" },
+	{ "name": "ParticalC62", "bone": "ParticalC63", "attachment": "Partical 2", "blend": "additive" },
+	{ "name": "ParticalC126", "bone": "ParticalC127", "attachment": "Partical 2", "blend": "additive" },
+	{ "name": "ParticalC14", "bone": "ParticalC15", "attachment": "star 2", "blend": "additive" },
+	{ "name": "ParticalC78", "bone": "ParticalC79", "attachment": "star 2", "blend": "additive" },
+	{ "name": "ParticalC46", "bone": "ParticalC47", "attachment": "star 0", "blend": "additive" },
+	{ "name": "ParticalC110", "bone": "ParticalC111", "attachment": "star 1", "blend": "additive" },
+	{ "name": "ParticalC19", "bone": "ParticalC20", "attachment": "star 0", "blend": "additive" },
+	{ "name": "ParticalC83", "bone": "ParticalC84", "attachment": "star 2", "blend": "additive" },
+	{ "name": "ParticalC51", "bone": "ParticalC52", "attachment": "star 2", "blend": "additive" },
+	{ "name": "ParticalC115", "bone": "ParticalC116", "attachment": "star 2", "blend": "additive" },
+	{ "name": "ParticalC7", "bone": "ParticalC8", "attachment": "star 0", "blend": "additive" },
+	{ "name": "ParticalC71", "bone": "ParticalC72", "attachment": "Partical", "blend": "additive" },
+	{ "name": "ParticalC39", "bone": "ParticalC40", "attachment": "star 1", "blend": "additive" },
+	{ "name": "ParticalC103", "bone": "ParticalC104", "attachment": "star 1", "blend": "additive" },
+	{ "name": "ParticalC26", "bone": "ParticalC27", "attachment": "star 0", "blend": "additive" },
+	{ "name": "ParticalC90", "bone": "ParticalC91", "attachment": "star 1", "blend": "additive" },
+	{ "name": "ParticalC58", "bone": "ParticalC59", "attachment": "Partical 2", "blend": "additive" },
+	{ "name": "ParticalC122", "bone": "ParticalC123", "attachment": "Partical 2", "blend": "additive" },
+	{ "name": "ParticalC10", "bone": "ParticalC11", "attachment": "star 0", "blend": "additive" },
+	{ "name": "ParticalC74", "bone": "ParticalC75", "attachment": "Partical", "blend": "additive" },
+	{ "name": "ParticalC42", "bone": "ParticalC43", "attachment": "Partical 2", "blend": "additive" },
+	{ "name": "ParticalC106", "bone": "ParticalC107", "attachment": "Partical 2", "blend": "additive" },
+	{ "name": "ParticalC23", "bone": "ParticalC24", "attachment": "star 2", "blend": "additive" },
+	{ "name": "ParticalC87", "bone": "ParticalC88", "attachment": "star 2", "blend": "additive" },
+	{ "name": "ParticalC55", "bone": "ParticalC56", "attachment": "star 1", "blend": "additive" },
+	{ "name": "ParticalC119", "bone": "ParticalC120", "attachment": "star 1", "blend": "additive" },
+	{ "name": "ParticalC2", "bone": "ParticalC3", "attachment": "star 0", "blend": "additive" },
+	{ "name": "ParticalC66", "bone": "ParticalC67", "attachment": "star 2", "blend": "additive" },
+	{ "name": "ParticalC34", "bone": "ParticalC35", "attachment": "star 0", "blend": "additive" },
+	{ "name": "ParticalC98", "bone": "ParticalC99", "attachment": "star 1", "blend": "additive" },
+	{ "name": "ParticalC31", "bone": "ParticalC32", "attachment": "Partical 2", "blend": "additive" },
+	{ "name": "ParticalC95", "bone": "ParticalC96", "attachment": "Partical 2", "blend": "additive" },
+	{ "name": "ParticalC63", "bone": "ParticalC64", "attachment": "Partical", "blend": "additive" },
+	{ "name": "ParticalC127", "bone": "ParticalC128", "attachment": "Partical", "blend": "additive" },
+	{ "name": "ParticalC15", "bone": "ParticalC16", "attachment": "Partical 3", "blend": "additive" },
+	{ "name": "ParticalC79", "bone": "ParticalC80", "attachment": "Partical 3", "blend": "additive" },
+	{ "name": "ParticalC47", "bone": "ParticalC48", "attachment": "Partical", "blend": "additive" },
+	{ "name": "ParticalC111", "bone": "ParticalC112", "attachment": "Partical", "blend": "additive" },
+	{ "name": "ParticalC18", "bone": "ParticalC19", "attachment": "Partical 2", "blend": "additive" },
+	{ "name": "ParticalC82", "bone": "ParticalC83", "attachment": "Partical 2", "blend": "additive" },
+	{ "name": "ParticalC50", "bone": "ParticalC51", "attachment": "Partical", "blend": "additive" },
+	{ "name": "ParticalC114", "bone": "ParticalC115", "attachment": "Partical", "blend": "additive" },
+	{ "name": "ParticalC6", "bone": "ParticalC7", "attachment": "Partical", "blend": "additive" },
+	{ "name": "ParticalC70", "bone": "ParticalC71", "attachment": "Partical", "blend": "additive" },
+	{ "name": "ParticalC38", "bone": "ParticalC39", "attachment": "Partical", "blend": "additive" },
+	{ "name": "ParticalC102", "bone": "ParticalC103", "attachment": "Partical", "blend": "additive" },
+	{ "name": "ParticalC27", "bone": "ParticalC28", "attachment": "star 2", "blend": "additive" },
+	{ "name": "ParticalC91", "bone": "ParticalC92", "attachment": "star 2", "blend": "additive" },
+	{ "name": "ParticalC59", "bone": "ParticalC60", "attachment": "Partical", "blend": "additive" },
+	{ "name": "ParticalC123", "bone": "ParticalC124", "attachment": "Partical", "blend": "additive" },
+	{ "name": "ParticalC11", "bone": "ParticalC12", "attachment": "star 2", "blend": "additive" },
+	{ "name": "ParticalC75", "bone": "ParticalC76", "attachment": "star 2", "blend": "additive" },
+	{ "name": "ParticalC43", "bone": "ParticalC44", "attachment": "star 1", "blend": "additive" },
+	{ "name": "ParticalC107", "bone": "ParticalC108", "attachment": "star 1", "blend": "additive" },
+	{ "name": "ParticalC22", "bone": "ParticalC23", "attachment": "Partical 3", "blend": "additive" },
+	{ "name": "ParticalC86", "bone": "ParticalC87", "attachment": "Partical 3", "blend": "additive" },
+	{ "name": "ParticalC54", "bone": "ParticalC55", "attachment": "Partical 2", "blend": "additive" },
+	{ "name": "ParticalC118", "bone": "ParticalC119", "attachment": "Partical 2", "blend": "additive" },
+	{ "name": "ParticalC4", "bone": "ParticalC5", "attachment": "star 2", "blend": "additive" },
+	{ "name": "ParticalC68", "bone": "ParticalC69", "attachment": "star 2", "blend": "additive" },
+	{ "name": "ParticalC36", "bone": "ParticalC37", "attachment": "star 1", "blend": "additive" },
+	{ "name": "ParticalC100", "bone": "ParticalC101", "attachment": "star 1", "blend": "additive" },
+	{ "name": "ParticalC29", "bone": "ParticalC30", "attachment": "Partical 2", "blend": "additive" },
+	{ "name": "ParticalC93", "bone": "ParticalC94", "attachment": "Partical 2", "blend": "additive" },
+	{ "name": "ParticalC61", "bone": "ParticalC62", "attachment": "star 0", "blend": "additive" },
+	{ "name": "ParticalC125", "bone": "ParticalC126", "attachment": "star 1", "blend": "additive" },
+	{ "name": "ParticalC13", "bone": "ParticalC14", "attachment": "star 0", "blend": "additive" },
+	{ "name": "ParticalC77", "bone": "ParticalC78", "attachment": "star 2", "blend": "additive" },
+	{ "name": "ParticalC45", "bone": "ParticalC46", "attachment": "Partical", "blend": "additive" },
+	{ "name": "ParticalC109", "bone": "ParticalC110", "attachment": "Partical", "blend": "additive" },
+	{ "name": "ParticalC20", "bone": "ParticalC21", "attachment": "Partical 3", "blend": "additive" },
+	{ "name": "ParticalC84", "bone": "ParticalC85", "attachment": "Partical 3", "blend": "additive" },
+	{ "name": "ParticalC52", "bone": "ParticalC53", "attachment": "star 0", "blend": "additive" },
+	{ "name": "ParticalC116", "bone": "ParticalC117", "attachment": "star 1", "blend": "additive" },
+	{ "name": "ParticalC8", "bone": "ParticalC9", "attachment": "Partical", "blend": "additive" },
+	{ "name": "ParticalC72", "bone": "ParticalC73", "attachment": "Partical", "blend": "additive" },
+	{ "name": "ParticalC40", "bone": "ParticalC41", "attachment": "Partical 2", "blend": "additive" },
+	{ "name": "ParticalC104", "bone": "ParticalC105", "attachment": "Partical 2", "blend": "additive" },
+	{ "name": "ParticalC25", "bone": "ParticalC26", "attachment": "Partical 3", "blend": "additive" },
+	{ "name": "ParticalC89", "bone": "ParticalC90", "attachment": "Partical 3", "blend": "additive" },
+	{ "name": "ParticalC57", "bone": "ParticalC58", "attachment": "star 0", "blend": "additive" },
+	{ "name": "ParticalC121", "bone": "ParticalC122", "attachment": "star 1", "blend": "additive" },
+	{ "name": "ParticalC9", "bone": "ParticalC10", "attachment": "star 2", "blend": "additive" },
+	{ "name": "ParticalC73", "bone": "ParticalC74", "attachment": "star 2", "blend": "additive" },
+	{ "name": "ParticalC41", "bone": "ParticalC42", "attachment": "star 0", "blend": "additive" },
+	{ "name": "ParticalC105", "bone": "ParticalC106", "attachment": "star 1", "blend": "additive" },
+	{ "name": "ParticalC24", "bone": "ParticalC25", "attachment": "star 0", "blend": "additive" },
+	{ "name": "ParticalC88", "bone": "ParticalC89", "attachment": "Partical 3", "blend": "additive" },
+	{ "name": "ParticalC56", "bone": "ParticalC57", "attachment": "Partical 2", "blend": "additive" },
+	{ "name": "ParticalC120", "bone": "ParticalC121", "attachment": "Partical 2", "blend": "additive" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bg": {
+				"bg": { "width": 961, "height": 541 }
+			},
+			"bgAdd": {
+				"bg": { "width": 961, "height": 541 }
+			},
+			"BulletDown": {
+				"BulletDown": { "x": -796.5, "y": -320.5, "width": 99, "height": 215 }
+			},
+			"BulletDownAdd": {
+				"BulletDown": { "x": -796.5, "y": -320.5, "width": 99, "height": 215 }
+			},
+			"BulletUp": {
+				"BulletUp": { "x": -877.5, "y": -339, "width": 141, "height": 354 }
+			},
+			"BulletUpAdd": {
+				"BulletUp": { "x": -877.5, "y": -339, "width": 141, "height": 354 }
+			},
+			"diamond1": {
+				"diamond1": { "width": 47, "height": 78 }
+			},
+			"diamond2": {
+				"diamond2": { "width": 56, "height": 81 }
+			},
+			"diamond3": {
+				"diamond1": { "width": 47, "height": 78 }
+			},
+			"diamond4": {
+				"diamond2": { "width": 56, "height": 81 }
+			},
+			"diamond5": {
+				"diamond1": { "width": 47, "height": 78 }
+			},
+			"Mask": {
+				"Mask": {
+					"type": "clipping",
+					"end": "Mask",
+					"vertexCount": 4,
+					"vertices": [ -959.99, 539.86, 959.81, 539.93, 960.03, -539.74, -959.81, -539.78 ],
+					"color": "ce3a3aff"
+				}
+			},
+			"Partical": {
+				"Partical 3": { "y": -0.5, "width": 19, "height": 20 }
+			},
+			"Partical2": {
+				"Partical 2": { "y": -0.5, "width": 18, "height": 16 }
+			},
+			"Partical3": {
+				"Partical 2": { "y": -0.5, "width": 18, "height": 16 }
+			},
+			"Partical4": {
+				"Partical 2": { "y": -0.5, "width": 18, "height": 16 }
+			},
+			"Partical5": {
+				"Partical 2": { "y": -0.5, "width": 18, "height": 16 }
+			},
+			"Partical6": {
+				"Partical 3": { "y": -0.5, "width": 19, "height": 20 }
+			},
+			"Partical7": {
+				"Partical 2": { "y": -0.5, "width": 18, "height": 16 }
+			},
+			"Partical8": {
+				"Partical 2": { "y": -0.5, "width": 18, "height": 16 }
+			},
+			"Partical9": {
+				"Partical": { "y": -0.5, "width": 14, "height": 15 }
+			},
+			"Partical10": {
+				"Partical": { "y": -0.5, "width": 14, "height": 15 }
+			},
+			"Partical11": {
+				"Partical": { "y": -0.5, "width": 14, "height": 15 }
+			},
+			"Partical12": {
+				"Partical": { "y": -0.5, "width": 14, "height": 15 }
+			},
+			"Partical13": {
+				"Partical": { "y": -0.5, "width": 14, "height": 15 }
+			},
+			"Partical14": {
+				"Partical": { "y": -0.5, "width": 14, "height": 15 }
+			},
+			"Partical15": {
+				"Partical": { "y": -0.5, "width": 14, "height": 15 }
+			},
+			"Partical16": {
+				"Partical": { "y": -0.5, "width": 14, "height": 15 }
+			},
+			"Partical17": {
+				"Partical": { "y": -0.5, "width": 14, "height": 15 }
+			},
+			"Partical18": {
+				"Partical": { "y": -0.5, "width": 14, "height": 15 }
+			},
+			"Partical19": {
+				"Partical": { "y": -0.5, "width": 14, "height": 15 }
+			},
+			"Partical20": {
+				"Partical": { "y": -0.5, "width": 14, "height": 15 }
+			},
+			"Partical21": {
+				"Partical": { "y": -0.5, "width": 14, "height": 15 }
+			},
+			"ParticalC1": {
+				"star 2": { "width": 156, "height": 130 }
+			},
+			"ParticalC2": {
+				"star 0": { "width": 98, "height": 81 }
+			},
+			"ParticalC3": {
+				"star 0": { "width": 98, "height": 81 }
+			},
+			"ParticalC4": {
+				"star 2": { "width": 156, "height": 130 }
+			},
+			"ParticalC5": {
+				"star 2": { "width": 156, "height": 130 }
+			},
+			"ParticalC6": {
+				"Partical": { "width": 14, "height": 15 }
+			},
+			"ParticalC7": {
+				"star 0": { "width": 98, "height": 81 }
+			},
+			"ParticalC8": {
+				"Partical": { "width": 14, "height": 15 }
+			},
+			"ParticalC9": {
+				"star 2": { "width": 156, "height": 130 }
+			},
+			"ParticalC10": {
+				"star 0": { "width": 98, "height": 81 }
+			},
+			"ParticalC11": {
+				"star 2": { "width": 156, "height": 130 }
+			},
+			"ParticalC12": {
+				"Partical": { "width": 14, "height": 15 }
+			},
+			"ParticalC13": {
+				"star 0": { "width": 98, "height": 81 }
+			},
+			"ParticalC14": {
+				"star 2": { "width": 156, "height": 130 }
+			},
+			"ParticalC15": {
+				"Partical 3": { "width": 19, "height": 20 }
+			},
+			"ParticalC16": {
+				"Partical 2": { "width": 18, "height": 16 }
+			},
+			"ParticalC17": {
+				"star 1": { "width": 98, "height": 81 }
+			},
+			"ParticalC18": {
+				"Partical 2": { "width": 18, "height": 16 }
+			},
+			"ParticalC19": {
+				"star 0": { "width": 98, "height": 81 }
+			},
+			"ParticalC20": {
+				"Partical 3": { "width": 19, "height": 20 }
+			},
+			"ParticalC21": {
+				"star 2": { "width": 156, "height": 130 }
+			},
+			"ParticalC22": {
+				"Partical 3": { "width": 19, "height": 20 }
+			},
+			"ParticalC23": {
+				"star 2": { "width": 156, "height": 130 }
+			},
+			"ParticalC24": {
+				"star 0": { "width": 98, "height": 81 }
+			},
+			"ParticalC25": {
+				"Partical 3": { "width": 19, "height": 20 }
+			},
+			"ParticalC26": {
+				"star 0": { "width": 98, "height": 81 }
+			},
+			"ParticalC27": {
+				"star 2": { "width": 156, "height": 130 }
+			},
+			"ParticalC28": {
+				"Partical 3": { "width": 19, "height": 20 }
+			},
+			"ParticalC29": {
+				"Partical 2": { "width": 18, "height": 16 }
+			},
+			"ParticalC30": {
+				"Partical 3": { "width": 19, "height": 20 }
+			},
+			"ParticalC31": {
+				"Partical 2": { "width": 18, "height": 16 }
+			},
+			"ParticalC32": {
+				"star 1": { "width": 98, "height": 81 }
+			},
+			"ParticalC33": {
+				"Partical 2": { "width": 18, "height": 16 }
+			},
+			"ParticalC34": {
+				"star 0": { "width": 98, "height": 81 }
+			},
+			"ParticalC35": {
+				"Partical 2": { "width": 18, "height": 16 }
+			},
+			"ParticalC36": {
+				"star 1": { "width": 98, "height": 81 }
+			},
+			"ParticalC37": {
+				"star 2": { "width": 156, "height": 130 }
+			},
+			"ParticalC38": {
+				"Partical": { "width": 14, "height": 15 }
+			},
+			"ParticalC39": {
+				"star 1": { "width": 98, "height": 81 }
+			},
+			"ParticalC40": {
+				"Partical 2": { "width": 18, "height": 16 }
+			},
+			"ParticalC41": {
+				"star 0": { "width": 98, "height": 81 }
+			},
+			"ParticalC42": {
+				"Partical 2": { "width": 18, "height": 16 }
+			},
+			"ParticalC43": {
+				"star 1": { "width": 98, "height": 81 }
+			},
+			"ParticalC44": {
+				"star 2": { "width": 156, "height": 130 }
+			},
+			"ParticalC45": {
+				"Partical": { "width": 14, "height": 15 }
+			},
+			"ParticalC46": {
+				"star 0": { "width": 98, "height": 81 }
+			},
+			"ParticalC47": {
+				"Partical": { "width": 14, "height": 15 }
+			},
+			"ParticalC48": {
+				"Partical": { "width": 14, "height": 15 }
+			},
+			"ParticalC49": {
+				"star 1": { "width": 98, "height": 81 }
+			},
+			"ParticalC50": {
+				"Partical": { "width": 14, "height": 15 }
+			},
+			"ParticalC51": {
+				"star 2": { "width": 156, "height": 130 }
+			},
+			"ParticalC52": {
+				"star 0": { "width": 98, "height": 81 }
+			},
+			"ParticalC53": {
+				"Partical": { "width": 14, "height": 15 }
+			},
+			"ParticalC54": {
+				"Partical 2": { "width": 18, "height": 16 }
+			},
+			"ParticalC55": {
+				"star 1": { "width": 98, "height": 81 }
+			},
+			"ParticalC56": {
+				"Partical 2": { "width": 18, "height": 16 }
+			},
+			"ParticalC57": {
+				"star 0": { "width": 98, "height": 81 }
+			},
+			"ParticalC58": {
+				"Partical 2": { "width": 18, "height": 16 }
+			},
+			"ParticalC59": {
+				"Partical": { "width": 14, "height": 15 }
+			},
+			"ParticalC60": {
+				"star 2": { "width": 156, "height": 130 }
+			},
+			"ParticalC61": {
+				"star 0": { "width": 98, "height": 81 }
+			},
+			"ParticalC62": {
+				"Partical 2": { "width": 18, "height": 16 }
+			},
+			"ParticalC63": {
+				"Partical": { "width": 14, "height": 15 }
+			},
+			"ParticalC64": {
+				"star 1": { "width": 98, "height": 81 }
+			},
+			"ParticalC65": {
+				"star 2": { "width": 156, "height": 130 }
+			},
+			"ParticalC66": {
+				"star 2": { "width": 156, "height": 130 }
+			},
+			"ParticalC67": {
+				"Partical": { "width": 14, "height": 15 }
+			},
+			"ParticalC68": {
+				"star 2": { "width": 156, "height": 130 }
+			},
+			"ParticalC69": {
+				"star 2": { "width": 156, "height": 130 }
+			},
+			"ParticalC70": {
+				"Partical": { "width": 14, "height": 15 }
+			},
+			"ParticalC71": {
+				"Partical": { "width": 14, "height": 15 }
+			},
+			"ParticalC72": {
+				"Partical": { "width": 14, "height": 15 }
+			},
+			"ParticalC73": {
+				"star 2": { "width": 156, "height": 130 }
+			},
+			"ParticalC74": {
+				"Partical": { "width": 14, "height": 15 }
+			},
+			"ParticalC75": {
+				"star 2": { "width": 156, "height": 130 }
+			},
+			"ParticalC76": {
+				"Partical": { "width": 14, "height": 15 }
+			},
+			"ParticalC77": {
+				"star 2": { "width": 156, "height": 130 }
+			},
+			"ParticalC78": {
+				"star 2": { "width": 156, "height": 130 }
+			},
+			"ParticalC79": {
+				"Partical 3": { "width": 19, "height": 20 }
+			},
+			"ParticalC80": {
+				"Partical 2": { "width": 18, "height": 16 }
+			},
+			"ParticalC81": {
+				"star 1": { "width": 98, "height": 81 }
+			},
+			"ParticalC82": {
+				"Partical 2": { "width": 18, "height": 16 }
+			},
+			"ParticalC83": {
+				"star 2": { "width": 156, "height": 130 }
+			},
+			"ParticalC84": {
+				"Partical 3": { "width": 19, "height": 20 }
+			},
+			"ParticalC85": {
+				"star 2": { "width": 156, "height": 130 }
+			},
+			"ParticalC86": {
+				"Partical 3": { "width": 19, "height": 20 }
+			},
+			"ParticalC87": {
+				"star 2": { "width": 156, "height": 130 }
+			},
+			"ParticalC88": {
+				"Partical 3": { "width": 19, "height": 20 }
+			},
+			"ParticalC89": {
+				"Partical 3": { "width": 19, "height": 20 }
+			},
+			"ParticalC90": {
+				"star 1": { "width": 98, "height": 81 }
+			},
+			"ParticalC91": {
+				"star 2": { "width": 156, "height": 130 }
+			},
+			"ParticalC92": {
+				"Partical 3": { "width": 19, "height": 20 }
+			},
+			"ParticalC93": {
+				"Partical 2": { "width": 18, "height": 16 }
+			},
+			"ParticalC94": {
+				"Partical 3": { "width": 19, "height": 20 }
+			},
+			"ParticalC95": {
+				"Partical 2": { "width": 18, "height": 16 }
+			},
+			"ParticalC96": {
+				"star 1": { "width": 98, "height": 81 }
+			},
+			"ParticalC97": {
+				"Partical 2": { "width": 18, "height": 16 }
+			},
+			"ParticalC98": {
+				"star 1": { "width": 98, "height": 81 }
+			},
+			"ParticalC99": {
+				"Partical 2": { "width": 18, "height": 16 }
+			},
+			"ParticalC100": {
+				"star 1": { "width": 98, "height": 81 }
+			},
+			"ParticalC101": {
+				"star 2": { "width": 156, "height": 130 }
+			},
+			"ParticalC102": {
+				"Partical": { "width": 14, "height": 15 }
+			},
+			"ParticalC103": {
+				"star 1": { "width": 98, "height": 81 }
+			},
+			"ParticalC104": {
+				"Partical 2": { "width": 18, "height": 16 }
+			},
+			"ParticalC105": {
+				"star 1": { "width": 98, "height": 81 }
+			},
+			"ParticalC106": {
+				"Partical 2": { "width": 18, "height": 16 }
+			},
+			"ParticalC107": {
+				"star 1": { "width": 98, "height": 81 }
+			},
+			"ParticalC108": {
+				"star 2": { "width": 156, "height": 130 }
+			},
+			"ParticalC109": {
+				"Partical": { "width": 14, "height": 15 }
+			},
+			"ParticalC110": {
+				"star 1": { "width": 98, "height": 81 }
+			},
+			"ParticalC111": {
+				"Partical": { "width": 14, "height": 15 }
+			},
+			"ParticalC112": {
+				"Partical": { "width": 14, "height": 15 }
+			},
+			"ParticalC113": {
+				"star 1": { "width": 98, "height": 81 }
+			},
+			"ParticalC114": {
+				"Partical": { "width": 14, "height": 15 }
+			},
+			"ParticalC115": {
+				"star 2": { "width": 156, "height": 130 }
+			},
+			"ParticalC116": {
+				"star 1": { "width": 98, "height": 81 }
+			},
+			"ParticalC117": {
+				"Partical": { "width": 14, "height": 15 }
+			},
+			"ParticalC118": {
+				"Partical 2": { "width": 18, "height": 16 }
+			},
+			"ParticalC119": {
+				"star 1": { "width": 98, "height": 81 }
+			},
+			"ParticalC120": {
+				"Partical 2": { "width": 18, "height": 16 }
+			},
+			"ParticalC121": {
+				"star 1": { "width": 98, "height": 81 }
+			},
+			"ParticalC122": {
+				"Partical 2": { "width": 18, "height": 16 }
+			},
+			"ParticalC123": {
+				"Partical": { "width": 14, "height": 15 }
+			},
+			"ParticalC124": {
+				"star 2": { "width": 156, "height": 130 }
+			},
+			"ParticalC125": {
+				"star 1": { "width": 98, "height": 81 }
+			},
+			"ParticalC126": {
+				"Partical 2": { "width": 18, "height": 16 }
+			},
+			"ParticalC127": {
+				"Partical": { "width": 14, "height": 15 }
+			},
+			"ParticalC128": {
+				"star 1": { "width": 98, "height": 81 }
+			}
+		}
+	}
+],
+"animations": {
+	"base_game": {
+		"slots": {
+			"bgAdd": {
+				"rgba": [
+					{ "color": "ffffff00" },
+					{ "time": 2.5, "color": "ffffff2a" },
+					{ "time": 5, "color": "ffffff00" },
+					{ "time": 7.5, "color": "ffffff2a" },
+					{ "time": 10, "color": "ffffff00" },
+					{ "time": 10.8333, "color": "ffffff2a" },
+					{ "time": 12, "color": "ffffff00" }
+				]
+			},
+			"BulletDownAdd": {
+				"rgba": [
+					{ "color": "ffffff00" },
+					{ "time": 0.8333, "color": "ffffff60" },
+					{ "time": 1.6667, "color": "ffffff00" },
+					{ "time": 2.5, "color": "ffffff60" },
+					{ "time": 3.3333, "color": "ffffff00" },
+					{ "time": 4.1667, "color": "ffffff60" },
+					{ "time": 5, "color": "ffffff00" },
+					{ "time": 5.8333, "color": "ffffff60" },
+					{ "time": 6.6667, "color": "ffffff00" },
+					{ "time": 7.5, "color": "ffffff60" },
+					{ "time": 8.3333, "color": "ffffff00" },
+					{ "time": 9.1667, "color": "ffffff60" },
+					{ "time": 10, "color": "ffffff00" },
+					{ "time": 10.8333, "color": "ffffff60" },
+					{ "time": 12, "color": "ffffff00" }
+				]
+			},
+			"BulletUpAdd": {
+				"rgba": [
+					{ "color": "ffffff00" },
+					{ "time": 0.8333, "color": "ffffff60" },
+					{ "time": 1.6667, "color": "ffffff00" },
+					{ "time": 2.5, "color": "ffffff60" },
+					{ "time": 3.3333, "color": "ffffff00" },
+					{ "time": 4.1667, "color": "ffffff60" },
+					{ "time": 5, "color": "ffffff00" },
+					{ "time": 5.8333, "color": "ffffff60" },
+					{ "time": 6.6667, "color": "ffffff00" },
+					{ "time": 7.5, "color": "ffffff60" },
+					{ "time": 8.3333, "color": "ffffff00" },
+					{ "time": 9.1667, "color": "ffffff60" },
+					{ "time": 10, "color": "ffffff00" },
+					{ "time": 10.8333, "color": "ffffff60" },
+					{ "time": 12, "color": "ffffff00" }
+				]
+			},
+			"diamond1": {
+				"rgba": [
+					{ "color": "ffffff00" },
+					{ "time": 0.1667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 11.8333, "color": "ffffffff" },
+					{ "time": 11.9667, "color": "ffffff00" }
+				]
+			},
+			"diamond2": {
+				"rgba": [
+					{ "time": 1.5333, "color": "ffffffff" },
+					{ "time": 1.6667, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.7, "color": "ffffff00" },
+					{ "time": 1.8667, "color": "ffffffff" }
+				]
+			},
+			"diamond3": {
+				"rgba": [
+					{ "time": 4.3, "color": "ffffffff" },
+					{ "time": 4.4333, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 4.4667, "color": "ffffff00" },
+					{ "time": 4.6333, "color": "ffffffff" }
+				]
+			},
+			"diamond4": {
+				"rgba": [
+					{ "time": 6.5333, "color": "ffffffff" },
+					{ "time": 6.6667, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 6.7, "color": "ffffff00" },
+					{ "time": 6.8667, "color": "ffffffff" }
+				]
+			},
+			"diamond5": {
+				"rgba": [
+					{ "time": 8.8333, "color": "ffffffff" },
+					{ "time": 8.9667, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 9, "color": "ffffff00" },
+					{ "time": 9.1667, "color": "ffffffff" }
+				]
+			},
+			"Partical": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.4, "value": 1, "curve": "stepped" },
+					{ "time": 11.6667, "value": 1 },
+					{ "time": 11.9667, "value": 0 }
+				]
+			},
+			"Partical2": {
+				"alpha": [
+					{ "time": 0.5, "value": 1 },
+					{ "time": 0.8, "value": 0, "curve": "stepped" },
+					{ "time": 0.8333, "value": 0 },
+					{ "time": 1.2333, "value": 1 }
+				]
+			},
+			"Partical3": {
+				"alpha": [
+					{ "time": 1.6667, "value": 1 },
+					{ "time": 1.9667, "value": 0, "curve": "stepped" },
+					{ "time": 2, "value": 0 },
+					{ "time": 2.4, "value": 1 }
+				]
+			},
+			"Partical4": {
+				"alpha": [
+					{ "time": 2.4333, "value": 1 },
+					{ "time": 2.7333, "value": 0, "curve": "stepped" },
+					{ "time": 2.7667, "value": 0 },
+					{ "time": 3.1667, "value": 1 }
+				]
+			},
+			"Partical5": {
+				"alpha": [
+					{ "time": 3.0333, "value": 1 },
+					{ "time": 3.3333, "value": 0, "curve": "stepped" },
+					{ "time": 3.3667, "value": 0 },
+					{ "time": 3.7667, "value": 1 }
+				]
+			},
+			"Partical6": {
+				"alpha": [
+					{ "time": 4.7, "value": 1 },
+					{ "time": 5, "value": 0, "curve": "stepped" },
+					{ "time": 5.0333, "value": 0 },
+					{ "time": 5.4333, "value": 1 }
+				]
+			},
+			"Partical7": {
+				"alpha": [
+					{ "time": 6.3667, "value": 1 },
+					{ "time": 6.6667, "value": 0, "curve": "stepped" },
+					{ "time": 6.7, "value": 0 },
+					{ "time": 7.1, "value": 1 }
+				]
+			},
+			"Partical8": {
+				"alpha": [
+					{ "value": 0.77777743 },
+					{ "time": 0.2333, "value": 0, "curve": "stepped" },
+					{ "time": 0.2667, "value": 0 },
+					{ "time": 0.6667, "value": 1, "curve": "stepped" },
+					{ "time": 11.9333, "value": 1 },
+					{ "time": 12, "value": 0.77777743 }
+				]
+			},
+			"Partical9": {
+				"alpha": [
+					{ "time": 0.7667, "value": 1 },
+					{ "time": 1.0667, "value": 0, "curve": "stepped" },
+					{ "time": 1.1, "value": 0 },
+					{ "time": 1.5, "value": 1 }
+				]
+			},
+			"Partical10": {
+				"alpha": [
+					{ "time": 1.9333, "value": 1 },
+					{ "time": 2.2333, "value": 0, "curve": "stepped" },
+					{ "time": 2.2667, "value": 0 },
+					{ "time": 2.6667, "value": 1 }
+				]
+			},
+			"Partical11": {
+				"alpha": [
+					{ "time": 2.7, "value": 1 },
+					{ "time": 3, "value": 0, "curve": "stepped" },
+					{ "time": 3.0333, "value": 0 },
+					{ "time": 3.4333, "value": 1 }
+				]
+			},
+			"Partical12": {
+				"alpha": [
+					{ "time": 3.3, "value": 1 },
+					{ "time": 3.6, "value": 0, "curve": "stepped" },
+					{ "time": 3.6333, "value": 0 },
+					{ "time": 4.0333, "value": 1 }
+				]
+			},
+			"Partical13": {
+				"alpha": [
+					{ "time": 4.9667, "value": 1 },
+					{ "time": 5.2667, "value": 0, "curve": "stepped" },
+					{ "time": 5.3, "value": 0 },
+					{ "time": 5.7, "value": 1 }
+				]
+			},
+			"Partical14": {
+				"alpha": [
+					{ "time": 6.6333, "value": 1 },
+					{ "time": 6.9333, "value": 0, "curve": "stepped" },
+					{ "time": 6.9667, "value": 0 },
+					{ "time": 7.3667, "value": 1 }
+				]
+			},
+			"Partical15": {
+				"alpha": [
+					{ "time": 7.3667, "value": 1 },
+					{ "time": 7.4333, "value": 0.77777743 },
+					{ "time": 7.6667, "value": 0, "curve": "stepped" },
+					{ "time": 7.7, "value": 0 },
+					{ "time": 8.1, "value": 1 }
+				]
+			},
+			"Partical16": {
+				"alpha": [
+					{ "time": 8.2, "value": 1 },
+					{ "time": 8.5, "value": 0, "curve": "stepped" },
+					{ "time": 8.5333, "value": 0 },
+					{ "time": 8.9333, "value": 1 }
+				]
+			},
+			"Partical17": {
+				"alpha": [
+					{ "time": 9.3667, "value": 1 },
+					{ "time": 9.6667, "value": 0, "curve": "stepped" },
+					{ "time": 9.7, "value": 0 },
+					{ "time": 10.1, "value": 1 }
+				]
+			},
+			"Partical18": {
+				"alpha": [
+					{ "time": 10.1333, "value": 1 },
+					{ "time": 10.4333, "value": 0, "curve": "stepped" },
+					{ "time": 10.4667, "value": 0 },
+					{ "time": 10.8667, "value": 1 }
+				]
+			},
+			"Partical19": {
+				"alpha": [
+					{ "time": 10.7333, "value": 1 },
+					{ "time": 11.0333, "value": 0, "curve": "stepped" },
+					{ "time": 11.0667, "value": 0 },
+					{ "time": 11.4667, "value": 1 }
+				]
+			},
+			"Partical20": {
+				"alpha": [
+					{ "time": 0.4, "value": 1 },
+					{ "time": 0.7, "value": 0, "curve": "stepped" },
+					{ "time": 0.7333, "value": 0 },
+					{ "time": 1.1333, "value": 1 }
+				]
+			},
+			"Partical21": {
+				"alpha": [
+					{ "time": 2.0667, "value": 1 },
+					{ "time": 2.3667, "value": 0, "curve": "stepped" },
+					{ "time": 2.4, "value": 0 },
+					{ "time": 2.8, "value": 1 }
+				]
+			},
+			"ParticalC1": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC2": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC3": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC4": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC5": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC6": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC7": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC8": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC9": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC10": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC11": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC12": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC13": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC14": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC15": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC16": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC17": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC18": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC19": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC20": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC21": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC22": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC23": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC24": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC25": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC26": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC27": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC28": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC29": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC30": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC31": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC32": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC33": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC34": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC35": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC36": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC37": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC38": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC39": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC40": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC41": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC42": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC43": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC44": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC45": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC46": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC47": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC48": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC49": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC50": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC51": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC52": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC53": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC54": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC55": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC56": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC57": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC58": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC59": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC60": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC61": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC62": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC63": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC64": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC65": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC66": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC67": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC68": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC69": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC70": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC71": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC72": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC73": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC74": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC75": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC76": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC77": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC78": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC79": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC80": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC81": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC82": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC83": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC84": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC85": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC86": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC87": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC88": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC89": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC90": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC91": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC92": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC93": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC94": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC95": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC96": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC97": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC98": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC99": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC100": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC101": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC102": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC103": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC104": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC105": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC106": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC107": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC108": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC109": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC110": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC111": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC112": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC113": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC114": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC115": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC116": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC117": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC118": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC119": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC120": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC121": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC122": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC123": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC124": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC125": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC126": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC127": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"ParticalC128": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"Partical": {
+				"translate": [
+					{ "y": 1076.44 },
+					{ "time": 11.9667, "y": -860.74 },
+					{ "time": 12, "y": 1076.44 }
+				]
+			},
+			"Partical2": {
+				"translate": [
+					{ "y": -731.23 },
+					{ "time": 0.8, "y": -860.74 },
+					{ "time": 0.8333, "y": 1076.44 },
+					{ "time": 12, "y": -731.23 }
+				]
+			},
+			"Partical3": {
+				"translate": [
+					{ "y": -542.37 },
+					{ "time": 1.9667, "y": -860.74 },
+					{ "time": 2, "y": 1076.44 },
+					{ "time": 12, "y": -542.37 }
+				]
+			},
+			"Partical4": {
+				"translate": [
+					{ "y": -418.26 },
+					{ "time": 2.7333, "y": -860.74 },
+					{ "time": 2.7667, "y": 1076.44 },
+					{ "time": 12, "y": -418.26 }
+				]
+			},
+			"Partical5": {
+				"translate": [
+					{ "y": -321.13 },
+					{ "time": 3.3333, "y": -860.74 },
+					{ "time": 3.3667, "y": 1076.44 },
+					{ "time": 12, "y": -321.13 }
+				]
+			},
+			"Partical6": {
+				"translate": [
+					{ "y": -51.33 },
+					{ "time": 5, "y": -860.74 },
+					{ "time": 5.0333, "y": 1076.44 },
+					{ "time": 12, "y": -51.33 }
+				]
+			},
+			"Partical7": {
+				"translate": [
+					{ "y": 218.47 },
+					{ "time": 6.6667, "y": -860.74 },
+					{ "time": 6.7, "y": 1076.44 },
+					{ "time": 12, "y": 218.47 }
+				]
+			},
+			"Partical8": {
+				"translate": [
+					{ "y": -822.97 },
+					{ "time": 0.2333, "y": -860.74 },
+					{ "time": 0.2667, "y": 1076.44 },
+					{ "time": 12, "y": -822.97 }
+				]
+			},
+			"Partical9": {
+				"translate": [
+					{ "y": -688.07 },
+					{ "time": 0.2667, "y": -731.23 },
+					{ "time": 1.0667, "y": -860.74 },
+					{ "time": 1.1, "y": 1076.44 },
+					{ "time": 12, "y": -688.07 }
+				]
+			},
+			"Partical10": {
+				"translate": [
+					{ "y": -499.2 },
+					{ "time": 0.2667, "y": -542.37 },
+					{ "time": 2.2333, "y": -860.74 },
+					{ "time": 2.2667, "y": 1076.44 },
+					{ "time": 12, "y": -499.2 }
+				]
+			},
+			"Partical11": {
+				"translate": [
+					{ "y": -375.09 },
+					{ "time": 0.2667, "y": -418.26 },
+					{ "time": 3, "y": -860.74 },
+					{ "time": 3.0333, "y": 1076.44 },
+					{ "time": 12, "y": -375.09 }
+				]
+			},
+			"Partical12": {
+				"translate": [
+					{ "y": -277.97 },
+					{ "time": 0.2667, "y": -321.13 },
+					{ "time": 3.6, "y": -860.74 },
+					{ "time": 3.6333, "y": 1076.44 },
+					{ "time": 12, "y": -277.97 }
+				]
+			},
+			"Partical13": {
+				"translate": [
+					{ "y": -8.16 },
+					{ "time": 0.2667, "y": -51.33 },
+					{ "time": 5.2667, "y": -860.74 },
+					{ "time": 5.3, "y": 1076.44 },
+					{ "time": 12, "y": -8.16 }
+				]
+			},
+			"Partical14": {
+				"translate": [
+					{ "y": 261.64 },
+					{ "time": 0.2667, "y": 218.47 },
+					{ "time": 6.9333, "y": -860.74 },
+					{ "time": 6.9667, "y": 1076.44 },
+					{ "time": 12, "y": 261.64 }
+				]
+			},
+			"Partical15": {
+				"translate": [
+					{ "y": 380.35 },
+					{ "time": 7.4333, "y": -822.97 },
+					{ "time": 7.6667, "y": -860.74 },
+					{ "time": 7.7, "y": 1076.44 },
+					{ "time": 12, "y": 380.35 }
+				]
+			},
+			"Partical16": {
+				"translate": [
+					{ "y": 515.25 },
+					{ "time": 7.4333, "y": -688.07 },
+					{ "time": 7.7, "y": -731.23 },
+					{ "time": 8.5, "y": -860.74 },
+					{ "time": 8.5333, "y": 1076.44 },
+					{ "time": 12, "y": 515.25 }
+				]
+			},
+			"Partical17": {
+				"translate": [
+					{ "y": 704.12 },
+					{ "time": 7.4333, "y": -499.2 },
+					{ "time": 7.7, "y": -542.37 },
+					{ "time": 9.6667, "y": -860.74 },
+					{ "time": 9.7, "y": 1076.44 },
+					{ "time": 12, "y": 704.12 }
+				]
+			},
+			"Partical18": {
+				"translate": [
+					{ "y": 828.23 },
+					{ "time": 7.4333, "y": -375.09 },
+					{ "time": 7.7, "y": -418.26 },
+					{ "time": 10.4333, "y": -860.74 },
+					{ "time": 10.4667, "y": 1076.44 },
+					{ "time": 12, "y": 828.23 }
+				]
+			},
+			"Partical19": {
+				"translate": [
+					{ "y": 925.35 },
+					{ "time": 7.4333, "y": -277.97 },
+					{ "time": 7.7, "y": -321.13 },
+					{ "time": 11.0333, "y": -860.74 },
+					{ "time": 11.0667, "y": 1076.44 },
+					{ "time": 12, "y": 925.35 }
+				]
+			},
+			"Partical20": {
+				"translate": [
+					{ "y": -747.42 },
+					{ "time": 0.7, "y": -860.74 },
+					{ "time": 0.7333, "y": 1076.44 },
+					{ "time": 7.4333, "y": -8.16 },
+					{ "time": 7.7, "y": -51.33 },
+					{ "time": 12, "y": -747.42 }
+				]
+			},
+			"Partical21": {
+				"translate": [
+					{ "y": -477.62 },
+					{ "time": 2.3667, "y": -860.74 },
+					{ "time": 2.4, "y": 1076.44 },
+					{ "time": 7.4333, "y": 261.64 },
+					{ "time": 7.7, "y": 218.47 },
+					{ "time": 12, "y": -477.62 }
+				]
+			},
+			"diamond2": {
+				"rotate": [
+					{},
+					{ "time": 11.9667, "value": 695.06 },
+					{ "time": 12 }
+				],
+				"translate": [
+					{ "y": 905.24 },
+					{ "time": 11.9667, "y": -1004.13 },
+					{ "time": 12, "y": 905.24 }
+				]
+			},
+			"diamond3": {
+				"rotate": [
+					{ "value": 598.26 },
+					{ "time": 1.6667, "value": 695.06 },
+					{ "time": 1.7 },
+					{ "time": 12, "value": 598.26 }
+				],
+				"translate": [
+					{ "y": -738.2 },
+					{ "time": 1.6667, "y": -1004.13 },
+					{ "time": 1.7, "y": 905.24 },
+					{ "time": 12, "y": -738.2 }
+				]
+			},
+			"diamond4": {
+				"rotate": [
+					{ "value": 437.56 },
+					{ "time": 4.4333, "value": 695.06 },
+					{ "time": 4.4667 },
+					{ "time": 12, "value": 437.56 }
+				],
+				"translate": [
+					{ "y": -296.76 },
+					{ "time": 4.4333, "y": -1004.13 },
+					{ "time": 4.4667, "y": 905.24 },
+					{ "time": 12, "y": -296.76 }
+				]
+			},
+			"diamond5": {
+				"rotate": [
+					{ "value": 307.84 },
+					{ "time": 6.6667, "value": 695.06 },
+					{ "time": 6.7 },
+					{ "time": 12, "value": 307.84 }
+				],
+				"translate": [
+					{ "y": 59.59 },
+					{ "time": 6.6667, "y": -1004.13 },
+					{ "time": 6.7, "y": 905.24 },
+					{ "time": 12, "y": 59.59 }
+				]
+			},
+			"diamond6": {
+				"rotate": [
+					{ "value": 174.25 },
+					{ "time": 8.9667, "value": 695.06 },
+					{ "time": 9 },
+					{ "time": 12, "value": 174.25 }
+				],
+				"translate": [
+					{ "y": 426.57 },
+					{ "time": 8.9667, "y": -1004.13 },
+					{ "time": 9, "y": 905.24 },
+					{ "time": 12, "y": 426.57 }
+				]
+			}
+		}
+	},
+	"free_game": {
+		"slots": {
+			"bgAdd": {
+				"rgba": [
+					{ "color": "ffffff00" },
+					{ "time": 0.3333, "color": "ffffff53" },
+					{ "time": 0.6667, "color": "ffffff00" },
+					{ "time": 1, "color": "ffffff53" },
+					{ "time": 1.3333, "color": "ffffff00" },
+					{ "time": 1.6667, "color": "ffffff53" },
+					{ "time": 2, "color": "ffffff00" },
+					{ "time": 2.3333, "color": "ffffff53" },
+					{ "time": 2.6667, "color": "ffffff00" },
+					{ "time": 3, "color": "ffffff53" },
+					{ "time": 3.3333, "color": "ffffff00" },
+					{ "time": 3.6667, "color": "ffffff53" },
+					{ "time": 4, "color": "ffffff00" },
+					{ "time": 4.3333, "color": "ffffff53" },
+					{ "time": 4.6667, "color": "ffffff00" },
+					{ "time": 5, "color": "ffffff53" },
+					{ "time": 5.3333, "color": "ffffff00" },
+					{ "time": 5.6667, "color": "ffffff53" },
+					{ "time": 6, "color": "ffffff00" },
+					{ "time": 6.3333, "color": "ffffff53" },
+					{ "time": 6.6667, "color": "ffffff00" },
+					{ "time": 7, "color": "ffffff53" },
+					{ "time": 7.3333, "color": "ffffff00" },
+					{ "time": 7.6667, "color": "ffffff53" },
+					{ "time": 8, "color": "ffffff00" },
+					{ "time": 8.3333, "color": "ffffff53" },
+					{ "time": 8.6667, "color": "ffffff00" },
+					{ "time": 9, "color": "ffffff53" },
+					{ "time": 9.3333, "color": "ffffff00" },
+					{ "time": 9.6667, "color": "ffffff53" },
+					{ "time": 10, "color": "ffffff00" },
+					{ "time": 10.3333, "color": "ffffff53" },
+					{ "time": 10.6667, "color": "ffffff00" },
+					{ "time": 11, "color": "ffffff53" },
+					{ "time": 11.3333, "color": "ffffff00" },
+					{ "time": 11.6667, "color": "ffffff53" },
+					{ "time": 12, "color": "ffffff00" }
+				]
+			},
+			"BulletDownAdd": {
+				"rgba": [
+					{ "color": "ffffff00" },
+					{ "time": 0.5, "color": "ffffff60" },
+					{ "time": 0.8333, "color": "ffffff00" },
+					{ "time": 1.1667, "color": "ffffff60" },
+					{ "time": 1.5, "color": "ffffff00" },
+					{ "time": 1.8333, "color": "ffffff60" },
+					{ "time": 2.1667, "color": "ffffff00" },
+					{ "time": 2.5, "color": "ffffff60" },
+					{ "time": 2.8333, "color": "ffffff00" },
+					{ "time": 3.1667, "color": "ffffff60" },
+					{ "time": 3.5, "color": "ffffff00" },
+					{ "time": 3.8333, "color": "ffffff60" },
+					{ "time": 4.1667, "color": "ffffff00" },
+					{ "time": 4.5, "color": "ffffff60" },
+					{ "time": 4.8333, "color": "ffffff00" },
+					{ "time": 5.1667, "color": "ffffff60" },
+					{ "time": 5.5, "color": "ffffff00" },
+					{ "time": 5.8333, "color": "ffffff60" },
+					{ "time": 6.1667, "color": "ffffff00" },
+					{ "time": 6.5, "color": "ffffff60" },
+					{ "time": 6.8333, "color": "ffffff00" },
+					{ "time": 7.1667, "color": "ffffff60" },
+					{ "time": 7.5, "color": "ffffff00" },
+					{ "time": 7.8333, "color": "ffffff60" },
+					{ "time": 8.1667, "color": "ffffff00" },
+					{ "time": 8.5, "color": "ffffff60" },
+					{ "time": 8.8333, "color": "ffffff00" },
+					{ "time": 9.1667, "color": "ffffff60" },
+					{ "time": 9.5, "color": "ffffff00" },
+					{ "time": 9.8333, "color": "ffffff60" },
+					{ "time": 10.1667, "color": "ffffff00" },
+					{ "time": 10.5, "color": "ffffff60" },
+					{ "time": 10.8333, "color": "ffffff00" },
+					{ "time": 11.1667, "color": "ffffff60" },
+					{ "time": 11.5, "color": "ffffff00" },
+					{ "time": 11.7333, "color": "ffffff60" },
+					{ "time": 12, "color": "ffffff00" }
+				]
+			},
+			"BulletUpAdd": {
+				"rgba": [
+					{ "color": "ffffff00" },
+					{ "time": 0.5, "color": "ffffff60" },
+					{ "time": 0.8333, "color": "ffffff00" },
+					{ "time": 1.1667, "color": "ffffff60" },
+					{ "time": 1.5, "color": "ffffff00" },
+					{ "time": 1.8333, "color": "ffffff60" },
+					{ "time": 2.1667, "color": "ffffff00" },
+					{ "time": 2.5, "color": "ffffff60" },
+					{ "time": 2.8333, "color": "ffffff00" },
+					{ "time": 3.1667, "color": "ffffff60" },
+					{ "time": 3.5, "color": "ffffff00" },
+					{ "time": 3.8333, "color": "ffffff60" },
+					{ "time": 4.1667, "color": "ffffff00" },
+					{ "time": 4.5, "color": "ffffff60" },
+					{ "time": 4.8333, "color": "ffffff00" },
+					{ "time": 5.1667, "color": "ffffff60" },
+					{ "time": 5.5, "color": "ffffff00" },
+					{ "time": 5.8333, "color": "ffffff60" },
+					{ "time": 6.1667, "color": "ffffff00" },
+					{ "time": 6.5, "color": "ffffff60" },
+					{ "time": 6.8333, "color": "ffffff00" },
+					{ "time": 7.1667, "color": "ffffff60" },
+					{ "time": 7.5, "color": "ffffff00" },
+					{ "time": 7.8333, "color": "ffffff60" },
+					{ "time": 8.1667, "color": "ffffff00" },
+					{ "time": 8.5, "color": "ffffff60" },
+					{ "time": 8.8333, "color": "ffffff00" },
+					{ "time": 9.1667, "color": "ffffff60" },
+					{ "time": 9.5, "color": "ffffff00" },
+					{ "time": 9.8333, "color": "ffffff60" },
+					{ "time": 10.1667, "color": "ffffff00" },
+					{ "time": 10.5, "color": "ffffff60" },
+					{ "time": 10.8333, "color": "ffffff00" },
+					{ "time": 11.1667, "color": "ffffff60" },
+					{ "time": 11.5, "color": "ffffff00" },
+					{ "time": 11.7333, "color": "ffffff60" },
+					{ "time": 12, "color": "ffffff00" }
+				]
+			},
+			"diamond1": {
+				"rgba": [
+					{ "color": "ffffff00" },
+					{ "time": 0.1667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 11.8333, "color": "ffffffff" },
+					{ "time": 11.9667, "color": "ffffff00" }
+				]
+			},
+			"diamond2": {
+				"rgba": [
+					{ "time": 1.5333, "color": "ffffffff" },
+					{ "time": 1.6667, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.7, "color": "ffffff00" },
+					{ "time": 1.8667, "color": "ffffffff" }
+				]
+			},
+			"diamond3": {
+				"rgba": [
+					{ "time": 4.3, "color": "ffffffff" },
+					{ "time": 4.4333, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 4.4667, "color": "ffffff00" },
+					{ "time": 4.6333, "color": "ffffffff" }
+				]
+			},
+			"diamond4": {
+				"rgba": [
+					{ "time": 6.5333, "color": "ffffffff" },
+					{ "time": 6.6667, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 6.7, "color": "ffffff00" },
+					{ "time": 6.8667, "color": "ffffffff" }
+				]
+			},
+			"diamond5": {
+				"rgba": [
+					{ "time": 8.8333, "color": "ffffffff" },
+					{ "time": 8.9667, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 9, "color": "ffffff00" },
+					{ "time": 9.1667, "color": "ffffffff" }
+				]
+			},
+			"Partical": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.4, "value": 1, "curve": "stepped" },
+					{ "time": 11.6667, "value": 1 },
+					{ "time": 11.9667, "value": 0 }
+				]
+			},
+			"Partical2": {
+				"alpha": [
+					{ "time": 0.5, "value": 1 },
+					{ "time": 0.8, "value": 0, "curve": "stepped" },
+					{ "time": 0.8333, "value": 0 },
+					{ "time": 1.2333, "value": 1 }
+				]
+			},
+			"Partical3": {
+				"alpha": [
+					{ "time": 1.6667, "value": 1 },
+					{ "time": 1.9667, "value": 0, "curve": "stepped" },
+					{ "time": 2, "value": 0 },
+					{ "time": 2.4, "value": 1 }
+				]
+			},
+			"Partical4": {
+				"alpha": [
+					{ "time": 2.4333, "value": 1 },
+					{ "time": 2.7333, "value": 0, "curve": "stepped" },
+					{ "time": 2.7667, "value": 0 },
+					{ "time": 3.1667, "value": 1 }
+				]
+			},
+			"Partical5": {
+				"alpha": [
+					{ "time": 3.0333, "value": 1 },
+					{ "time": 3.3333, "value": 0, "curve": "stepped" },
+					{ "time": 3.3667, "value": 0 },
+					{ "time": 3.7667, "value": 1 }
+				]
+			},
+			"Partical6": {
+				"alpha": [
+					{ "time": 4.7, "value": 1 },
+					{ "time": 5, "value": 0, "curve": "stepped" },
+					{ "time": 5.0333, "value": 0 },
+					{ "time": 5.4333, "value": 1 }
+				]
+			},
+			"Partical7": {
+				"alpha": [
+					{ "time": 6.3667, "value": 1 },
+					{ "time": 6.6667, "value": 0, "curve": "stepped" },
+					{ "time": 6.7, "value": 0 },
+					{ "time": 7.1, "value": 1 }
+				]
+			},
+			"Partical8": {
+				"alpha": [
+					{ "value": 0.77777743 },
+					{ "time": 0.2333, "value": 0, "curve": "stepped" },
+					{ "time": 0.2667, "value": 0 },
+					{ "time": 0.6667, "value": 1, "curve": "stepped" },
+					{ "time": 11.9333, "value": 1 },
+					{ "time": 12, "value": 0.77777743 }
+				]
+			},
+			"Partical9": {
+				"alpha": [
+					{ "time": 0.7667, "value": 1 },
+					{ "time": 1.0667, "value": 0, "curve": "stepped" },
+					{ "time": 1.1, "value": 0 },
+					{ "time": 1.5, "value": 1 }
+				]
+			},
+			"Partical10": {
+				"alpha": [
+					{ "time": 1.9333, "value": 1 },
+					{ "time": 2.2333, "value": 0, "curve": "stepped" },
+					{ "time": 2.2667, "value": 0 },
+					{ "time": 2.6667, "value": 1 }
+				]
+			},
+			"Partical11": {
+				"alpha": [
+					{ "time": 2.7, "value": 1 },
+					{ "time": 3, "value": 0, "curve": "stepped" },
+					{ "time": 3.0333, "value": 0 },
+					{ "time": 3.4333, "value": 1 }
+				]
+			},
+			"Partical12": {
+				"alpha": [
+					{ "time": 3.3, "value": 1 },
+					{ "time": 3.6, "value": 0, "curve": "stepped" },
+					{ "time": 3.6333, "value": 0 },
+					{ "time": 4.0333, "value": 1 }
+				]
+			},
+			"Partical13": {
+				"alpha": [
+					{ "time": 4.9667, "value": 1 },
+					{ "time": 5.2667, "value": 0, "curve": "stepped" },
+					{ "time": 5.3, "value": 0 },
+					{ "time": 5.7, "value": 1 }
+				]
+			},
+			"Partical14": {
+				"alpha": [
+					{ "time": 6.6333, "value": 1 },
+					{ "time": 6.9333, "value": 0, "curve": "stepped" },
+					{ "time": 6.9667, "value": 0 },
+					{ "time": 7.3667, "value": 1 }
+				]
+			},
+			"Partical15": {
+				"alpha": [
+					{ "time": 7.3667, "value": 1 },
+					{ "time": 7.4333, "value": 0.77777743 },
+					{ "time": 7.6667, "value": 0, "curve": "stepped" },
+					{ "time": 7.7, "value": 0 },
+					{ "time": 8.1, "value": 1 }
+				]
+			},
+			"Partical16": {
+				"alpha": [
+					{ "time": 8.2, "value": 1 },
+					{ "time": 8.5, "value": 0, "curve": "stepped" },
+					{ "time": 8.5333, "value": 0 },
+					{ "time": 8.9333, "value": 1 }
+				]
+			},
+			"Partical17": {
+				"alpha": [
+					{ "time": 9.3667, "value": 1 },
+					{ "time": 9.6667, "value": 0, "curve": "stepped" },
+					{ "time": 9.7, "value": 0 },
+					{ "time": 10.1, "value": 1 }
+				]
+			},
+			"Partical18": {
+				"alpha": [
+					{ "time": 10.1333, "value": 1 },
+					{ "time": 10.4333, "value": 0, "curve": "stepped" },
+					{ "time": 10.4667, "value": 0 },
+					{ "time": 10.8667, "value": 1 }
+				]
+			},
+			"Partical19": {
+				"alpha": [
+					{ "time": 10.7333, "value": 1 },
+					{ "time": 11.0333, "value": 0, "curve": "stepped" },
+					{ "time": 11.0667, "value": 0 },
+					{ "time": 11.4667, "value": 1 }
+				]
+			},
+			"Partical20": {
+				"alpha": [
+					{ "time": 0.4, "value": 1 },
+					{ "time": 0.7, "value": 0, "curve": "stepped" },
+					{ "time": 0.7333, "value": 0 },
+					{ "time": 1.1333, "value": 1 }
+				]
+			},
+			"Partical21": {
+				"alpha": [
+					{ "time": 2.0667, "value": 1 },
+					{ "time": 2.3667, "value": 0, "curve": "stepped" },
+					{ "time": 2.4, "value": 0 },
+					{ "time": 2.8, "value": 1 }
+				]
+			},
+			"ParticalC1": {
+				"rgba": [
+					{ "color": "ffffff00" },
+					{ "time": 0.0333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.3333, "color": "ffffffff" },
+					{ "time": 1.3667, "color": "ffffff00" }
+				]
+			},
+			"ParticalC2": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.2, "color": "ffffff00" },
+					{ "time": 0.2333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.5333, "color": "ffffffff" },
+					{ "time": 1.5667, "color": "ffffff00" }
+				]
+			},
+			"ParticalC3": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.5333, "color": "ffffff00" },
+					{ "time": 0.5667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.8667, "color": "ffffffff" },
+					{ "time": 1.9, "color": "ffffff00" }
+				]
+			},
+			"ParticalC4": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.9, "color": "ffffff00" },
+					{ "time": 0.9333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 2.2333, "color": "ffffffff" },
+					{ "time": 2.2667, "color": "ffffff00" }
+				]
+			},
+			"ParticalC5": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.8, "color": "ffffff00" },
+					{ "time": 0.8333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 2.1333, "color": "ffffffff" },
+					{ "time": 2.1667, "color": "ffffff00" }
+				]
+			},
+			"ParticalC6": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1, "color": "ffffff00" },
+					{ "time": 1.0333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 2.3333, "color": "ffffffff" },
+					{ "time": 2.3667, "color": "ffffff00" }
+				]
+			},
+			"ParticalC7": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.3333, "color": "ffffff00" },
+					{ "time": 1.3667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 2.6667, "color": "ffffffff" },
+					{ "time": 2.7, "color": "ffffff00" }
+				]
+			},
+			"ParticalC8": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.7, "color": "ffffff00" },
+					{ "time": 1.7333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 3.0333, "color": "ffffffff" },
+					{ "time": 3.0667, "color": "ffffff00" }
+				]
+			},
+			"ParticalC9": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.0333, "color": "ffffff00" },
+					{ "time": 3.0667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 4.3667, "color": "ffffffff" },
+					{ "time": 4.4, "color": "ffffff00" }
+				]
+			},
+			"ParticalC10": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.6667, "color": "ffffff00" },
+					{ "time": 2.7, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 4, "color": "ffffffff" },
+					{ "time": 4.0333, "color": "ffffff00" }
+				]
+			},
+			"ParticalC11": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.3333, "color": "ffffff00" },
+					{ "time": 2.3667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 3.6667, "color": "ffffffff" },
+					{ "time": 3.7, "color": "ffffff00" }
+				]
+			},
+			"ParticalC12": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.1333, "color": "ffffff00" },
+					{ "time": 2.1667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 3.4667, "color": "ffffffff" },
+					{ "time": 3.5, "color": "ffffff00" }
+				]
+			},
+			"ParticalC13": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.2333, "color": "ffffff00" },
+					{ "time": 2.2667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 3.5667, "color": "ffffffff" },
+					{ "time": 3.6, "color": "ffffff00" }
+				]
+			},
+			"ParticalC14": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.8667, "color": "ffffff00" },
+					{ "time": 1.9, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 3.2, "color": "ffffffff" },
+					{ "time": 3.2333, "color": "ffffff00" }
+				]
+			},
+			"ParticalC15": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.5333, "color": "ffffff00" },
+					{ "time": 1.5667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 2.8667, "color": "ffffffff" },
+					{ "time": 2.9, "color": "ffffff00" }
+				]
+			},
+			"ParticalC16": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.3333, "color": "ffffff00" },
+					{ "time": 1.3667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 2.6667, "color": "ffffffff" },
+					{ "time": 2.7, "color": "ffffff00" }
+				]
+			},
+			"ParticalC17": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 4, "color": "ffffff00" },
+					{ "time": 4.0333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 5.3333, "color": "ffffffff" },
+					{ "time": 5.3667, "color": "ffffff00" }
+				]
+			},
+			"ParticalC18": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 4.2, "color": "ffffff00" },
+					{ "time": 4.2333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 5.5333, "color": "ffffffff" },
+					{ "time": 5.5667, "color": "ffffff00" }
+				]
+			},
+			"ParticalC19": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 4.5333, "color": "ffffff00" },
+					{ "time": 4.5667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 5.8667, "color": "ffffffff" },
+					{ "time": 5.9, "color": "ffffff00" }
+				]
+			},
+			"ParticalC20": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 4.9, "color": "ffffff00" },
+					{ "time": 4.9333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 6.2333, "color": "ffffffff" },
+					{ "time": 6.2667, "color": "ffffff00" }
+				]
+			},
+			"ParticalC21": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 4.8, "color": "ffffff00" },
+					{ "time": 4.8333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 6.1333, "color": "ffffffff" },
+					{ "time": 6.1667, "color": "ffffff00" }
+				]
+			},
+			"ParticalC22": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 5, "color": "ffffff00" },
+					{ "time": 5.0333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 6.3333, "color": "ffffffff" },
+					{ "time": 6.3667, "color": "ffffff00" }
+				]
+			},
+			"ParticalC23": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 5.3333, "color": "ffffff00" },
+					{ "time": 5.3667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 6.6667, "color": "ffffffff" },
+					{ "time": 6.7, "color": "ffffff00" }
+				]
+			},
+			"ParticalC24": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 5.7, "color": "ffffff00" },
+					{ "time": 5.7333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 7.0333, "color": "ffffffff" },
+					{ "time": 7.0667, "color": "ffffff00" }
+				]
+			},
+			"ParticalC25": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 4.3667, "color": "ffffff00" },
+					{ "time": 4.4, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 5.7, "color": "ffffffff" },
+					{ "time": 5.7333, "color": "ffffff00" }
+				]
+			},
+			"ParticalC26": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 4, "color": "ffffff00" },
+					{ "time": 4.0333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 5.3333, "color": "ffffffff" },
+					{ "time": 5.3667, "color": "ffffff00" }
+				]
+			},
+			"ParticalC27": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.6667, "color": "ffffff00" },
+					{ "time": 3.7, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 5, "color": "ffffffff" },
+					{ "time": 5.0333, "color": "ffffff00" }
+				]
+			},
+			"ParticalC28": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.4667, "color": "ffffff00" },
+					{ "time": 3.5, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 4.8, "color": "ffffffff" },
+					{ "time": 4.8333, "color": "ffffff00" }
+				]
+			},
+			"ParticalC29": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.5667, "color": "ffffff00" },
+					{ "time": 3.6, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 4.9, "color": "ffffffff" },
+					{ "time": 4.9333, "color": "ffffff00" }
+				]
+			},
+			"ParticalC30": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.2, "color": "ffffff00" },
+					{ "time": 3.2333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 4.5333, "color": "ffffffff" },
+					{ "time": 4.5667, "color": "ffffff00" }
+				]
+			},
+			"ParticalC31": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.8667, "color": "ffffff00" },
+					{ "time": 2.9, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 4.2, "color": "ffffffff" },
+					{ "time": 4.2333, "color": "ffffff00" }
+				]
+			},
+			"ParticalC32": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.6667, "color": "ffffff00" },
+					{ "time": 2.7, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 4, "color": "ffffffff" },
+					{ "time": 4.0333, "color": "ffffff00" }
+				]
+			},
+			"ParticalC33": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 5.3333, "color": "ffffff00" },
+					{ "time": 5.3667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 6.6667, "color": "ffffffff" },
+					{ "time": 6.7, "color": "ffffff00" }
+				]
+			},
+			"ParticalC34": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 5.5333, "color": "ffffff00" },
+					{ "time": 5.5667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 6.8667, "color": "ffffffff" },
+					{ "time": 6.9, "color": "ffffff00" }
+				]
+			},
+			"ParticalC35": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 5.8667, "color": "ffffff00" },
+					{ "time": 5.9, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 7.2, "color": "ffffffff" },
+					{ "time": 7.2333, "color": "ffffff00" }
+				]
+			},
+			"ParticalC36": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 6.2333, "color": "ffffff00" },
+					{ "time": 6.2667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 7.5667, "color": "ffffffff" },
+					{ "time": 7.6, "color": "ffffff00" }
+				]
+			},
+			"ParticalC37": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 6.1333, "color": "ffffff00" },
+					{ "time": 6.1667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 7.4667, "color": "ffffffff" },
+					{ "time": 7.5, "color": "ffffff00" }
+				]
+			},
+			"ParticalC38": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 6.3333, "color": "ffffff00" },
+					{ "time": 6.3667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 7.6667, "color": "ffffffff" },
+					{ "time": 7.7, "color": "ffffff00" }
+				]
+			},
+			"ParticalC39": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 6.6667, "color": "ffffff00" },
+					{ "time": 6.7, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 8, "color": "ffffffff" },
+					{ "time": 8.0333, "color": "ffffff00" }
+				]
+			},
+			"ParticalC40": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 7.0333, "color": "ffffff00" },
+					{ "time": 7.0667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 8.3667, "color": "ffffffff" },
+					{ "time": 8.4, "color": "ffffff00" }
+				]
+			},
+			"ParticalC41": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 8.3667, "color": "ffffff00" },
+					{ "time": 8.4, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 9.7, "color": "ffffffff" },
+					{ "time": 9.7333, "color": "ffffff00" }
+				]
+			},
+			"ParticalC42": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 8, "color": "ffffff00" },
+					{ "time": 8.0333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 9.3333, "color": "ffffffff" },
+					{ "time": 9.3667, "color": "ffffff00" }
+				]
+			},
+			"ParticalC43": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 7.6667, "color": "ffffff00" },
+					{ "time": 7.7, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 9, "color": "ffffffff" },
+					{ "time": 9.0333, "color": "ffffff00" }
+				]
+			},
+			"ParticalC44": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 7.4667, "color": "ffffff00" },
+					{ "time": 7.5, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 8.8, "color": "ffffffff" },
+					{ "time": 8.8333, "color": "ffffff00" }
+				]
+			},
+			"ParticalC45": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 7.5667, "color": "ffffff00" },
+					{ "time": 7.6, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 8.9, "color": "ffffffff" },
+					{ "time": 8.9333, "color": "ffffff00" }
+				]
+			},
+			"ParticalC46": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 7.2, "color": "ffffff00" },
+					{ "time": 7.2333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 8.5333, "color": "ffffffff" },
+					{ "time": 8.5667, "color": "ffffff00" }
+				]
+			},
+			"ParticalC47": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 6.8667, "color": "ffffff00" },
+					{ "time": 6.9, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 8.2, "color": "ffffffff" },
+					{ "time": 8.2333, "color": "ffffff00" }
+				]
+			},
+			"ParticalC48": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 6.6667, "color": "ffffff00" },
+					{ "time": 6.7, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 8, "color": "ffffffff" },
+					{ "time": 8.0333, "color": "ffffff00" }
+				]
+			},
+			"ParticalC49": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 9.3333, "color": "ffffff00" },
+					{ "time": 9.3667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 10.6667, "color": "ffffffff" },
+					{ "time": 10.7, "color": "ffffff00" }
+				]
+			},
+			"ParticalC50": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 9.5333, "color": "ffffff00" },
+					{ "time": 9.5667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 10.8667, "color": "ffffffff" },
+					{ "time": 10.9, "color": "ffffff00" }
+				]
+			},
+			"ParticalC51": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 9.8667, "color": "ffffff00" },
+					{ "time": 9.9, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 11.2, "color": "ffffffff" },
+					{ "time": 11.2333, "color": "ffffff00" }
+				]
+			},
+			"ParticalC52": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 10.2333, "color": "ffffff00" },
+					{ "time": 10.2667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 11.5667, "color": "ffffffff" },
+					{ "time": 11.6, "color": "ffffff00" }
+				]
+			},
+			"ParticalC53": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 10.1333, "color": "ffffff00" },
+					{ "time": 10.1667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 11.4667, "color": "ffffffff" },
+					{ "time": 11.5, "color": "ffffff00" }
+				]
+			},
+			"ParticalC54": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 10.3333, "color": "ffffff00" },
+					{ "time": 10.3667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 11.6667, "color": "ffffffff" },
+					{ "time": 11.7, "color": "ffffff00" }
+				]
+			},
+			"ParticalC55": {
+				"rgba": [
+					{ "color": "ffffffff" },
+					{ "time": 0.0333, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 10.6667, "color": "ffffff00" },
+					{ "time": 10.7, "color": "ffffffff" }
+				]
+			},
+			"ParticalC56": {
+				"rgba": [
+					{ "time": 0.3667, "color": "ffffffff" },
+					{ "time": 0.4, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 11.0333, "color": "ffffff00" },
+					{ "time": 11.0667, "color": "ffffffff" }
+				]
+			},
+			"ParticalC57": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 9.7, "color": "ffffff00" },
+					{ "time": 9.7333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 11.0333, "color": "ffffffff" },
+					{ "time": 11.0667, "color": "ffffff00" }
+				]
+			},
+			"ParticalC58": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 9.3333, "color": "ffffff00" },
+					{ "time": 9.3667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 10.6667, "color": "ffffffff" },
+					{ "time": 10.7, "color": "ffffff00" }
+				]
+			},
+			"ParticalC59": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 9, "color": "ffffff00" },
+					{ "time": 9.0333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 10.3333, "color": "ffffffff" },
+					{ "time": 10.3667, "color": "ffffff00" }
+				]
+			},
+			"ParticalC60": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 8.8, "color": "ffffff00" },
+					{ "time": 8.8333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 10.1333, "color": "ffffffff" },
+					{ "time": 10.1667, "color": "ffffff00" }
+				]
+			},
+			"ParticalC61": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 8.9, "color": "ffffff00" },
+					{ "time": 8.9333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 10.2333, "color": "ffffffff" },
+					{ "time": 10.2667, "color": "ffffff00" }
+				]
+			},
+			"ParticalC62": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 8.5333, "color": "ffffff00" },
+					{ "time": 8.5667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 9.8667, "color": "ffffffff" },
+					{ "time": 9.9, "color": "ffffff00" }
+				]
+			},
+			"ParticalC63": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 8.2, "color": "ffffff00" },
+					{ "time": 8.2333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 9.5333, "color": "ffffffff" },
+					{ "time": 9.5667, "color": "ffffff00" }
+				]
+			},
+			"ParticalC64": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 8, "color": "ffffff00" },
+					{ "time": 8.0333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 9.3333, "color": "ffffffff" },
+					{ "time": 9.3667, "color": "ffffff00" }
+				]
+			},
+			"ParticalC65": {
+				"rgba": [
+					{ "color": "ffffff00" },
+					{ "time": 0.0333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.3333, "color": "ffffffff" },
+					{ "time": 1.3667, "color": "ffffff00" }
+				]
+			},
+			"ParticalC66": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.2, "color": "ffffff00" },
+					{ "time": 0.2333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.5333, "color": "ffffffff" },
+					{ "time": 1.5667, "color": "ffffff00" }
+				]
+			},
+			"ParticalC67": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.5333, "color": "ffffff00" },
+					{ "time": 0.5667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.8667, "color": "ffffffff" },
+					{ "time": 1.9, "color": "ffffff00" }
+				]
+			},
+			"ParticalC68": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.9, "color": "ffffff00" },
+					{ "time": 0.9333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 2.2333, "color": "ffffffff" },
+					{ "time": 2.2667, "color": "ffffff00" }
+				]
+			},
+			"ParticalC69": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.8, "color": "ffffff00" },
+					{ "time": 0.8333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 2.1333, "color": "ffffffff" },
+					{ "time": 2.1667, "color": "ffffff00" }
+				]
+			},
+			"ParticalC70": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1, "color": "ffffff00" },
+					{ "time": 1.0333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 2.3333, "color": "ffffffff" },
+					{ "time": 2.3667, "color": "ffffff00" }
+				]
+			},
+			"ParticalC71": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.3333, "color": "ffffff00" },
+					{ "time": 1.3667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 2.6667, "color": "ffffffff" },
+					{ "time": 2.7, "color": "ffffff00" }
+				]
+			},
+			"ParticalC72": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.7, "color": "ffffff00" },
+					{ "time": 1.7333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 3.0333, "color": "ffffffff" },
+					{ "time": 3.0667, "color": "ffffff00" }
+				]
+			},
+			"ParticalC73": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.0333, "color": "ffffff00" },
+					{ "time": 3.0667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 4.3667, "color": "ffffffff" },
+					{ "time": 4.4, "color": "ffffff00" }
+				]
+			},
+			"ParticalC74": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.6667, "color": "ffffff00" },
+					{ "time": 2.7, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 4, "color": "ffffffff" },
+					{ "time": 4.0333, "color": "ffffff00" }
+				]
+			},
+			"ParticalC75": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.3333, "color": "ffffff00" },
+					{ "time": 2.3667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 3.6667, "color": "ffffffff" },
+					{ "time": 3.7, "color": "ffffff00" }
+				]
+			},
+			"ParticalC76": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.1333, "color": "ffffff00" },
+					{ "time": 2.1667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 3.4667, "color": "ffffffff" },
+					{ "time": 3.5, "color": "ffffff00" }
+				]
+			},
+			"ParticalC77": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.2333, "color": "ffffff00" },
+					{ "time": 2.2667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 3.5667, "color": "ffffffff" },
+					{ "time": 3.6, "color": "ffffff00" }
+				]
+			},
+			"ParticalC78": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.8667, "color": "ffffff00" },
+					{ "time": 1.9, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 3.2, "color": "ffffffff" },
+					{ "time": 3.2333, "color": "ffffff00" }
+				]
+			},
+			"ParticalC79": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.5333, "color": "ffffff00" },
+					{ "time": 1.5667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 2.8667, "color": "ffffffff" },
+					{ "time": 2.9, "color": "ffffff00" }
+				]
+			},
+			"ParticalC80": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.3333, "color": "ffffff00" },
+					{ "time": 1.3667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 2.6667, "color": "ffffffff" },
+					{ "time": 2.7, "color": "ffffff00" }
+				]
+			},
+			"ParticalC81": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 4, "color": "ffffff00" },
+					{ "time": 4.0333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 5.3333, "color": "ffffffff" },
+					{ "time": 5.3667, "color": "ffffff00" }
+				]
+			},
+			"ParticalC82": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 4.2, "color": "ffffff00" },
+					{ "time": 4.2333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 5.5333, "color": "ffffffff" },
+					{ "time": 5.5667, "color": "ffffff00" }
+				]
+			},
+			"ParticalC83": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 4.5333, "color": "ffffff00" },
+					{ "time": 4.5667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 5.8667, "color": "ffffffff" },
+					{ "time": 5.9, "color": "ffffff00" }
+				]
+			},
+			"ParticalC84": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 4.9, "color": "ffffff00" },
+					{ "time": 4.9333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 6.2333, "color": "ffffffff" },
+					{ "time": 6.2667, "color": "ffffff00" }
+				]
+			},
+			"ParticalC85": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 4.8, "color": "ffffff00" },
+					{ "time": 4.8333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 6.1333, "color": "ffffffff" },
+					{ "time": 6.1667, "color": "ffffff00" }
+				]
+			},
+			"ParticalC86": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 5, "color": "ffffff00" },
+					{ "time": 5.0333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 6.3333, "color": "ffffffff" },
+					{ "time": 6.3667, "color": "ffffff00" }
+				]
+			},
+			"ParticalC87": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 5.3333, "color": "ffffff00" },
+					{ "time": 5.3667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 6.6667, "color": "ffffffff" },
+					{ "time": 6.7, "color": "ffffff00" }
+				]
+			},
+			"ParticalC88": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 5.7, "color": "ffffff00" },
+					{ "time": 5.7333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 7.0333, "color": "ffffffff" },
+					{ "time": 7.0667, "color": "ffffff00" }
+				]
+			},
+			"ParticalC89": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 4.3667, "color": "ffffff00" },
+					{ "time": 4.4, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 5.7, "color": "ffffffff" },
+					{ "time": 5.7333, "color": "ffffff00" }
+				]
+			},
+			"ParticalC90": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 4, "color": "ffffff00" },
+					{ "time": 4.0333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 5.3333, "color": "ffffffff" },
+					{ "time": 5.3667, "color": "ffffff00" }
+				]
+			},
+			"ParticalC91": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.6667, "color": "ffffff00" },
+					{ "time": 3.7, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 5, "color": "ffffffff" },
+					{ "time": 5.0333, "color": "ffffff00" }
+				]
+			},
+			"ParticalC92": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.4667, "color": "ffffff00" },
+					{ "time": 3.5, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 4.8, "color": "ffffffff" },
+					{ "time": 4.8333, "color": "ffffff00" }
+				]
+			},
+			"ParticalC93": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.5667, "color": "ffffff00" },
+					{ "time": 3.6, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 4.9, "color": "ffffffff" },
+					{ "time": 4.9333, "color": "ffffff00" }
+				]
+			},
+			"ParticalC94": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.2, "color": "ffffff00" },
+					{ "time": 3.2333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 4.5333, "color": "ffffffff" },
+					{ "time": 4.5667, "color": "ffffff00" }
+				]
+			},
+			"ParticalC95": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.8667, "color": "ffffff00" },
+					{ "time": 2.9, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 4.2, "color": "ffffffff" },
+					{ "time": 4.2333, "color": "ffffff00" }
+				]
+			},
+			"ParticalC96": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 2.6667, "color": "ffffff00" },
+					{ "time": 2.7, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 4, "color": "ffffffff" },
+					{ "time": 4.0333, "color": "ffffff00" }
+				]
+			},
+			"ParticalC97": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 5.3333, "color": "ffffff00" },
+					{ "time": 5.3667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 6.6667, "color": "ffffffff" },
+					{ "time": 6.7, "color": "ffffff00" }
+				]
+			},
+			"ParticalC98": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 5.5333, "color": "ffffff00" },
+					{ "time": 5.5667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 6.8667, "color": "ffffffff" },
+					{ "time": 6.9, "color": "ffffff00" }
+				]
+			},
+			"ParticalC99": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 5.8667, "color": "ffffff00" },
+					{ "time": 5.9, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 7.2, "color": "ffffffff" },
+					{ "time": 7.2333, "color": "ffffff00" }
+				]
+			},
+			"ParticalC100": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 6.2333, "color": "ffffff00" },
+					{ "time": 6.2667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 7.5667, "color": "ffffffff" },
+					{ "time": 7.6, "color": "ffffff00" }
+				]
+			},
+			"ParticalC101": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 6.1333, "color": "ffffff00" },
+					{ "time": 6.1667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 7.4667, "color": "ffffffff" },
+					{ "time": 7.5, "color": "ffffff00" }
+				]
+			},
+			"ParticalC102": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 6.3333, "color": "ffffff00" },
+					{ "time": 6.3667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 7.6667, "color": "ffffffff" },
+					{ "time": 7.7, "color": "ffffff00" }
+				]
+			},
+			"ParticalC103": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 6.6667, "color": "ffffff00" },
+					{ "time": 6.7, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 8, "color": "ffffffff" },
+					{ "time": 8.0333, "color": "ffffff00" }
+				]
+			},
+			"ParticalC104": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 7.0333, "color": "ffffff00" },
+					{ "time": 7.0667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 8.3667, "color": "ffffffff" },
+					{ "time": 8.4, "color": "ffffff00" }
+				]
+			},
+			"ParticalC105": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 8.3667, "color": "ffffff00" },
+					{ "time": 8.4, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 9.7, "color": "ffffffff" },
+					{ "time": 9.7333, "color": "ffffff00" }
+				]
+			},
+			"ParticalC106": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 8, "color": "ffffff00" },
+					{ "time": 8.0333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 9.3333, "color": "ffffffff" },
+					{ "time": 9.3667, "color": "ffffff00" }
+				]
+			},
+			"ParticalC107": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 7.6667, "color": "ffffff00" },
+					{ "time": 7.7, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 9, "color": "ffffffff" },
+					{ "time": 9.0333, "color": "ffffff00" }
+				]
+			},
+			"ParticalC108": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 7.4667, "color": "ffffff00" },
+					{ "time": 7.5, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 8.8, "color": "ffffffff" },
+					{ "time": 8.8333, "color": "ffffff00" }
+				]
+			},
+			"ParticalC109": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 7.5667, "color": "ffffff00" },
+					{ "time": 7.6, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 8.9, "color": "ffffffff" },
+					{ "time": 8.9333, "color": "ffffff00" }
+				]
+			},
+			"ParticalC110": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 7.2, "color": "ffffff00" },
+					{ "time": 7.2333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 8.5333, "color": "ffffffff" },
+					{ "time": 8.5667, "color": "ffffff00" }
+				]
+			},
+			"ParticalC111": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 6.8667, "color": "ffffff00" },
+					{ "time": 6.9, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 8.2, "color": "ffffffff" },
+					{ "time": 8.2333, "color": "ffffff00" }
+				]
+			},
+			"ParticalC112": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 6.6667, "color": "ffffff00" },
+					{ "time": 6.7, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 8, "color": "ffffffff" },
+					{ "time": 8.0333, "color": "ffffff00" }
+				]
+			},
+			"ParticalC113": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 9.3333, "color": "ffffff00" },
+					{ "time": 9.3667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 10.6667, "color": "ffffffff" },
+					{ "time": 10.7, "color": "ffffff00" }
+				]
+			},
+			"ParticalC114": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 9.5333, "color": "ffffff00" },
+					{ "time": 9.5667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 10.8667, "color": "ffffffff" },
+					{ "time": 10.9, "color": "ffffff00" }
+				]
+			},
+			"ParticalC115": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 9.8667, "color": "ffffff00" },
+					{ "time": 9.9, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 11.2, "color": "ffffffff" },
+					{ "time": 11.2333, "color": "ffffff00" }
+				]
+			},
+			"ParticalC116": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 10.2333, "color": "ffffff00" },
+					{ "time": 10.2667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 11.5667, "color": "ffffffff" },
+					{ "time": 11.6, "color": "ffffff00" }
+				]
+			},
+			"ParticalC117": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 10.1333, "color": "ffffff00" },
+					{ "time": 10.1667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 11.4667, "color": "ffffffff" },
+					{ "time": 11.5, "color": "ffffff00" }
+				]
+			},
+			"ParticalC118": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 10.3333, "color": "ffffff00" },
+					{ "time": 10.3667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 11.6667, "color": "ffffffff" },
+					{ "time": 11.7, "color": "ffffff00" }
+				]
+			},
+			"ParticalC119": {
+				"rgba": [
+					{ "color": "ffffffff" },
+					{ "time": 0.0333, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 10.6667, "color": "ffffff00" },
+					{ "time": 10.7, "color": "ffffffff" }
+				]
+			},
+			"ParticalC120": {
+				"rgba": [
+					{ "time": 0.3667, "color": "ffffffff" },
+					{ "time": 0.4, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 11.0333, "color": "ffffff00" },
+					{ "time": 11.0667, "color": "ffffffff" }
+				]
+			},
+			"ParticalC121": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 9.7, "color": "ffffff00" },
+					{ "time": 9.7333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 11.0333, "color": "ffffffff" },
+					{ "time": 11.0667, "color": "ffffff00" }
+				]
+			},
+			"ParticalC122": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 9.3333, "color": "ffffff00" },
+					{ "time": 9.3667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 10.6667, "color": "ffffffff" },
+					{ "time": 10.7, "color": "ffffff00" }
+				]
+			},
+			"ParticalC123": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 9, "color": "ffffff00" },
+					{ "time": 9.0333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 10.3333, "color": "ffffffff" },
+					{ "time": 10.3667, "color": "ffffff00" }
+				]
+			},
+			"ParticalC124": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 8.8, "color": "ffffff00" },
+					{ "time": 8.8333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 10.1333, "color": "ffffffff" },
+					{ "time": 10.1667, "color": "ffffff00" }
+				]
+			},
+			"ParticalC125": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 8.9, "color": "ffffff00" },
+					{ "time": 8.9333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 10.2333, "color": "ffffffff" },
+					{ "time": 10.2667, "color": "ffffff00" }
+				]
+			},
+			"ParticalC126": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 8.5333, "color": "ffffff00" },
+					{ "time": 8.5667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 9.8667, "color": "ffffffff" },
+					{ "time": 9.9, "color": "ffffff00" }
+				]
+			},
+			"ParticalC127": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 8.2, "color": "ffffff00" },
+					{ "time": 8.2333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 9.5333, "color": "ffffffff" },
+					{ "time": 9.5667, "color": "ffffff00" }
+				]
+			},
+			"ParticalC128": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 8, "color": "ffffff00" },
+					{ "time": 8.0333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 9.3333, "color": "ffffffff" },
+					{ "time": 9.3667, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"Partical": {
+				"translate": [
+					{ "y": 1076.44 },
+					{ "time": 11.9667, "y": -860.74 },
+					{ "time": 12, "y": 1076.44 }
+				]
+			},
+			"Partical2": {
+				"translate": [
+					{ "y": -731.23 },
+					{ "time": 0.8, "y": -860.74 },
+					{ "time": 0.8333, "y": 1076.44 },
+					{ "time": 12, "y": -731.23 }
+				]
+			},
+			"Partical3": {
+				"translate": [
+					{ "y": -542.37 },
+					{ "time": 1.9667, "y": -860.74 },
+					{ "time": 2, "y": 1076.44 },
+					{ "time": 12, "y": -542.37 }
+				]
+			},
+			"Partical4": {
+				"translate": [
+					{ "y": -418.26 },
+					{ "time": 2.7333, "y": -860.74 },
+					{ "time": 2.7667, "y": 1076.44 },
+					{ "time": 12, "y": -418.26 }
+				]
+			},
+			"Partical5": {
+				"translate": [
+					{ "y": -321.13 },
+					{ "time": 3.3333, "y": -860.74 },
+					{ "time": 3.3667, "y": 1076.44 },
+					{ "time": 12, "y": -321.13 }
+				]
+			},
+			"Partical6": {
+				"translate": [
+					{ "y": -51.33 },
+					{ "time": 5, "y": -860.74 },
+					{ "time": 5.0333, "y": 1076.44 },
+					{ "time": 12, "y": -51.33 }
+				]
+			},
+			"Partical7": {
+				"translate": [
+					{ "y": 218.47 },
+					{ "time": 6.6667, "y": -860.74 },
+					{ "time": 6.7, "y": 1076.44 },
+					{ "time": 12, "y": 218.47 }
+				]
+			},
+			"Partical8": {
+				"translate": [
+					{ "y": -822.97 },
+					{ "time": 0.2333, "y": -860.74 },
+					{ "time": 0.2667, "y": 1076.44 },
+					{ "time": 12, "y": -822.97 }
+				]
+			},
+			"Partical9": {
+				"translate": [
+					{ "y": -688.07 },
+					{ "time": 0.2667, "y": -731.23 },
+					{ "time": 1.0667, "y": -860.74 },
+					{ "time": 1.1, "y": 1076.44 },
+					{ "time": 12, "y": -688.07 }
+				]
+			},
+			"Partical10": {
+				"translate": [
+					{ "y": -499.2 },
+					{ "time": 0.2667, "y": -542.37 },
+					{ "time": 2.2333, "y": -860.74 },
+					{ "time": 2.2667, "y": 1076.44 },
+					{ "time": 12, "y": -499.2 }
+				]
+			},
+			"Partical11": {
+				"translate": [
+					{ "y": -375.09 },
+					{ "time": 0.2667, "y": -418.26 },
+					{ "time": 3, "y": -860.74 },
+					{ "time": 3.0333, "y": 1076.44 },
+					{ "time": 12, "y": -375.09 }
+				]
+			},
+			"Partical12": {
+				"translate": [
+					{ "y": -277.97 },
+					{ "time": 0.2667, "y": -321.13 },
+					{ "time": 3.6, "y": -860.74 },
+					{ "time": 3.6333, "y": 1076.44 },
+					{ "time": 12, "y": -277.97 }
+				]
+			},
+			"Partical13": {
+				"translate": [
+					{ "y": -8.16 },
+					{ "time": 0.2667, "y": -51.33 },
+					{ "time": 5.2667, "y": -860.74 },
+					{ "time": 5.3, "y": 1076.44 },
+					{ "time": 12, "y": -8.16 }
+				]
+			},
+			"Partical14": {
+				"translate": [
+					{ "y": 261.64 },
+					{ "time": 0.2667, "y": 218.47 },
+					{ "time": 6.9333, "y": -860.74 },
+					{ "time": 6.9667, "y": 1076.44 },
+					{ "time": 12, "y": 261.64 }
+				]
+			},
+			"Partical15": {
+				"translate": [
+					{ "y": 380.35 },
+					{ "time": 7.4333, "y": -822.97 },
+					{ "time": 7.6667, "y": -860.74 },
+					{ "time": 7.7, "y": 1076.44 },
+					{ "time": 12, "y": 380.35 }
+				]
+			},
+			"Partical16": {
+				"translate": [
+					{ "y": 515.25 },
+					{ "time": 7.4333, "y": -688.07 },
+					{ "time": 7.7, "y": -731.23 },
+					{ "time": 8.5, "y": -860.74 },
+					{ "time": 8.5333, "y": 1076.44 },
+					{ "time": 12, "y": 515.25 }
+				]
+			},
+			"Partical17": {
+				"translate": [
+					{ "y": 704.12 },
+					{ "time": 7.4333, "y": -499.2 },
+					{ "time": 7.7, "y": -542.37 },
+					{ "time": 9.6667, "y": -860.74 },
+					{ "time": 9.7, "y": 1076.44 },
+					{ "time": 12, "y": 704.12 }
+				]
+			},
+			"Partical18": {
+				"translate": [
+					{ "y": 828.23 },
+					{ "time": 7.4333, "y": -375.09 },
+					{ "time": 7.7, "y": -418.26 },
+					{ "time": 10.4333, "y": -860.74 },
+					{ "time": 10.4667, "y": 1076.44 },
+					{ "time": 12, "y": 828.23 }
+				]
+			},
+			"Partical19": {
+				"translate": [
+					{ "y": 925.35 },
+					{ "time": 7.4333, "y": -277.97 },
+					{ "time": 7.7, "y": -321.13 },
+					{ "time": 11.0333, "y": -860.74 },
+					{ "time": 11.0667, "y": 1076.44 },
+					{ "time": 12, "y": 925.35 }
+				]
+			},
+			"Partical20": {
+				"translate": [
+					{ "y": -747.42 },
+					{ "time": 0.7, "y": -860.74 },
+					{ "time": 0.7333, "y": 1076.44 },
+					{ "time": 7.4333, "y": -8.16 },
+					{ "time": 7.7, "y": -51.33 },
+					{ "time": 12, "y": -747.42 }
+				]
+			},
+			"Partical21": {
+				"translate": [
+					{ "y": -477.62 },
+					{ "time": 2.3667, "y": -860.74 },
+					{ "time": 2.4, "y": 1076.44 },
+					{ "time": 7.4333, "y": 261.64 },
+					{ "time": 7.7, "y": 218.47 },
+					{ "time": 12, "y": -477.62 }
+				]
+			},
+			"diamond2": {
+				"rotate": [
+					{},
+					{ "time": 11.9667, "value": 695.06 },
+					{ "time": 12 }
+				],
+				"translate": [
+					{ "y": 905.24 },
+					{ "time": 11.9667, "y": -1004.13 },
+					{ "time": 12, "y": 905.24 }
+				]
+			},
+			"diamond3": {
+				"rotate": [
+					{ "value": 598.26 },
+					{ "time": 1.6667, "value": 695.06 },
+					{ "time": 1.7 },
+					{ "time": 12, "value": 598.26 }
+				],
+				"translate": [
+					{ "y": -738.2 },
+					{ "time": 1.6667, "y": -1004.13 },
+					{ "time": 1.7, "y": 905.24 },
+					{ "time": 12, "y": -738.2 }
+				]
+			},
+			"diamond4": {
+				"rotate": [
+					{ "value": 437.56 },
+					{ "time": 4.4333, "value": 695.06 },
+					{ "time": 4.4667 },
+					{ "time": 12, "value": 437.56 }
+				],
+				"translate": [
+					{ "y": -296.76 },
+					{ "time": 4.4333, "y": -1004.13 },
+					{ "time": 4.4667, "y": 905.24 },
+					{ "time": 12, "y": -296.76 }
+				]
+			},
+			"diamond5": {
+				"rotate": [
+					{ "value": 307.84 },
+					{ "time": 6.6667, "value": 695.06 },
+					{ "time": 6.7 },
+					{ "time": 12, "value": 307.84 }
+				],
+				"translate": [
+					{ "y": 59.59 },
+					{ "time": 6.6667, "y": -1004.13 },
+					{ "time": 6.7, "y": 905.24 },
+					{ "time": 12, "y": 59.59 }
+				]
+			},
+			"diamond6": {
+				"rotate": [
+					{ "value": 174.25 },
+					{ "time": 8.9667, "value": 695.06 },
+					{ "time": 9 },
+					{ "time": 12, "value": 174.25 }
+				],
+				"translate": [
+					{ "y": 426.57 },
+					{ "time": 8.9667, "y": -1004.13 },
+					{ "time": 9, "y": 905.24 },
+					{ "time": 12, "y": 426.57 }
+				]
+			},
+			"ParticalC2": {
+				"translate": [
+					{
+						"time": 0.0333,
+						"curve": [ 0.244, 0, 0.456, 117.24, 0.244, 0, 0.456, 381.21 ]
+					},
+					{
+						"time": 0.6667,
+						"x": 212.73,
+						"y": 425.46,
+						"curve": [ 0.889, 313.24, 1.111, 413.76, 0.889, 472.04, 1.111, 518.62 ]
+					},
+					{ "time": 1.3333, "x": 514.27, "y": 565.2 },
+					{ "time": 1.3667 }
+				]
+			},
+			"ParticalC3": {
+				"translate": [
+					{
+						"time": 0.2333,
+						"curve": [ 0.444, 0, 0.656, 136.96, 0.444, 0, 0.656, 239 ]
+					},
+					{
+						"time": 0.8667,
+						"x": 136.96,
+						"y": 332.21,
+						"curve": [ 1.089, 136.96, 1.311, 28.17, 1.089, 430.32, 1.311, 528.42 ]
+					},
+					{ "time": 1.5333, "x": -26.23, "y": 626.53 },
+					{ "time": 1.5667 }
+				]
+			},
+			"ParticalC4": {
+				"translate": [
+					{
+						"time": 0.5667,
+						"curve": [ 0.778, 0, 0.989, 41.71, 0.778, 0, 0.989, 381.21 ]
+					},
+					{
+						"time": 1.2,
+						"x": 137.19,
+						"y": 425.46,
+						"curve": [ 1.422, 237.71, 1.644, 187.15, 1.422, 472.04, 1.644, 619.33 ]
+					},
+					{ "time": 1.8667, "x": 287.66, "y": 665.91 },
+					{ "time": 1.9 }
+				]
+			},
+			"ParticalC5": {
+				"translate": [
+					{
+						"time": 0.9333,
+						"curve": [ 1.144, 0, 1.356, 181.72, 1.144, 0, 1.356, 141.09 ]
+					},
+					{
+						"time": 1.5667,
+						"x": 181.72,
+						"y": 234.29,
+						"curve": [ 1.789, 181.72, 2.011, 237.99, 1.789, 332.4, 2.011, 626.34 ]
+					},
+					{ "time": 2.2333, "x": 183.59, "y": 724.45 },
+					{ "time": 2.2667 }
+				]
+			},
+			"ParticalC6": {
+				"translate": [
+					{
+						"time": 0.8333,
+						"curve": [ 1.044, 0, 1.256, 117.24, 1.044, 0, 1.256, 381.21 ]
+					},
+					{
+						"time": 1.4667,
+						"x": 212.73,
+						"y": 425.46,
+						"curve": [ 1.689, 313.24, 1.911, 413.76, 1.689, 472.04, 1.911, 518.62 ]
+					},
+					{ "time": 2.1333, "x": 514.27, "y": 565.2 },
+					{ "time": 2.1667 }
+				]
+			},
+			"ParticalC7": {
+				"translate": [
+					{
+						"time": 1.0333,
+						"curve": [ 1.244, 0, 1.456, 136.96, 1.244, 0, 1.456, 239 ]
+					},
+					{
+						"time": 1.6667,
+						"x": 136.96,
+						"y": 332.21,
+						"curve": [ 1.889, 136.96, 2.111, 28.17, 1.889, 430.32, 2.111, 528.42 ]
+					},
+					{ "time": 2.3333, "x": -26.23, "y": 626.53 },
+					{ "time": 2.3667 }
+				]
+			},
+			"ParticalC8": {
+				"translate": [
+					{
+						"time": 1.3667,
+						"curve": [ 1.578, 0, 1.789, 41.71, 1.578, 0, 1.789, 381.21 ]
+					},
+					{
+						"time": 2,
+						"x": 137.19,
+						"y": 425.46,
+						"curve": [ 2.222, 237.71, 2.444, 187.15, 2.222, 472.04, 2.444, 619.33 ]
+					},
+					{ "time": 2.6667, "x": 287.66, "y": 665.91 },
+					{ "time": 2.7 }
+				]
+			},
+			"ParticalC9": {
+				"translate": [
+					{
+						"time": 1.7333,
+						"curve": [ 1.944, 0, 2.156, 181.72, 1.944, 0, 2.156, 141.09 ]
+					},
+					{
+						"time": 2.3667,
+						"x": 181.72,
+						"y": 234.29,
+						"curve": [ 2.589, 181.72, 2.811, 237.99, 2.589, 332.4, 2.811, 626.34 ]
+					},
+					{ "time": 3.0333, "x": 183.59, "y": 724.45 },
+					{ "time": 3.0667 }
+				]
+			},
+			"ParticalC10": {
+				"translate": [
+					{
+						"time": 3.0667,
+						"curve": [ 3.278, 0, 3.489, 181.72, 3.278, 0, 3.489, 141.09 ]
+					},
+					{
+						"time": 3.7,
+						"x": 181.72,
+						"y": 234.29,
+						"curve": [ 3.922, 181.72, 4.144, 237.99, 3.922, 332.4, 4.144, 626.34 ]
+					},
+					{ "time": 4.3667, "x": 183.59, "y": 724.45 },
+					{ "time": 4.4 }
+				]
+			},
+			"ParticalC11": {
+				"translate": [
+					{
+						"time": 2.7,
+						"curve": [ 2.911, 0, 3.122, 41.71, 2.911, 0, 3.122, 381.21 ]
+					},
+					{
+						"time": 3.3333,
+						"x": 137.19,
+						"y": 425.46,
+						"curve": [ 3.556, 237.71, 3.778, 187.15, 3.556, 472.04, 3.778, 619.33 ]
+					},
+					{ "time": 4, "x": 287.66, "y": 665.91 },
+					{ "time": 4.0333 }
+				]
+			},
+			"ParticalC12": {
+				"translate": [
+					{
+						"time": 2.3667,
+						"curve": [ 2.578, 0, 2.789, 136.96, 2.578, 0, 2.789, 239 ]
+					},
+					{
+						"time": 3,
+						"x": 136.96,
+						"y": 332.21,
+						"curve": [ 3.222, 136.96, 3.444, 28.17, 3.222, 430.32, 3.444, 528.42 ]
+					},
+					{ "time": 3.6667, "x": -26.23, "y": 626.53 },
+					{ "time": 3.7 }
+				]
+			},
+			"ParticalC13": {
+				"translate": [
+					{
+						"time": 2.1667,
+						"curve": [ 2.378, 0, 2.589, 117.24, 2.378, 0, 2.589, 381.21 ]
+					},
+					{
+						"time": 2.8,
+						"x": 212.73,
+						"y": 425.46,
+						"curve": [ 3.022, 313.24, 3.244, 413.76, 3.022, 472.04, 3.244, 518.62 ]
+					},
+					{ "time": 3.4667, "x": 514.27, "y": 565.2 },
+					{ "time": 3.5 }
+				]
+			},
+			"ParticalC14": {
+				"translate": [
+					{
+						"time": 2.2667,
+						"curve": [ 2.478, 0, 2.689, 181.72, 2.478, 0, 2.689, 141.09 ]
+					},
+					{
+						"time": 2.9,
+						"x": 181.72,
+						"y": 234.29,
+						"curve": [ 3.122, 181.72, 3.344, 237.99, 3.122, 332.4, 3.344, 626.34 ]
+					},
+					{ "time": 3.5667, "x": 183.59, "y": 724.45 },
+					{ "time": 3.6 }
+				]
+			},
+			"ParticalC15": {
+				"translate": [
+					{
+						"time": 1.9,
+						"curve": [ 2.111, 0, 2.322, 41.71, 2.111, 0, 2.322, 381.21 ]
+					},
+					{
+						"time": 2.5333,
+						"x": 137.19,
+						"y": 425.46,
+						"curve": [ 2.756, 237.71, 2.978, 187.15, 2.756, 472.04, 2.978, 619.33 ]
+					},
+					{ "time": 3.2, "x": 287.66, "y": 665.91 },
+					{ "time": 3.2333 }
+				]
+			},
+			"ParticalC16": {
+				"translate": [
+					{
+						"time": 1.5667,
+						"curve": [ 1.778, 0, 1.989, 136.96, 1.778, 0, 1.989, 239 ]
+					},
+					{
+						"time": 2.2,
+						"x": 136.96,
+						"y": 332.21,
+						"curve": [ 2.422, 136.96, 2.644, 28.17, 2.422, 430.32, 2.644, 528.42 ]
+					},
+					{ "time": 2.8667, "x": -26.23, "y": 626.53 },
+					{ "time": 2.9 }
+				]
+			},
+			"ParticalC17": {
+				"translate": [
+					{
+						"time": 1.3667,
+						"curve": [ 1.578, 0, 1.789, 117.24, 1.578, 0, 1.789, 381.21 ]
+					},
+					{
+						"time": 2,
+						"x": 212.73,
+						"y": 425.46,
+						"curve": [ 2.222, 313.24, 2.444, 413.76, 2.222, 472.04, 2.444, 518.62 ]
+					},
+					{ "time": 2.6667, "x": 514.27, "y": 565.2 },
+					{ "time": 2.7 }
+				]
+			},
+			"ParticalC18": {
+				"translate": [
+					{
+						"time": 4.0333,
+						"curve": [ 4.244, 0, 4.456, 117.24, 4.244, 0, 4.456, 381.21 ]
+					},
+					{
+						"time": 4.6667,
+						"x": 212.73,
+						"y": 425.46,
+						"curve": [ 4.889, 313.24, 5.111, 413.76, 4.889, 472.04, 5.111, 518.62 ]
+					},
+					{ "time": 5.3333, "x": 514.27, "y": 565.2 },
+					{ "time": 5.3667 }
+				]
+			},
+			"ParticalC19": {
+				"translate": [
+					{
+						"time": 4.2333,
+						"curve": [ 4.444, 0, 4.656, 136.96, 4.444, 0, 4.656, 239 ]
+					},
+					{
+						"time": 4.8667,
+						"x": 136.96,
+						"y": 332.21,
+						"curve": [ 5.089, 136.96, 5.311, 28.17, 5.089, 430.32, 5.311, 528.42 ]
+					},
+					{ "time": 5.5333, "x": -26.23, "y": 626.53 },
+					{ "time": 5.5667 }
+				]
+			},
+			"ParticalC20": {
+				"translate": [
+					{
+						"time": 4.5667,
+						"curve": [ 4.778, 0, 4.989, 41.71, 4.778, 0, 4.989, 381.21 ]
+					},
+					{
+						"time": 5.2,
+						"x": 137.19,
+						"y": 425.46,
+						"curve": [ 5.422, 237.71, 5.644, 187.15, 5.422, 472.04, 5.644, 619.33 ]
+					},
+					{ "time": 5.8667, "x": 287.66, "y": 665.91 },
+					{ "time": 5.9 }
+				]
+			},
+			"ParticalC21": {
+				"translate": [
+					{
+						"time": 4.9333,
+						"curve": [ 5.144, 0, 5.356, 181.72, 5.144, 0, 5.356, 141.09 ]
+					},
+					{
+						"time": 5.5667,
+						"x": 181.72,
+						"y": 234.29,
+						"curve": [ 5.789, 181.72, 6.011, 237.99, 5.789, 332.4, 6.011, 626.34 ]
+					},
+					{ "time": 6.2333, "x": 183.59, "y": 724.45 },
+					{ "time": 6.2667 }
+				]
+			},
+			"ParticalC22": {
+				"translate": [
+					{
+						"time": 4.8333,
+						"curve": [ 5.044, 0, 5.256, 117.24, 5.044, 0, 5.256, 381.21 ]
+					},
+					{
+						"time": 5.4667,
+						"x": 212.73,
+						"y": 425.46,
+						"curve": [ 5.689, 313.24, 5.911, 413.76, 5.689, 472.04, 5.911, 518.62 ]
+					},
+					{ "time": 6.1333, "x": 514.27, "y": 565.2 },
+					{ "time": 6.1667 }
+				]
+			},
+			"ParticalC23": {
+				"translate": [
+					{
+						"time": 5.0333,
+						"curve": [ 5.244, 0, 5.456, 136.96, 5.244, 0, 5.456, 239 ]
+					},
+					{
+						"time": 5.6667,
+						"x": 136.96,
+						"y": 332.21,
+						"curve": [ 5.889, 136.96, 6.111, 28.17, 5.889, 430.32, 6.111, 528.42 ]
+					},
+					{ "time": 6.3333, "x": -26.23, "y": 626.53 },
+					{ "time": 6.3667 }
+				]
+			},
+			"ParticalC24": {
+				"translate": [
+					{
+						"time": 5.3667,
+						"curve": [ 5.578, 0, 5.789, 41.71, 5.578, 0, 5.789, 381.21 ]
+					},
+					{
+						"time": 6,
+						"x": 137.19,
+						"y": 425.46,
+						"curve": [ 6.222, 237.71, 6.444, 187.15, 6.222, 472.04, 6.444, 619.33 ]
+					},
+					{ "time": 6.6667, "x": 287.66, "y": 665.91 },
+					{ "time": 6.7 }
+				]
+			},
+			"ParticalC25": {
+				"translate": [
+					{
+						"time": 5.7333,
+						"curve": [ 5.944, 0, 6.156, 181.72, 5.944, 0, 6.156, 141.09 ]
+					},
+					{
+						"time": 6.3667,
+						"x": 181.72,
+						"y": 234.29,
+						"curve": [ 6.589, 181.72, 6.811, 237.99, 6.589, 332.4, 6.811, 626.34 ]
+					},
+					{ "time": 7.0333, "x": 183.59, "y": 724.45 },
+					{ "time": 7.0667 }
+				]
+			},
+			"ParticalC26": {
+				"translate": [
+					{
+						"time": 4.4,
+						"curve": [ 4.611, 0, 4.822, 181.72, 4.611, 0, 4.822, 141.09 ]
+					},
+					{
+						"time": 5.0333,
+						"x": 181.72,
+						"y": 234.29,
+						"curve": [ 5.256, 181.72, 5.478, 237.99, 5.256, 332.4, 5.478, 626.34 ]
+					},
+					{ "time": 5.7, "x": 183.59, "y": 724.45 },
+					{ "time": 5.7333 }
+				]
+			},
+			"ParticalC27": {
+				"translate": [
+					{
+						"time": 4.0333,
+						"curve": [ 4.244, 0, 4.456, 41.71, 4.244, 0, 4.456, 381.21 ]
+					},
+					{
+						"time": 4.6667,
+						"x": 137.19,
+						"y": 425.46,
+						"curve": [ 4.889, 237.71, 5.111, 187.15, 4.889, 472.04, 5.111, 619.33 ]
+					},
+					{ "time": 5.3333, "x": 287.66, "y": 665.91 },
+					{ "time": 5.3667 }
+				]
+			},
+			"ParticalC28": {
+				"translate": [
+					{
+						"time": 3.7,
+						"curve": [ 3.911, 0, 4.122, 136.96, 3.911, 0, 4.122, 239 ]
+					},
+					{
+						"time": 4.3333,
+						"x": 136.96,
+						"y": 332.21,
+						"curve": [ 4.556, 136.96, 4.778, 28.17, 4.556, 430.32, 4.778, 528.42 ]
+					},
+					{ "time": 5, "x": -26.23, "y": 626.53 },
+					{ "time": 5.0333 }
+				]
+			},
+			"ParticalC29": {
+				"translate": [
+					{
+						"time": 3.5,
+						"curve": [ 3.711, 0, 3.922, 117.24, 3.711, 0, 3.922, 381.21 ]
+					},
+					{
+						"time": 4.1333,
+						"x": 212.73,
+						"y": 425.46,
+						"curve": [ 4.356, 313.24, 4.578, 413.76, 4.356, 472.04, 4.578, 518.62 ]
+					},
+					{ "time": 4.8, "x": 514.27, "y": 565.2 },
+					{ "time": 4.8333 }
+				]
+			},
+			"ParticalC30": {
+				"translate": [
+					{
+						"time": 3.6,
+						"curve": [ 3.811, 0, 4.022, 181.72, 3.811, 0, 4.022, 141.09 ]
+					},
+					{
+						"time": 4.2333,
+						"x": 181.72,
+						"y": 234.29,
+						"curve": [ 4.456, 181.72, 4.678, 237.99, 4.456, 332.4, 4.678, 626.34 ]
+					},
+					{ "time": 4.9, "x": 183.59, "y": 724.45 },
+					{ "time": 4.9333 }
+				]
+			},
+			"ParticalC31": {
+				"translate": [
+					{
+						"time": 3.2333,
+						"curve": [ 3.444, 0, 3.656, 41.71, 3.444, 0, 3.656, 381.21 ]
+					},
+					{
+						"time": 3.8667,
+						"x": 137.19,
+						"y": 425.46,
+						"curve": [ 4.089, 237.71, 4.311, 187.15, 4.089, 472.04, 4.311, 619.33 ]
+					},
+					{ "time": 4.5333, "x": 287.66, "y": 665.91 },
+					{ "time": 4.5667 }
+				]
+			},
+			"ParticalC32": {
+				"translate": [
+					{
+						"time": 2.9,
+						"curve": [ 3.111, 0, 3.322, 136.96, 3.111, 0, 3.322, 239 ]
+					},
+					{
+						"time": 3.5333,
+						"x": 136.96,
+						"y": 332.21,
+						"curve": [ 3.756, 136.96, 3.978, 28.17, 3.756, 430.32, 3.978, 528.42 ]
+					},
+					{ "time": 4.2, "x": -26.23, "y": 626.53 },
+					{ "time": 4.2333 }
+				]
+			},
+			"ParticalC33": {
+				"translate": [
+					{
+						"time": 2.7,
+						"curve": [ 2.911, 0, 3.122, 117.24, 2.911, 0, 3.122, 381.21 ]
+					},
+					{
+						"time": 3.3333,
+						"x": 212.73,
+						"y": 425.46,
+						"curve": [ 3.556, 313.24, 3.778, 413.76, 3.556, 472.04, 3.778, 518.62 ]
+					},
+					{ "time": 4, "x": 514.27, "y": 565.2 },
+					{ "time": 4.0333 }
+				]
+			},
+			"ParticalC34": {
+				"translate": [
+					{
+						"time": 5.3667,
+						"curve": [ 5.578, 0, 5.789, 117.24, 5.578, 0, 5.789, 381.21 ]
+					},
+					{
+						"time": 6,
+						"x": 212.73,
+						"y": 425.46,
+						"curve": [ 6.222, 313.24, 6.444, 413.76, 6.222, 472.04, 6.444, 518.62 ]
+					},
+					{ "time": 6.6667, "x": 514.27, "y": 565.2 },
+					{ "time": 6.7 }
+				]
+			},
+			"ParticalC35": {
+				"translate": [
+					{
+						"time": 5.5667,
+						"curve": [ 5.778, 0, 5.989, 136.96, 5.778, 0, 5.989, 239 ]
+					},
+					{
+						"time": 6.2,
+						"x": 136.96,
+						"y": 332.21,
+						"curve": [ 6.422, 136.96, 6.644, 28.17, 6.422, 430.32, 6.644, 528.42 ]
+					},
+					{ "time": 6.8667, "x": -26.23, "y": 626.53 },
+					{ "time": 6.9 }
+				]
+			},
+			"ParticalC36": {
+				"translate": [
+					{
+						"time": 5.9,
+						"curve": [ 6.111, 0, 6.322, 41.71, 6.111, 0, 6.322, 381.21 ]
+					},
+					{
+						"time": 6.5333,
+						"x": 137.19,
+						"y": 425.46,
+						"curve": [ 6.756, 237.71, 6.978, 187.15, 6.756, 472.04, 6.978, 619.33 ]
+					},
+					{ "time": 7.2, "x": 287.66, "y": 665.91 },
+					{ "time": 7.2333 }
+				]
+			},
+			"ParticalC37": {
+				"translate": [
+					{
+						"time": 6.2667,
+						"curve": [ 6.478, 0, 6.689, 181.72, 6.478, 0, 6.689, 141.09 ]
+					},
+					{
+						"time": 6.9,
+						"x": 181.72,
+						"y": 234.29,
+						"curve": [ 7.122, 181.72, 7.344, 237.99, 7.122, 332.4, 7.344, 626.34 ]
+					},
+					{ "time": 7.5667, "x": 183.59, "y": 724.45 },
+					{ "time": 7.6 }
+				]
+			},
+			"ParticalC38": {
+				"translate": [
+					{
+						"time": 6.1667,
+						"curve": [ 6.378, 0, 6.589, 117.24, 6.378, 0, 6.589, 381.21 ]
+					},
+					{
+						"time": 6.8,
+						"x": 212.73,
+						"y": 425.46,
+						"curve": [ 7.022, 313.24, 7.244, 413.76, 7.022, 472.04, 7.244, 518.62 ]
+					},
+					{ "time": 7.4667, "x": 514.27, "y": 565.2 },
+					{ "time": 7.5 }
+				]
+			},
+			"ParticalC39": {
+				"translate": [
+					{
+						"time": 6.3667,
+						"curve": [ 6.578, 0, 6.789, 136.96, 6.578, 0, 6.789, 239 ]
+					},
+					{
+						"time": 7,
+						"x": 136.96,
+						"y": 332.21,
+						"curve": [ 7.222, 136.96, 7.444, 28.17, 7.222, 430.32, 7.444, 528.42 ]
+					},
+					{ "time": 7.6667, "x": -26.23, "y": 626.53 },
+					{ "time": 7.7 }
+				]
+			},
+			"ParticalC40": {
+				"translate": [
+					{
+						"time": 6.7,
+						"curve": [ 6.911, 0, 7.122, 41.71, 6.911, 0, 7.122, 381.21 ]
+					},
+					{
+						"time": 7.3333,
+						"x": 137.19,
+						"y": 425.46,
+						"curve": [ 7.556, 237.71, 7.778, 187.15, 7.556, 472.04, 7.778, 619.33 ]
+					},
+					{ "time": 8, "x": 287.66, "y": 665.91 },
+					{ "time": 8.0333 }
+				]
+			},
+			"ParticalC41": {
+				"translate": [
+					{
+						"time": 7.0667,
+						"curve": [ 7.278, 0, 7.489, 181.72, 7.278, 0, 7.489, 141.09 ]
+					},
+					{
+						"time": 7.7,
+						"x": 181.72,
+						"y": 234.29,
+						"curve": [ 7.922, 181.72, 8.144, 237.99, 7.922, 332.4, 8.144, 626.34 ]
+					},
+					{ "time": 8.3667, "x": 183.59, "y": 724.45 },
+					{ "time": 8.4 }
+				]
+			},
+			"ParticalC42": {
+				"translate": [
+					{
+						"time": 8.4,
+						"curve": [ 8.611, 0, 8.822, 181.72, 8.611, 0, 8.822, 141.09 ]
+					},
+					{
+						"time": 9.0333,
+						"x": 181.72,
+						"y": 234.29,
+						"curve": [ 9.256, 181.72, 9.478, 237.99, 9.256, 332.4, 9.478, 626.34 ]
+					},
+					{ "time": 9.7, "x": 183.59, "y": 724.45 },
+					{ "time": 9.7333 }
+				]
+			},
+			"ParticalC43": {
+				"translate": [
+					{
+						"time": 8.0333,
+						"curve": [ 8.244, 0, 8.456, 41.71, 8.244, 0, 8.456, 381.21 ]
+					},
+					{
+						"time": 8.6667,
+						"x": 137.19,
+						"y": 425.46,
+						"curve": [ 8.889, 237.71, 9.111, 187.15, 8.889, 472.04, 9.111, 619.33 ]
+					},
+					{ "time": 9.3333, "x": 287.66, "y": 665.91 },
+					{ "time": 9.3667 }
+				]
+			},
+			"ParticalC44": {
+				"translate": [
+					{
+						"time": 7.7,
+						"curve": [ 7.911, 0, 8.122, 136.96, 7.911, 0, 8.122, 239 ]
+					},
+					{
+						"time": 8.3333,
+						"x": 136.96,
+						"y": 332.21,
+						"curve": [ 8.556, 136.96, 8.778, 28.17, 8.556, 430.32, 8.778, 528.42 ]
+					},
+					{ "time": 9, "x": -26.23, "y": 626.53 },
+					{ "time": 9.0333 }
+				]
+			},
+			"ParticalC45": {
+				"translate": [
+					{
+						"time": 7.5,
+						"curve": [ 7.711, 0, 7.922, 117.24, 7.711, 0, 7.922, 381.21 ]
+					},
+					{
+						"time": 8.1333,
+						"x": 212.73,
+						"y": 425.46,
+						"curve": [ 8.356, 313.24, 8.578, 413.76, 8.356, 472.04, 8.578, 518.62 ]
+					},
+					{ "time": 8.8, "x": 514.27, "y": 565.2 },
+					{ "time": 8.8333 }
+				]
+			},
+			"ParticalC46": {
+				"translate": [
+					{
+						"time": 7.6,
+						"curve": [ 7.811, 0, 8.022, 181.72, 7.811, 0, 8.022, 141.09 ]
+					},
+					{
+						"time": 8.2333,
+						"x": 181.72,
+						"y": 234.29,
+						"curve": [ 8.456, 181.72, 8.678, 237.99, 8.456, 332.4, 8.678, 626.34 ]
+					},
+					{ "time": 8.9, "x": 183.59, "y": 724.45 },
+					{ "time": 8.9333 }
+				]
+			},
+			"ParticalC47": {
+				"translate": [
+					{
+						"time": 7.2333,
+						"curve": [ 7.444, 0, 7.656, 41.71, 7.444, 0, 7.656, 381.21 ]
+					},
+					{
+						"time": 7.8667,
+						"x": 137.19,
+						"y": 425.46,
+						"curve": [ 8.089, 237.71, 8.311, 187.15, 8.089, 472.04, 8.311, 619.33 ]
+					},
+					{ "time": 8.5333, "x": 287.66, "y": 665.91 },
+					{ "time": 8.5667 }
+				]
+			},
+			"ParticalC48": {
+				"translate": [
+					{
+						"time": 6.9,
+						"curve": [ 7.111, 0, 7.322, 136.96, 7.111, 0, 7.322, 239 ]
+					},
+					{
+						"time": 7.5333,
+						"x": 136.96,
+						"y": 332.21,
+						"curve": [ 7.756, 136.96, 7.978, 28.17, 7.756, 430.32, 7.978, 528.42 ]
+					},
+					{ "time": 8.2, "x": -26.23, "y": 626.53 },
+					{ "time": 8.2333 }
+				]
+			},
+			"ParticalC49": {
+				"translate": [
+					{
+						"time": 6.7,
+						"curve": [ 6.911, 0, 7.122, 117.24, 6.911, 0, 7.122, 381.21 ]
+					},
+					{
+						"time": 7.3333,
+						"x": 212.73,
+						"y": 425.46,
+						"curve": [ 7.556, 313.24, 7.778, 413.76, 7.556, 472.04, 7.778, 518.62 ]
+					},
+					{ "time": 8, "x": 514.27, "y": 565.2 },
+					{ "time": 8.0333 }
+				]
+			},
+			"ParticalC50": {
+				"translate": [
+					{
+						"time": 9.3667,
+						"curve": [ 9.578, 0, 9.789, 117.24, 9.578, 0, 9.789, 381.21 ]
+					},
+					{
+						"time": 10,
+						"x": 212.73,
+						"y": 425.46,
+						"curve": [ 10.222, 313.24, 10.444, 413.76, 10.222, 472.04, 10.444, 518.62 ]
+					},
+					{ "time": 10.6667, "x": 514.27, "y": 565.2 },
+					{ "time": 10.7 }
+				]
+			},
+			"ParticalC51": {
+				"translate": [
+					{
+						"time": 9.5667,
+						"curve": [ 9.778, 0, 9.989, 136.96, 9.778, 0, 9.989, 239 ]
+					},
+					{
+						"time": 10.2,
+						"x": 136.96,
+						"y": 332.21,
+						"curve": [ 10.422, 136.96, 10.644, 28.17, 10.422, 430.32, 10.644, 528.42 ]
+					},
+					{ "time": 10.8667, "x": -26.23, "y": 626.53 },
+					{ "time": 10.9 }
+				]
+			},
+			"ParticalC52": {
+				"translate": [
+					{
+						"time": 9.9,
+						"curve": [ 10.111, 0, 10.322, 41.71, 10.111, 0, 10.322, 381.21 ]
+					},
+					{
+						"time": 10.5333,
+						"x": 137.19,
+						"y": 425.46,
+						"curve": [ 10.756, 237.71, 10.978, 187.15, 10.756, 472.04, 10.978, 619.33 ]
+					},
+					{ "time": 11.2, "x": 287.66, "y": 665.91 },
+					{ "time": 11.2333 }
+				]
+			},
+			"ParticalC53": {
+				"translate": [
+					{
+						"time": 10.2667,
+						"curve": [ 10.478, 0, 10.689, 181.72, 10.478, 0, 10.689, 141.09 ]
+					},
+					{
+						"time": 10.9,
+						"x": 181.72,
+						"y": 234.29,
+						"curve": [ 11.122, 181.72, 11.344, 237.99, 11.122, 332.4, 11.344, 626.34 ]
+					},
+					{ "time": 11.5667, "x": 183.59, "y": 724.45 },
+					{ "time": 11.6 }
+				]
+			},
+			"ParticalC54": {
+				"translate": [
+					{
+						"time": 10.1667,
+						"curve": [ 10.378, 0, 10.589, 117.24, 10.378, 0, 10.589, 381.21 ]
+					},
+					{
+						"time": 10.8,
+						"x": 212.73,
+						"y": 425.46,
+						"curve": [ 11.022, 313.24, 11.244, 413.76, 11.022, 472.04, 11.244, 518.62 ]
+					},
+					{ "time": 11.4667, "x": 514.27, "y": 565.2 },
+					{ "time": 11.5 }
+				]
+			},
+			"ParticalC55": {
+				"translate": [
+					{
+						"time": 10.3667,
+						"curve": [ 10.578, 0, 10.789, 136.96, 10.578, 0, 10.789, 239 ]
+					},
+					{
+						"time": 11,
+						"x": 136.96,
+						"y": 332.21,
+						"curve": [ 11.222, 136.96, 11.444, 28.17, 11.222, 430.32, 11.444, 528.42 ]
+					},
+					{ "time": 11.6667, "x": -26.23, "y": 626.53 },
+					{ "time": 11.7 }
+				]
+			},
+			"ParticalC56": {
+				"translate": [
+					{ "x": 287.66, "y": 665.91 },
+					{ "time": 0.0333, "curve": "stepped" },
+					{
+						"time": 10.7,
+						"curve": [ 10.911, 0, 11.122, 41.71, 10.911, 0, 11.122, 381.21 ]
+					},
+					{
+						"time": 11.3333,
+						"x": 137.19,
+						"y": 425.46,
+						"curve": [ 11.556, 237.71, 11.778, 187.15, 11.556, 472.04, 11.778, 619.33 ]
+					},
+					{ "time": 12, "x": 287.66, "y": 665.91 }
+				]
+			},
+			"ParticalC57": {
+				"translate": [
+					{
+						"x": 200.55,
+						"y": 450.16,
+						"curve": [ 0.122, 209.81, 0.244, 213.51, 0.122, 557.44, 0.244, 670.49 ]
+					},
+					{ "time": 0.3667, "x": 183.59, "y": 724.45 },
+					{ "time": 0.4, "curve": "stepped" },
+					{
+						"time": 11.0667,
+						"curve": [ 11.278, 0, 11.489, 181.72, 11.278, 0, 11.489, 141.09 ]
+					},
+					{
+						"time": 11.7,
+						"x": 181.72,
+						"y": 234.29,
+						"curve": [ 11.8, 181.72, 11.9, 192.98, 11.8, 278.44, 11.9, 362.39 ]
+					},
+					{ "time": 12, "x": 200.55, "y": 450.16 }
+				]
+			},
+			"ParticalC58": {
+				"translate": [
+					{
+						"time": 9.7333,
+						"curve": [ 9.944, 0, 10.156, 181.72, 9.944, 0, 10.156, 141.09 ]
+					},
+					{
+						"time": 10.3667,
+						"x": 181.72,
+						"y": 234.29,
+						"curve": [ 10.589, 181.72, 10.811, 237.99, 10.589, 332.4, 10.811, 626.34 ]
+					},
+					{ "time": 11.0333, "x": 183.59, "y": 724.45 },
+					{ "time": 11.0667 }
+				]
+			},
+			"ParticalC59": {
+				"translate": [
+					{
+						"time": 9.3667,
+						"curve": [ 9.578, 0, 9.789, 41.71, 9.578, 0, 9.789, 381.21 ]
+					},
+					{
+						"time": 10,
+						"x": 137.19,
+						"y": 425.46,
+						"curve": [ 10.222, 237.71, 10.444, 187.15, 10.222, 472.04, 10.444, 619.33 ]
+					},
+					{ "time": 10.6667, "x": 287.66, "y": 665.91 },
+					{ "time": 10.7 }
+				]
+			},
+			"ParticalC60": {
+				"translate": [
+					{
+						"time": 9.0333,
+						"curve": [ 9.244, 0, 9.456, 136.96, 9.244, 0, 9.456, 239 ]
+					},
+					{
+						"time": 9.6667,
+						"x": 136.96,
+						"y": 332.21,
+						"curve": [ 9.889, 136.96, 10.111, 28.17, 9.889, 430.32, 10.111, 528.42 ]
+					},
+					{ "time": 10.3333, "x": -26.23, "y": 626.53 },
+					{ "time": 10.3667 }
+				]
+			},
+			"ParticalC61": {
+				"translate": [
+					{
+						"time": 8.8333,
+						"curve": [ 9.044, 0, 9.256, 117.24, 9.044, 0, 9.256, 381.21 ]
+					},
+					{
+						"time": 9.4667,
+						"x": 212.73,
+						"y": 425.46,
+						"curve": [ 9.689, 313.24, 9.911, 413.76, 9.689, 472.04, 9.911, 518.62 ]
+					},
+					{ "time": 10.1333, "x": 514.27, "y": 565.2 },
+					{ "time": 10.1667 }
+				]
+			},
+			"ParticalC62": {
+				"translate": [
+					{
+						"time": 8.9333,
+						"curve": [ 9.144, 0, 9.356, 181.72, 9.144, 0, 9.356, 141.09 ]
+					},
+					{
+						"time": 9.5667,
+						"x": 181.72,
+						"y": 234.29,
+						"curve": [ 9.789, 181.72, 10.011, 237.99, 9.789, 332.4, 10.011, 626.34 ]
+					},
+					{ "time": 10.2333, "x": 183.59, "y": 724.45 },
+					{ "time": 10.2667 }
+				]
+			},
+			"ParticalC63": {
+				"translate": [
+					{
+						"time": 8.5667,
+						"curve": [ 8.778, 0, 8.989, 41.71, 8.778, 0, 8.989, 381.21 ]
+					},
+					{
+						"time": 9.2,
+						"x": 137.19,
+						"y": 425.46,
+						"curve": [ 9.422, 237.71, 9.644, 187.15, 9.422, 472.04, 9.644, 619.33 ]
+					},
+					{ "time": 9.8667, "x": 287.66, "y": 665.91 },
+					{ "time": 9.9 }
+				]
+			},
+			"ParticalC64": {
+				"translate": [
+					{
+						"time": 8.2333,
+						"curve": [ 8.444, 0, 8.656, 136.96, 8.444, 0, 8.656, 239 ]
+					},
+					{
+						"time": 8.8667,
+						"x": 136.96,
+						"y": 332.21,
+						"curve": [ 9.089, 136.96, 9.311, 28.17, 9.089, 430.32, 9.311, 528.42 ]
+					},
+					{ "time": 9.5333, "x": -26.23, "y": 626.53 },
+					{ "time": 9.5667 }
+				]
+			},
+			"ParticalC65": {
+				"translate": [
+					{
+						"time": 8.0333,
+						"curve": [ 8.244, 0, 8.456, 117.24, 8.244, 0, 8.456, 381.21 ]
+					},
+					{
+						"time": 8.6667,
+						"x": 212.73,
+						"y": 425.46,
+						"curve": [ 8.889, 313.24, 9.111, 413.76, 8.889, 472.04, 9.111, 518.62 ]
+					},
+					{ "time": 9.3333, "x": 514.27, "y": 565.2 },
+					{ "time": 9.3667 }
+				]
+			},
+			"ParticalC66": {
+				"translate": [
+					{
+						"time": 0.0333,
+						"curve": [ 0.244, 0, 0.456, 117.24, 0.244, 0, 0.456, 381.21 ]
+					},
+					{
+						"time": 0.6667,
+						"x": 212.73,
+						"y": 425.46,
+						"curve": [ 0.889, 313.24, 1.111, 413.76, 0.889, 472.04, 1.111, 518.62 ]
+					},
+					{ "time": 1.3333, "x": 514.27, "y": 565.2 },
+					{ "time": 1.3667 }
+				]
+			},
+			"ParticalC67": {
+				"translate": [
+					{
+						"time": 0.2333,
+						"curve": [ 0.444, 0, 0.656, 136.96, 0.444, 0, 0.656, 239 ]
+					},
+					{
+						"time": 0.8667,
+						"x": 136.96,
+						"y": 332.21,
+						"curve": [ 1.089, 136.96, 1.311, 28.17, 1.089, 430.32, 1.311, 528.42 ]
+					},
+					{ "time": 1.5333, "x": -26.23, "y": 626.53 },
+					{ "time": 1.5667 }
+				]
+			},
+			"ParticalC68": {
+				"translate": [
+					{
+						"time": 0.5667,
+						"curve": [ 0.778, 0, 0.989, 41.71, 0.778, 0, 0.989, 381.21 ]
+					},
+					{
+						"time": 1.2,
+						"x": 137.19,
+						"y": 425.46,
+						"curve": [ 1.422, 237.71, 1.644, 187.15, 1.422, 472.04, 1.644, 619.33 ]
+					},
+					{ "time": 1.8667, "x": 287.66, "y": 665.91 },
+					{ "time": 1.9 }
+				]
+			},
+			"ParticalC69": {
+				"translate": [
+					{
+						"time": 0.9333,
+						"curve": [ 1.144, 0, 1.356, 181.72, 1.144, 0, 1.356, 141.09 ]
+					},
+					{
+						"time": 1.5667,
+						"x": 181.72,
+						"y": 234.29,
+						"curve": [ 1.789, 181.72, 2.011, 237.99, 1.789, 332.4, 2.011, 626.34 ]
+					},
+					{ "time": 2.2333, "x": 183.59, "y": 724.45 },
+					{ "time": 2.2667 }
+				]
+			},
+			"ParticalC70": {
+				"translate": [
+					{
+						"time": 0.8333,
+						"curve": [ 1.044, 0, 1.256, 117.24, 1.044, 0, 1.256, 381.21 ]
+					},
+					{
+						"time": 1.4667,
+						"x": 212.73,
+						"y": 425.46,
+						"curve": [ 1.689, 313.24, 1.911, 413.76, 1.689, 472.04, 1.911, 518.62 ]
+					},
+					{ "time": 2.1333, "x": 514.27, "y": 565.2 },
+					{ "time": 2.1667 }
+				]
+			},
+			"ParticalC71": {
+				"translate": [
+					{
+						"time": 1.0333,
+						"curve": [ 1.244, 0, 1.456, 136.96, 1.244, 0, 1.456, 239 ]
+					},
+					{
+						"time": 1.6667,
+						"x": 136.96,
+						"y": 332.21,
+						"curve": [ 1.889, 136.96, 2.111, 28.17, 1.889, 430.32, 2.111, 528.42 ]
+					},
+					{ "time": 2.3333, "x": -26.23, "y": 626.53 },
+					{ "time": 2.3667 }
+				]
+			},
+			"ParticalC72": {
+				"translate": [
+					{
+						"time": 1.3667,
+						"curve": [ 1.578, 0, 1.789, 41.71, 1.578, 0, 1.789, 381.21 ]
+					},
+					{
+						"time": 2,
+						"x": 137.19,
+						"y": 425.46,
+						"curve": [ 2.222, 237.71, 2.444, 187.15, 2.222, 472.04, 2.444, 619.33 ]
+					},
+					{ "time": 2.6667, "x": 287.66, "y": 665.91 },
+					{ "time": 2.7 }
+				]
+			},
+			"ParticalC73": {
+				"translate": [
+					{
+						"time": 1.7333,
+						"curve": [ 1.944, 0, 2.156, 181.72, 1.944, 0, 2.156, 141.09 ]
+					},
+					{
+						"time": 2.3667,
+						"x": 181.72,
+						"y": 234.29,
+						"curve": [ 2.589, 181.72, 2.811, 237.99, 2.589, 332.4, 2.811, 626.34 ]
+					},
+					{ "time": 3.0333, "x": 183.59, "y": 724.45 },
+					{ "time": 3.0667 }
+				]
+			},
+			"ParticalC74": {
+				"translate": [
+					{
+						"time": 3.0667,
+						"curve": [ 3.278, 0, 3.489, 181.72, 3.278, 0, 3.489, 141.09 ]
+					},
+					{
+						"time": 3.7,
+						"x": 181.72,
+						"y": 234.29,
+						"curve": [ 3.922, 181.72, 4.144, 237.99, 3.922, 332.4, 4.144, 626.34 ]
+					},
+					{ "time": 4.3667, "x": 183.59, "y": 724.45 },
+					{ "time": 4.4 }
+				]
+			},
+			"ParticalC75": {
+				"translate": [
+					{
+						"time": 2.7,
+						"curve": [ 2.911, 0, 3.122, 41.71, 2.911, 0, 3.122, 381.21 ]
+					},
+					{
+						"time": 3.3333,
+						"x": 137.19,
+						"y": 425.46,
+						"curve": [ 3.556, 237.71, 3.778, 187.15, 3.556, 472.04, 3.778, 619.33 ]
+					},
+					{ "time": 4, "x": 287.66, "y": 665.91 },
+					{ "time": 4.0333 }
+				]
+			},
+			"ParticalC76": {
+				"translate": [
+					{
+						"time": 2.3667,
+						"curve": [ 2.578, 0, 2.789, 136.96, 2.578, 0, 2.789, 239 ]
+					},
+					{
+						"time": 3,
+						"x": 136.96,
+						"y": 332.21,
+						"curve": [ 3.222, 136.96, 3.444, 28.17, 3.222, 430.32, 3.444, 528.42 ]
+					},
+					{ "time": 3.6667, "x": -26.23, "y": 626.53 },
+					{ "time": 3.7 }
+				]
+			},
+			"ParticalC77": {
+				"translate": [
+					{
+						"time": 2.1667,
+						"curve": [ 2.378, 0, 2.589, 117.24, 2.378, 0, 2.589, 381.21 ]
+					},
+					{
+						"time": 2.8,
+						"x": 212.73,
+						"y": 425.46,
+						"curve": [ 3.022, 313.24, 3.244, 413.76, 3.022, 472.04, 3.244, 518.62 ]
+					},
+					{ "time": 3.4667, "x": 514.27, "y": 565.2 },
+					{ "time": 3.5 }
+				]
+			},
+			"ParticalC78": {
+				"translate": [
+					{
+						"time": 2.2667,
+						"curve": [ 2.478, 0, 2.689, 181.72, 2.478, 0, 2.689, 141.09 ]
+					},
+					{
+						"time": 2.9,
+						"x": 181.72,
+						"y": 234.29,
+						"curve": [ 3.122, 181.72, 3.344, 237.99, 3.122, 332.4, 3.344, 626.34 ]
+					},
+					{ "time": 3.5667, "x": 183.59, "y": 724.45 },
+					{ "time": 3.6 }
+				]
+			},
+			"ParticalC79": {
+				"translate": [
+					{
+						"time": 1.9,
+						"curve": [ 2.111, 0, 2.322, 41.71, 2.111, 0, 2.322, 381.21 ]
+					},
+					{
+						"time": 2.5333,
+						"x": 137.19,
+						"y": 425.46,
+						"curve": [ 2.756, 237.71, 2.978, 187.15, 2.756, 472.04, 2.978, 619.33 ]
+					},
+					{ "time": 3.2, "x": 287.66, "y": 665.91 },
+					{ "time": 3.2333 }
+				]
+			},
+			"ParticalC80": {
+				"translate": [
+					{
+						"time": 1.5667,
+						"curve": [ 1.778, 0, 1.989, 136.96, 1.778, 0, 1.989, 239 ]
+					},
+					{
+						"time": 2.2,
+						"x": 136.96,
+						"y": 332.21,
+						"curve": [ 2.422, 136.96, 2.644, 28.17, 2.422, 430.32, 2.644, 528.42 ]
+					},
+					{ "time": 2.8667, "x": -26.23, "y": 626.53 },
+					{ "time": 2.9 }
+				]
+			},
+			"ParticalC81": {
+				"translate": [
+					{
+						"time": 1.3667,
+						"curve": [ 1.578, 0, 1.789, 117.24, 1.578, 0, 1.789, 381.21 ]
+					},
+					{
+						"time": 2,
+						"x": 212.73,
+						"y": 425.46,
+						"curve": [ 2.222, 313.24, 2.444, 413.76, 2.222, 472.04, 2.444, 518.62 ]
+					},
+					{ "time": 2.6667, "x": 514.27, "y": 565.2 },
+					{ "time": 2.7 }
+				]
+			},
+			"ParticalC82": {
+				"translate": [
+					{
+						"time": 4.0333,
+						"curve": [ 4.244, 0, 4.456, 117.24, 4.244, 0, 4.456, 381.21 ]
+					},
+					{
+						"time": 4.6667,
+						"x": 212.73,
+						"y": 425.46,
+						"curve": [ 4.889, 313.24, 5.111, 413.76, 4.889, 472.04, 5.111, 518.62 ]
+					},
+					{ "time": 5.3333, "x": 514.27, "y": 565.2 },
+					{ "time": 5.3667 }
+				]
+			},
+			"ParticalC83": {
+				"translate": [
+					{
+						"time": 4.2333,
+						"curve": [ 4.444, 0, 4.656, 136.96, 4.444, 0, 4.656, 239 ]
+					},
+					{
+						"time": 4.8667,
+						"x": 136.96,
+						"y": 332.21,
+						"curve": [ 5.089, 136.96, 5.311, 28.17, 5.089, 430.32, 5.311, 528.42 ]
+					},
+					{ "time": 5.5333, "x": -26.23, "y": 626.53 },
+					{ "time": 5.5667 }
+				]
+			},
+			"ParticalC84": {
+				"translate": [
+					{
+						"time": 4.5667,
+						"curve": [ 4.778, 0, 4.989, 41.71, 4.778, 0, 4.989, 381.21 ]
+					},
+					{
+						"time": 5.2,
+						"x": 137.19,
+						"y": 425.46,
+						"curve": [ 5.422, 237.71, 5.644, 187.15, 5.422, 472.04, 5.644, 619.33 ]
+					},
+					{ "time": 5.8667, "x": 287.66, "y": 665.91 },
+					{ "time": 5.9 }
+				]
+			},
+			"ParticalC85": {
+				"translate": [
+					{
+						"time": 4.9333,
+						"curve": [ 5.144, 0, 5.356, 181.72, 5.144, 0, 5.356, 141.09 ]
+					},
+					{
+						"time": 5.5667,
+						"x": 181.72,
+						"y": 234.29,
+						"curve": [ 5.789, 181.72, 6.011, 237.99, 5.789, 332.4, 6.011, 626.34 ]
+					},
+					{ "time": 6.2333, "x": 183.59, "y": 724.45 },
+					{ "time": 6.2667 }
+				]
+			},
+			"ParticalC86": {
+				"translate": [
+					{
+						"time": 4.8333,
+						"curve": [ 5.044, 0, 5.256, 117.24, 5.044, 0, 5.256, 381.21 ]
+					},
+					{
+						"time": 5.4667,
+						"x": 212.73,
+						"y": 425.46,
+						"curve": [ 5.689, 313.24, 5.911, 413.76, 5.689, 472.04, 5.911, 518.62 ]
+					},
+					{ "time": 6.1333, "x": 514.27, "y": 565.2 },
+					{ "time": 6.1667 }
+				]
+			},
+			"ParticalC87": {
+				"translate": [
+					{
+						"time": 5.0333,
+						"curve": [ 5.244, 0, 5.456, 136.96, 5.244, 0, 5.456, 239 ]
+					},
+					{
+						"time": 5.6667,
+						"x": 136.96,
+						"y": 332.21,
+						"curve": [ 5.889, 136.96, 6.111, 28.17, 5.889, 430.32, 6.111, 528.42 ]
+					},
+					{ "time": 6.3333, "x": -26.23, "y": 626.53 },
+					{ "time": 6.3667 }
+				]
+			},
+			"ParticalC88": {
+				"translate": [
+					{
+						"time": 5.3667,
+						"curve": [ 5.578, 0, 5.789, 41.71, 5.578, 0, 5.789, 381.21 ]
+					},
+					{
+						"time": 6,
+						"x": 137.19,
+						"y": 425.46,
+						"curve": [ 6.222, 237.71, 6.444, 187.15, 6.222, 472.04, 6.444, 619.33 ]
+					},
+					{ "time": 6.6667, "x": 287.66, "y": 665.91 },
+					{ "time": 6.7 }
+				]
+			},
+			"ParticalC89": {
+				"translate": [
+					{
+						"time": 5.7333,
+						"curve": [ 5.944, 0, 6.156, 181.72, 5.944, 0, 6.156, 141.09 ]
+					},
+					{
+						"time": 6.3667,
+						"x": 181.72,
+						"y": 234.29,
+						"curve": [ 6.589, 181.72, 6.811, 237.99, 6.589, 332.4, 6.811, 626.34 ]
+					},
+					{ "time": 7.0333, "x": 183.59, "y": 724.45 },
+					{ "time": 7.0667 }
+				]
+			},
+			"ParticalC90": {
+				"translate": [
+					{
+						"time": 4.4,
+						"curve": [ 4.611, 0, 4.822, 181.72, 4.611, 0, 4.822, 141.09 ]
+					},
+					{
+						"time": 5.0333,
+						"x": 181.72,
+						"y": 234.29,
+						"curve": [ 5.256, 181.72, 5.478, 237.99, 5.256, 332.4, 5.478, 626.34 ]
+					},
+					{ "time": 5.7, "x": 183.59, "y": 724.45 },
+					{ "time": 5.7333 }
+				]
+			},
+			"ParticalC91": {
+				"translate": [
+					{
+						"time": 4.0333,
+						"curve": [ 4.244, 0, 4.456, 41.71, 4.244, 0, 4.456, 381.21 ]
+					},
+					{
+						"time": 4.6667,
+						"x": 137.19,
+						"y": 425.46,
+						"curve": [ 4.889, 237.71, 5.111, 187.15, 4.889, 472.04, 5.111, 619.33 ]
+					},
+					{ "time": 5.3333, "x": 287.66, "y": 665.91 },
+					{ "time": 5.3667 }
+				]
+			},
+			"ParticalC92": {
+				"translate": [
+					{
+						"time": 3.7,
+						"curve": [ 3.911, 0, 4.122, 136.96, 3.911, 0, 4.122, 239 ]
+					},
+					{
+						"time": 4.3333,
+						"x": 136.96,
+						"y": 332.21,
+						"curve": [ 4.556, 136.96, 4.778, 28.17, 4.556, 430.32, 4.778, 528.42 ]
+					},
+					{ "time": 5, "x": -26.23, "y": 626.53 },
+					{ "time": 5.0333 }
+				]
+			},
+			"ParticalC93": {
+				"translate": [
+					{
+						"time": 3.5,
+						"curve": [ 3.711, 0, 3.922, 117.24, 3.711, 0, 3.922, 381.21 ]
+					},
+					{
+						"time": 4.1333,
+						"x": 212.73,
+						"y": 425.46,
+						"curve": [ 4.356, 313.24, 4.578, 413.76, 4.356, 472.04, 4.578, 518.62 ]
+					},
+					{ "time": 4.8, "x": 514.27, "y": 565.2 },
+					{ "time": 4.8333 }
+				]
+			},
+			"ParticalC94": {
+				"translate": [
+					{
+						"time": 3.6,
+						"curve": [ 3.811, 0, 4.022, 181.72, 3.811, 0, 4.022, 141.09 ]
+					},
+					{
+						"time": 4.2333,
+						"x": 181.72,
+						"y": 234.29,
+						"curve": [ 4.456, 181.72, 4.678, 237.99, 4.456, 332.4, 4.678, 626.34 ]
+					},
+					{ "time": 4.9, "x": 183.59, "y": 724.45 },
+					{ "time": 4.9333 }
+				]
+			},
+			"ParticalC95": {
+				"translate": [
+					{
+						"time": 3.2333,
+						"curve": [ 3.444, 0, 3.656, 41.71, 3.444, 0, 3.656, 381.21 ]
+					},
+					{
+						"time": 3.8667,
+						"x": 137.19,
+						"y": 425.46,
+						"curve": [ 4.089, 237.71, 4.311, 187.15, 4.089, 472.04, 4.311, 619.33 ]
+					},
+					{ "time": 4.5333, "x": 287.66, "y": 665.91 },
+					{ "time": 4.5667 }
+				]
+			},
+			"ParticalC96": {
+				"translate": [
+					{
+						"time": 2.9,
+						"curve": [ 3.111, 0, 3.322, 136.96, 3.111, 0, 3.322, 239 ]
+					},
+					{
+						"time": 3.5333,
+						"x": 136.96,
+						"y": 332.21,
+						"curve": [ 3.756, 136.96, 3.978, 28.17, 3.756, 430.32, 3.978, 528.42 ]
+					},
+					{ "time": 4.2, "x": -26.23, "y": 626.53 },
+					{ "time": 4.2333 }
+				]
+			},
+			"ParticalC97": {
+				"translate": [
+					{
+						"time": 2.7,
+						"curve": [ 2.911, 0, 3.122, 117.24, 2.911, 0, 3.122, 381.21 ]
+					},
+					{
+						"time": 3.3333,
+						"x": 212.73,
+						"y": 425.46,
+						"curve": [ 3.556, 313.24, 3.778, 413.76, 3.556, 472.04, 3.778, 518.62 ]
+					},
+					{ "time": 4, "x": 514.27, "y": 565.2 },
+					{ "time": 4.0333 }
+				]
+			},
+			"ParticalC98": {
+				"translate": [
+					{
+						"time": 5.3667,
+						"curve": [ 5.578, 0, 5.789, 117.24, 5.578, 0, 5.789, 381.21 ]
+					},
+					{
+						"time": 6,
+						"x": 212.73,
+						"y": 425.46,
+						"curve": [ 6.222, 313.24, 6.444, 413.76, 6.222, 472.04, 6.444, 518.62 ]
+					},
+					{ "time": 6.6667, "x": 514.27, "y": 565.2 },
+					{ "time": 6.7 }
+				]
+			},
+			"ParticalC99": {
+				"translate": [
+					{
+						"time": 5.5667,
+						"curve": [ 5.778, 0, 5.989, 136.96, 5.778, 0, 5.989, 239 ]
+					},
+					{
+						"time": 6.2,
+						"x": 136.96,
+						"y": 332.21,
+						"curve": [ 6.422, 136.96, 6.644, 28.17, 6.422, 430.32, 6.644, 528.42 ]
+					},
+					{ "time": 6.8667, "x": -26.23, "y": 626.53 },
+					{ "time": 6.9 }
+				]
+			},
+			"ParticalC100": {
+				"translate": [
+					{
+						"time": 5.9,
+						"curve": [ 6.111, 0, 6.322, 41.71, 6.111, 0, 6.322, 381.21 ]
+					},
+					{
+						"time": 6.5333,
+						"x": 137.19,
+						"y": 425.46,
+						"curve": [ 6.756, 237.71, 6.978, 187.15, 6.756, 472.04, 6.978, 619.33 ]
+					},
+					{ "time": 7.2, "x": 287.66, "y": 665.91 },
+					{ "time": 7.2333 }
+				]
+			},
+			"ParticalC101": {
+				"translate": [
+					{
+						"time": 6.2667,
+						"curve": [ 6.478, 0, 6.689, 181.72, 6.478, 0, 6.689, 141.09 ]
+					},
+					{
+						"time": 6.9,
+						"x": 181.72,
+						"y": 234.29,
+						"curve": [ 7.122, 181.72, 7.344, 237.99, 7.122, 332.4, 7.344, 626.34 ]
+					},
+					{ "time": 7.5667, "x": 183.59, "y": 724.45 },
+					{ "time": 7.6 }
+				]
+			},
+			"ParticalC102": {
+				"translate": [
+					{
+						"time": 6.1667,
+						"curve": [ 6.378, 0, 6.589, 117.24, 6.378, 0, 6.589, 381.21 ]
+					},
+					{
+						"time": 6.8,
+						"x": 212.73,
+						"y": 425.46,
+						"curve": [ 7.022, 313.24, 7.244, 413.76, 7.022, 472.04, 7.244, 518.62 ]
+					},
+					{ "time": 7.4667, "x": 514.27, "y": 565.2 },
+					{ "time": 7.5 }
+				]
+			},
+			"ParticalC103": {
+				"translate": [
+					{
+						"time": 6.3667,
+						"curve": [ 6.578, 0, 6.789, 136.96, 6.578, 0, 6.789, 239 ]
+					},
+					{
+						"time": 7,
+						"x": 136.96,
+						"y": 332.21,
+						"curve": [ 7.222, 136.96, 7.444, 28.17, 7.222, 430.32, 7.444, 528.42 ]
+					},
+					{ "time": 7.6667, "x": -26.23, "y": 626.53 },
+					{ "time": 7.7 }
+				]
+			},
+			"ParticalC104": {
+				"translate": [
+					{
+						"time": 6.7,
+						"curve": [ 6.911, 0, 7.122, 41.71, 6.911, 0, 7.122, 381.21 ]
+					},
+					{
+						"time": 7.3333,
+						"x": 137.19,
+						"y": 425.46,
+						"curve": [ 7.556, 237.71, 7.778, 187.15, 7.556, 472.04, 7.778, 619.33 ]
+					},
+					{ "time": 8, "x": 287.66, "y": 665.91 },
+					{ "time": 8.0333 }
+				]
+			},
+			"ParticalC105": {
+				"translate": [
+					{
+						"time": 7.0667,
+						"curve": [ 7.278, 0, 7.489, 181.72, 7.278, 0, 7.489, 141.09 ]
+					},
+					{
+						"time": 7.7,
+						"x": 181.72,
+						"y": 234.29,
+						"curve": [ 7.922, 181.72, 8.144, 237.99, 7.922, 332.4, 8.144, 626.34 ]
+					},
+					{ "time": 8.3667, "x": 183.59, "y": 724.45 },
+					{ "time": 8.4 }
+				]
+			},
+			"ParticalC106": {
+				"translate": [
+					{
+						"time": 8.4,
+						"curve": [ 8.611, 0, 8.822, 181.72, 8.611, 0, 8.822, 141.09 ]
+					},
+					{
+						"time": 9.0333,
+						"x": 181.72,
+						"y": 234.29,
+						"curve": [ 9.256, 181.72, 9.478, 237.99, 9.256, 332.4, 9.478, 626.34 ]
+					},
+					{ "time": 9.7, "x": 183.59, "y": 724.45 },
+					{ "time": 9.7333 }
+				]
+			},
+			"ParticalC107": {
+				"translate": [
+					{
+						"time": 8.0333,
+						"curve": [ 8.244, 0, 8.456, 41.71, 8.244, 0, 8.456, 381.21 ]
+					},
+					{
+						"time": 8.6667,
+						"x": 137.19,
+						"y": 425.46,
+						"curve": [ 8.889, 237.71, 9.111, 187.15, 8.889, 472.04, 9.111, 619.33 ]
+					},
+					{ "time": 9.3333, "x": 287.66, "y": 665.91 },
+					{ "time": 9.3667 }
+				]
+			},
+			"ParticalC108": {
+				"translate": [
+					{
+						"time": 7.7,
+						"curve": [ 7.911, 0, 8.122, 136.96, 7.911, 0, 8.122, 239 ]
+					},
+					{
+						"time": 8.3333,
+						"x": 136.96,
+						"y": 332.21,
+						"curve": [ 8.556, 136.96, 8.778, 28.17, 8.556, 430.32, 8.778, 528.42 ]
+					},
+					{ "time": 9, "x": -26.23, "y": 626.53 },
+					{ "time": 9.0333 }
+				]
+			},
+			"ParticalC109": {
+				"translate": [
+					{
+						"time": 7.5,
+						"curve": [ 7.711, 0, 7.922, 117.24, 7.711, 0, 7.922, 381.21 ]
+					},
+					{
+						"time": 8.1333,
+						"x": 212.73,
+						"y": 425.46,
+						"curve": [ 8.356, 313.24, 8.578, 413.76, 8.356, 472.04, 8.578, 518.62 ]
+					},
+					{ "time": 8.8, "x": 514.27, "y": 565.2 },
+					{ "time": 8.8333 }
+				]
+			},
+			"ParticalC110": {
+				"translate": [
+					{
+						"time": 7.6,
+						"curve": [ 7.811, 0, 8.022, 181.72, 7.811, 0, 8.022, 141.09 ]
+					},
+					{
+						"time": 8.2333,
+						"x": 181.72,
+						"y": 234.29,
+						"curve": [ 8.456, 181.72, 8.678, 237.99, 8.456, 332.4, 8.678, 626.34 ]
+					},
+					{ "time": 8.9, "x": 183.59, "y": 724.45 },
+					{ "time": 8.9333 }
+				]
+			},
+			"ParticalC111": {
+				"translate": [
+					{
+						"time": 7.2333,
+						"curve": [ 7.444, 0, 7.656, 41.71, 7.444, 0, 7.656, 381.21 ]
+					},
+					{
+						"time": 7.8667,
+						"x": 137.19,
+						"y": 425.46,
+						"curve": [ 8.089, 237.71, 8.311, 187.15, 8.089, 472.04, 8.311, 619.33 ]
+					},
+					{ "time": 8.5333, "x": 287.66, "y": 665.91 },
+					{ "time": 8.5667 }
+				]
+			},
+			"ParticalC112": {
+				"translate": [
+					{
+						"time": 6.9,
+						"curve": [ 7.111, 0, 7.322, 136.96, 7.111, 0, 7.322, 239 ]
+					},
+					{
+						"time": 7.5333,
+						"x": 136.96,
+						"y": 332.21,
+						"curve": [ 7.756, 136.96, 7.978, 28.17, 7.756, 430.32, 7.978, 528.42 ]
+					},
+					{ "time": 8.2, "x": -26.23, "y": 626.53 },
+					{ "time": 8.2333 }
+				]
+			},
+			"ParticalC113": {
+				"translate": [
+					{
+						"time": 6.7,
+						"curve": [ 6.911, 0, 7.122, 117.24, 6.911, 0, 7.122, 381.21 ]
+					},
+					{
+						"time": 7.3333,
+						"x": 212.73,
+						"y": 425.46,
+						"curve": [ 7.556, 313.24, 7.778, 413.76, 7.556, 472.04, 7.778, 518.62 ]
+					},
+					{ "time": 8, "x": 514.27, "y": 565.2 },
+					{ "time": 8.0333 }
+				]
+			},
+			"ParticalC114": {
+				"translate": [
+					{
+						"time": 9.3667,
+						"curve": [ 9.578, 0, 9.789, 117.24, 9.578, 0, 9.789, 381.21 ]
+					},
+					{
+						"time": 10,
+						"x": 212.73,
+						"y": 425.46,
+						"curve": [ 10.222, 313.24, 10.444, 413.76, 10.222, 472.04, 10.444, 518.62 ]
+					},
+					{ "time": 10.6667, "x": 514.27, "y": 565.2 },
+					{ "time": 10.7 }
+				]
+			},
+			"ParticalC115": {
+				"translate": [
+					{
+						"time": 9.5667,
+						"curve": [ 9.778, 0, 9.989, 136.96, 9.778, 0, 9.989, 239 ]
+					},
+					{
+						"time": 10.2,
+						"x": 136.96,
+						"y": 332.21,
+						"curve": [ 10.422, 136.96, 10.644, 28.17, 10.422, 430.32, 10.644, 528.42 ]
+					},
+					{ "time": 10.8667, "x": -26.23, "y": 626.53 },
+					{ "time": 10.9 }
+				]
+			},
+			"ParticalC116": {
+				"translate": [
+					{
+						"time": 9.9,
+						"curve": [ 10.111, 0, 10.322, 41.71, 10.111, 0, 10.322, 381.21 ]
+					},
+					{
+						"time": 10.5333,
+						"x": 137.19,
+						"y": 425.46,
+						"curve": [ 10.756, 237.71, 10.978, 187.15, 10.756, 472.04, 10.978, 619.33 ]
+					},
+					{ "time": 11.2, "x": 287.66, "y": 665.91 },
+					{ "time": 11.2333 }
+				]
+			},
+			"ParticalC117": {
+				"translate": [
+					{
+						"time": 10.2667,
+						"curve": [ 10.478, 0, 10.689, 181.72, 10.478, 0, 10.689, 141.09 ]
+					},
+					{
+						"time": 10.9,
+						"x": 181.72,
+						"y": 234.29,
+						"curve": [ 11.122, 181.72, 11.344, 237.99, 11.122, 332.4, 11.344, 626.34 ]
+					},
+					{ "time": 11.5667, "x": 183.59, "y": 724.45 },
+					{ "time": 11.6 }
+				]
+			},
+			"ParticalC118": {
+				"translate": [
+					{
+						"time": 10.1667,
+						"curve": [ 10.378, 0, 10.589, 117.24, 10.378, 0, 10.589, 381.21 ]
+					},
+					{
+						"time": 10.8,
+						"x": 212.73,
+						"y": 425.46,
+						"curve": [ 11.022, 313.24, 11.244, 413.76, 11.022, 472.04, 11.244, 518.62 ]
+					},
+					{ "time": 11.4667, "x": 514.27, "y": 565.2 },
+					{ "time": 11.5 }
+				]
+			},
+			"ParticalC119": {
+				"translate": [
+					{
+						"time": 10.3667,
+						"curve": [ 10.578, 0, 10.789, 136.96, 10.578, 0, 10.789, 239 ]
+					},
+					{
+						"time": 11,
+						"x": 136.96,
+						"y": 332.21,
+						"curve": [ 11.222, 136.96, 11.444, 28.17, 11.222, 430.32, 11.444, 528.42 ]
+					},
+					{ "time": 11.6667, "x": -26.23, "y": 626.53 },
+					{ "time": 11.7 }
+				]
+			},
+			"ParticalC120": {
+				"translate": [
+					{ "x": 287.66, "y": 665.91 },
+					{ "time": 0.0333, "curve": "stepped" },
+					{
+						"time": 10.7,
+						"curve": [ 10.911, 0, 11.122, 41.71, 10.911, 0, 11.122, 381.21 ]
+					},
+					{
+						"time": 11.3333,
+						"x": 137.19,
+						"y": 425.46,
+						"curve": [ 11.556, 237.71, 11.778, 187.15, 11.556, 472.04, 11.778, 619.33 ]
+					},
+					{ "time": 12, "x": 287.66, "y": 665.91 }
+				]
+			},
+			"ParticalC121": {
+				"translate": [
+					{
+						"x": 200.55,
+						"y": 450.16,
+						"curve": [ 0.122, 209.81, 0.244, 213.51, 0.122, 557.44, 0.244, 670.49 ]
+					},
+					{ "time": 0.3667, "x": 183.59, "y": 724.45 },
+					{ "time": 0.4, "curve": "stepped" },
+					{
+						"time": 11.0667,
+						"curve": [ 11.278, 0, 11.489, 181.72, 11.278, 0, 11.489, 141.09 ]
+					},
+					{
+						"time": 11.7,
+						"x": 181.72,
+						"y": 234.29,
+						"curve": [ 11.8, 181.72, 11.9, 192.98, 11.8, 278.44, 11.9, 362.39 ]
+					},
+					{ "time": 12, "x": 200.55, "y": 450.16 }
+				]
+			},
+			"ParticalC122": {
+				"translate": [
+					{
+						"time": 9.7333,
+						"curve": [ 9.944, 0, 10.156, 181.72, 9.944, 0, 10.156, 141.09 ]
+					},
+					{
+						"time": 10.3667,
+						"x": 181.72,
+						"y": 234.29,
+						"curve": [ 10.589, 181.72, 10.811, 237.99, 10.589, 332.4, 10.811, 626.34 ]
+					},
+					{ "time": 11.0333, "x": 183.59, "y": 724.45 },
+					{ "time": 11.0667 }
+				]
+			},
+			"ParticalC123": {
+				"translate": [
+					{
+						"time": 9.3667,
+						"curve": [ 9.578, 0, 9.789, 41.71, 9.578, 0, 9.789, 381.21 ]
+					},
+					{
+						"time": 10,
+						"x": 137.19,
+						"y": 425.46,
+						"curve": [ 10.222, 237.71, 10.444, 187.15, 10.222, 472.04, 10.444, 619.33 ]
+					},
+					{ "time": 10.6667, "x": 287.66, "y": 665.91 },
+					{ "time": 10.7 }
+				]
+			},
+			"ParticalC124": {
+				"translate": [
+					{
+						"time": 9.0333,
+						"curve": [ 9.244, 0, 9.456, 136.96, 9.244, 0, 9.456, 239 ]
+					},
+					{
+						"time": 9.6667,
+						"x": 136.96,
+						"y": 332.21,
+						"curve": [ 9.889, 136.96, 10.111, 28.17, 9.889, 430.32, 10.111, 528.42 ]
+					},
+					{ "time": 10.3333, "x": -26.23, "y": 626.53 },
+					{ "time": 10.3667 }
+				]
+			},
+			"ParticalC125": {
+				"translate": [
+					{
+						"time": 8.8333,
+						"curve": [ 9.044, 0, 9.256, 117.24, 9.044, 0, 9.256, 381.21 ]
+					},
+					{
+						"time": 9.4667,
+						"x": 212.73,
+						"y": 425.46,
+						"curve": [ 9.689, 313.24, 9.911, 413.76, 9.689, 472.04, 9.911, 518.62 ]
+					},
+					{ "time": 10.1333, "x": 514.27, "y": 565.2 },
+					{ "time": 10.1667 }
+				]
+			},
+			"ParticalC126": {
+				"translate": [
+					{
+						"time": 8.9333,
+						"curve": [ 9.144, 0, 9.356, 181.72, 9.144, 0, 9.356, 141.09 ]
+					},
+					{
+						"time": 9.5667,
+						"x": 181.72,
+						"y": 234.29,
+						"curve": [ 9.789, 181.72, 10.011, 237.99, 9.789, 332.4, 10.011, 626.34 ]
+					},
+					{ "time": 10.2333, "x": 183.59, "y": 724.45 },
+					{ "time": 10.2667 }
+				]
+			},
+			"ParticalC127": {
+				"translate": [
+					{
+						"time": 8.5667,
+						"curve": [ 8.778, 0, 8.989, 41.71, 8.778, 0, 8.989, 381.21 ]
+					},
+					{
+						"time": 9.2,
+						"x": 137.19,
+						"y": 425.46,
+						"curve": [ 9.422, 237.71, 9.644, 187.15, 9.422, 472.04, 9.644, 619.33 ]
+					},
+					{ "time": 9.8667, "x": 287.66, "y": 665.91 },
+					{ "time": 9.9 }
+				]
+			},
+			"ParticalC128": {
+				"translate": [
+					{
+						"time": 8.2333,
+						"curve": [ 8.444, 0, 8.656, 136.96, 8.444, 0, 8.656, 239 ]
+					},
+					{
+						"time": 8.8667,
+						"x": 136.96,
+						"y": 332.21,
+						"curve": [ 9.089, 136.96, 9.311, 28.17, 9.089, 430.32, 9.311, 528.42 ]
+					},
+					{ "time": 9.5333, "x": -26.23, "y": 626.53 },
+					{ "time": 9.5667 }
+				]
+			},
+			"ParticalC129": {
+				"translate": [
+					{
+						"time": 8.0333,
+						"curve": [ 8.244, 0, 8.456, 117.24, 8.244, 0, 8.456, 381.21 ]
+					},
+					{
+						"time": 8.6667,
+						"x": 212.73,
+						"y": 425.46,
+						"curve": [ 8.889, 313.24, 9.111, 413.76, 8.889, 472.04, 9.111, 518.62 ]
+					},
+					{ "time": 9.3333, "x": 514.27, "y": 565.2 },
+					{ "time": 9.3667 }
+				]
+			}
+		}
+	}
+}
+}

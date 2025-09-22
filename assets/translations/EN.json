@@ -226,21 +226,19 @@
     "tfCoinValue": "COIN VALUE",
     "tfTotalBet": "TOTAL BET",
     "btnMax": "MAXIMUM BET",
-    "btnMin": "BET MIN",
-    "btnConfirm" : "CONFIRM"
+    "btnConfirm":"CONFIRM"
   },
   "history": {
     "title": "GAME HISTORY",
     "tfdate": "DATE",
     "tftotalBet": "TOTAL BET",
-    "tfwin": "WIN ",
+    "tfwin": "WIN",
     "tfbalance": "BALANCE",
-    "tfbetId": "BETID",
-    "nohistoryentries": "No history entries"
+     "tfbetId": "BETID"
   },
   "autoSpin": {
     "title": "AUTOSPIN SETTINGS",
-    "tfNumber": "NUMBER OF SPINS",
+    "tfNumber": "NUMBER OF AUTOSPINS",
     "tfStop": "STOP AUTOSPIN",
     "tfCheckbox1": "On any win",
     "tfCheckbox2": "If bonus game is won",
@@ -248,17 +246,17 @@
     "tfCheckbox4": "If cash balance increases by",
     "tfCheckbox5": "If cash balance decreases by",
     "tfConfirm": "CONFIRM",
-    "tfStartAutoPlay":"Start AutoPlay",
+    "tfStartAutoPlay": "START AUTOPLAY",
     "tfSkipScreen": "SKIP SCREEN",
-    "tfHeading":"AUTOPLAY SETTINGS",
-     "tfTurboSpin":"TURBO SPIN",
-     "tfQuickSpin":"QUICK SPIN",
-     "tfSkipSpin":"SKIP SCREEN",
-     "tfMin":"MIN",
-     "tfMax":"MAX"
+    "tfHeading": "AUTOPLAY SETTINGS",
+    "tfTurboSpin": "TURBO SPIN",
+    "tfQuickSpin": "QUICK SPIN",
+    "tfSkipSpin": "SKIP SCREEN",
+    "tfMin": "MIN",
+    "tfMax": "MAX"
   },
   "freeSpins": {
-    "buy": "BUY\nFEATURE",
+    "buy": "BUY\n FREE SPINS",
     "left": "FREE SPINS\nLEFT",
     "no": "NO",
     "yes": "YES"
@@ -267,14 +265,32 @@
     "bet":"BET",
     "double": "DOUBLE",
     "description": "CHANCE TO\n WIN FEATURE",
-    "doubleChance": "DOUBLE CHANCE"
+    "doubleChance": "DOUBLE\nCHANCE"
   },
+  
   "tfWinUpTo": "WIN UP TO 5.000 X",
   "tfGoodLuck": "GOOD LUCK",
-  "tfWin": "TOTAL WIN",
+  "tfWin": "WIN: ",
+  "tfTotalWin": "TOTAL WIN",
+  "tfBet": "BET",
+  "tfBalance": "BALANCE",
+  "tfCoinValue": "COIN VALUE",
   "tfDesktopWin": "WIN",
-  "tfHoldSpace": "HOLD SPACE BAR FOR",
-  "tfTurboSpin":"TURBO SPIN",
-  "tfCredit": "CREDIT:", 
-  "tfBet":"BET:"
+  "tfHoldSpace": "HOLD SPACE FOR TURBO SPIN",
+  "tfStart": "START",
+  "introScreen": {
+    "tfWinUpTo": "WIN UP TO 5000X BET",
+    "tfRandomMultipliers": "RANDOM MULTIPLIERS UP TO 500X",
+    "tfSymbolPayAnywhere": "SYMBOL PAY ANYWHERE ON THE SCREEN",
+    "tfClickAnyWhere": "CLICK ANYWHERE TO CONTINUE",
+    "tfFind4XScatter": "FIND 4X SCATTER FOR FEATURE GAME"
+  },
+  "tfDoNotShowAgain": "DO NOT SHOW AGAIN",
+  "freeSpin": {
+    "tfFreeSpin": "FREE SPINS",
+    "tfYouHaveWon": "YOU HAVE WON",
+    "tfYouHaveLeft": "YOU HAVE LEFT",
+    "tfFreeSpinContinue": "PRESS ANYWHERE TO CONTINUE",
+    "tfFreeSpinNumber": "IN #{count} FREESPINS"
+  }
 }

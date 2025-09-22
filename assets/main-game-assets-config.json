@@ -63,10 +63,6 @@
       "url": "./images/main-screen-2.json"
     },
     {
-      "name": "main-screen-background",
-      "url": "./images/main-game-screen.jpg"
-    },
-    {
       "name": "newUI",
       "url": "./images/newUI-0-0.json"
     },
@@ -77,6 +73,18 @@
     {
       "name": "uiPanelBG-landscape",
       "url": "./images/uiPanelBG-landscape.png"
+    },
+    {
+      "name": "intro",
+      "url": "./images/intro/intro.json"
+    },
+    {
+      "name": "intro-bg-desktop",
+      "url": "./images/intro/intro-bg-desktop.png"
+    },
+    {
+      "name": "intro-bg-mobile",
+      "url": "./images/intro/intro-bg-mobile.png"
     }
   ],
   "spine": [
@@ -139,6 +147,10 @@
     {
       "name": "logo",
       "url": "./spine/logo.json"
+    },
+    {
+      "name": "background",
+      "url": "./spine/background.json"
     },
     {
       "name": "freespins-popup",
