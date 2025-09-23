@@ -3271,15 +3271,17 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 const AssetsManager_1 = __importDefault(__webpack_require__(36353));
-const pixi_js_1 = __webpack_require__(95894);
 const ScreenOrientation_1 = __webpack_require__(81827);
-class IntroScreenBackground extends pixi_js_1.Sprite {
+const pixi_spine_1 = __webpack_require__(15091);
+class IntroScreenBackground extends pixi_spine_1.Spine {
     constructor() {
-        super(AssetsManager_1.default.textures.get('main-screen-background'));
+        super(AssetsManager_1.default.spine.get('background'));
         // this.on('added', () => {
         //     this.state.setAnimation(0, 'idle', true);
         // });
-        this.anchor.set(0.5, 0.5);
+        this.pivot.set(this.width / 2, this.height / 2);
+        this.state.setEmptyAnimations(0);
+        this.state.setAnimation(0, 'base_game', true);
     }
     // PUBLIC API
     updateLayout(desc) {
@@ -3295,14 +3297,14 @@ class IntroScreenBackground extends pixi_js_1.Sprite {
                 const backgroundWidth = 1920;
                 this.scale.set((desc.currentHeight / desc.baseHeight) * 2);
                 this.pivot.x = -(backgroundWidth / 2);
-                this.x = 0 - offsetX;
+                this.x = -540 - offsetX;
                 break;
         }
         if (desc.orientation == ScreenOrientation_1.ScreenOrientation.VERTICAL) {
             const offsetX = (desc.currentWidth - desc.baseWidth) / 2;
             const backgroundWidth = 1920;
             this.pivot.x = -(backgroundWidth / 2);
-            this.x = 0 - offsetX;
+            this.x = -540 - offsetX;
         }
     }
 }
@@ -3915,6 +3917,9 @@ class DiamondGun extends BrowserApplication_1.BrowserApplication {
         this.currentHeight = availableHeight / this.stage.scale.y;
         if (this._activeMainGameView) {
             this._activeMainGameView.updateLayout(this.updateLayoutDescription);
+        }
+        if (this.introScreen) {
+            this.introScreen.updateLayout(this.updateLayoutDescription);
         }
         if (this.popupManager) {
             this.popupManager.updateLayout(this.updateLayoutDescription);
@@ -9326,6 +9331,7 @@ const engineTween_1 = __webpack_require__(50381);
 const ScreenOrientation_1 = __webpack_require__(81827);
 const GamePlayIntro_1 = __webpack_require__(67510);
 const Character_1 = __importDefault(__webpack_require__(24207));
+const BrowserApplication_1 = __webpack_require__(32139);
 class IntroScreen extends AdjustableLayoutContainer_1.default {
     constructor() {
         super(AssetsManager_1.default.layouts.get('intro-screen'));
@@ -9343,10 +9349,10 @@ class IntroScreen extends AdjustableLayoutContainer_1.default {
         }
         this.startTextInterval();
         if (this.background) {
-            this.background.anchor.set(0.5, 0.5);
+            this.background.pivot.set(this.background.width / 2, this.background.height / 2);
         }
         if (this.backgroundMobile) {
-            this.backgroundMobile.anchor.set(0.5, 0.5);
+            this.backgroundMobile.pivot.set(this.backgroundMobile.width / 2, this.backgroundMobile.height / 2);
         }
         if (this.gradient) {
             this.gradient.anchor.set(0.5, 1);
@@ -9360,6 +9366,17 @@ class IntroScreen extends AdjustableLayoutContainer_1.default {
         // Add event listeners
         this.on('added', this.onAdded, this);
         this.on('removed', this.onRemoved, this);
+        window.addEventListener('resize', () => {
+            const orientation = BrowserApplication_1.BrowserApplication.mainScreenStage.orientation;
+            const desc = {
+                orientation,
+                currentWidth: BrowserApplication_1.BrowserApplication.mainScreenStage.width,
+                currentHeight: BrowserApplication_1.BrowserApplication.mainScreenStage.height,
+                baseWidth: 1080,
+                baseHeight: 1920
+            };
+            this.updateLayout(desc);
+        }, false);
         window.addEventListener('click', this.boundOnGetStartedClicked);
         // Handle button click
         if (this.btnGetStarted) {
@@ -9430,9 +9447,10 @@ class IntroScreen extends AdjustableLayoutContainer_1.default {
             this.background.visible = false;
             this.backgroundMobile.visible = true;
         }
-        if (this.fade) {
-            this.fade.width = desc.currentWidth;
-            this.fade.height = desc.currentHeight;
+        if (this.gradient) {
+            this.gradient.width = desc.currentWidth;
+            this.gradient.height = desc.currentHeight;
+            this.gradient.y = desc.currentHeight;
         }
         if (this.tfDoNotShowAgain) {
             this.doNotShowAgainCheckbox.x = this.tfDoNotShowAgain.x - 260;
@@ -16284,10 +16302,12 @@ class LoadingScreen extends AdjustableLayoutContainer_1.default {
     createGradientBottom() {
         this.gradientBottom = new pixi_js_1.Sprite(AssetsManager_1.default.textures.get('footer-desktop'));
         this.gradientBottomMobile = new pixi_js_1.Sprite(AssetsManager_1.default.textures.get('footer-mobile'));
+        this.gradientBottom.name = 'gradient-bottom';
+        this.gradientBottomMobile.name = 'gradient-bottom-mobile';
         this.gradientBottom.anchor.set(0.5, 1);
-        this.gradientBottom.position.set(0, 540);
+        this.gradientBottom.position.set(960, 1080);
         this.gradientBottomMobile.anchor.set(0.5, 1);
-        this.background.addChild(this.gradientBottom);
+        this.addChild(this.gradientBottom);
         this.addChild(this.gradientBottomMobile);
     }
     // PUBLIC API
@@ -16366,6 +16386,8 @@ class LoadingScreen extends AdjustableLayoutContainer_1.default {
             this.footerText.x = width / 2;
             this.footerText.y = height * 0.89; // Position in lower part of gradient
             this.footerText.scale.set(scale);
+            this.gradientBottom.position.set(width / 2, height);
+            this.gradientBottom.width = width;
             // Progress bar: Center horizontally and position at bottom
             if (this.progressBar) {
                 this.progressBar.x = width / 2;

@@ -11,7 +11,9 @@
                 "textureName": "intro-bg-mobile"
               }
             ],
-            "customParams": {},
+            "customParams": {
+              "customComponentClass": "IntroScreenBackground"
+            },
             "params": {
               "name": "backgroundMobile",
               "x": 540,
@@ -377,7 +379,9 @@
                 "textureName": "intro-bg-desktop"
               }
             ],
-            "customParams": {},
+            "customParams": {
+              "customComponentClass": "IntroScreenBackground"
+            },
             "params": {
               "name": "background",
               "x": 960,
