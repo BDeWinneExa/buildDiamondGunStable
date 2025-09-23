@@ -9453,6 +9453,9 @@ class IntroScreen extends AdjustableLayoutContainer_1.default {
         if (this.gamePlayIntro) {
             this.gamePlayIntro.updateTransform();
         }
+        if (this.reelFrame) {
+            this.reelFrame.anchor.set(0.5, 0.5);
+        }
         if (this.reelBackground) {
             this.reelBackground.anchor.set(0.5, 0.5);
         }

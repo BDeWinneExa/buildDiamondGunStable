@@ -25,12 +25,29 @@
             "constructorParams": [
               {
                 "cls": "starling.textures.Texture",
-                "textureName": "reel"
+                "textureName": "reel-background"
               }
             ],
             "customParams": {},
             "params": {
               "name": "reelBackground",
+              "x": 535,
+              "y": 737.5,
+              "scaleX": 0.75,
+              "scaleY": 0.75
+            }
+          },
+          {
+            "cls": "starling.display.Image",
+            "constructorParams": [
+              {
+                "cls": "starling.textures.Texture",
+                "textureName": "reel"
+              }
+            ],
+            "customParams": {},
+            "params": {
+              "name": "reelFrame",
               "x": 535,
               "y": 690,
               "scaleX": 0.725,
@@ -374,12 +391,29 @@
             "constructorParams": [
               {
                 "cls": "starling.textures.Texture",
-                "textureName": "reel"
+                "textureName": "reel-background"
               }
             ],
             "customParams": {},
             "params": {
               "name": "reelBackground",
+              "x": 750,
+              "y": 497,
+              "scaleX": 0.9,
+              "scaleY": 0.85
+            }
+          },
+          {
+            "cls": "starling.display.Image",
+            "constructorParams": [
+              {
+                "cls": "starling.textures.Texture",
+                "textureName": "reel"
+              }
+            ],
+            "customParams": {},
+            "params": {
+              "name": "reelFrame",
               "x": 750,
               "y": 439,
               "scaleX": 0.9,
@@ -666,14 +700,14 @@
               "y": 1050
             },
             "tweenData": {
-              "effects":[
+              "effects": [
                 {
-                  "options":{
-                    "color":"#000000",
-                    "lineJoin":"round",
-                    "thickness":2
+                  "options": {
+                    "color": "#000000",
+                    "lineJoin": "round",
+                    "thickness": 2
                   },
-                  "type":"stroke"
+                  "type": "stroke"
                 }
               ]
             }
