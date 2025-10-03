@@ -9332,6 +9332,7 @@ const ScreenOrientation_1 = __webpack_require__(81827);
 const GamePlayIntro_1 = __webpack_require__(67510);
 const Character_1 = __importDefault(__webpack_require__(24207));
 const BrowserApplication_1 = __webpack_require__(32139);
+const tsyringe_1 = __webpack_require__(24872);
 class IntroScreen extends AdjustableLayoutContainer_1.default {
     constructor() {
         super(AssetsManager_1.default.layouts.get('intro-screen'));
@@ -9341,6 +9342,7 @@ class IntroScreen extends AdjustableLayoutContainer_1.default {
             'SYMBOL PAY ANYWHERE ON THE SCREEN',
         ];
         this.currentMessageIndex = 0;
+        this.getStartedClicked = false;
         LayoutBuilder_1.default.create(this.layout, this, (le) => {
             return this.customClassElementCreate(le);
         });
@@ -9438,6 +9440,8 @@ class IntroScreen extends AdjustableLayoutContainer_1.default {
         updateText();
     }
     updateLayout(desc) {
+        if (this.getStartedClicked)
+            return;
         super.updateLayout(desc);
         if (desc.orientation === ScreenOrientation_1.ScreenOrientation.HORIZONTAL) {
             this.background.visible = true;
@@ -9452,7 +9456,7 @@ class IntroScreen extends AdjustableLayoutContainer_1.default {
             this.gradient.height = desc.currentHeight;
             this.gradient.y = desc.currentHeight;
         }
-        if (this.tfDoNotShowAgain) {
+        if (this.doNotShowAgainCheckbox && this.tfDoNotShowAgain) {
             this.doNotShowAgainCheckbox.x = this.tfDoNotShowAgain.x - 260;
         }
     }
@@ -9534,6 +9538,7 @@ class IntroScreen extends AdjustableLayoutContainer_1.default {
         return instance;
     }
     onGetStartedClicked() {
+        this.getStartedClicked = true;
         if (this.backgroundSound) {
             this.backgroundSound.stop();
         }
@@ -9541,16 +9546,18 @@ class IntroScreen extends AdjustableLayoutContainer_1.default {
             this.btnGetStarted.enabled = false;
         }
         // SoundManager.play(SoundListExtended.INTRO_SPIN_BTN);
-        this.emit(IntroScreenEvent_1.IntroScreenEvent.ON_GET_STARTED_CLICKED);
         if (this.doNotShowAgainCheckbox) {
             this.doNotShowAgainCheckbox.offState.removeAllListeners();
             this.doNotShowAgainCheckbox.onState.removeAllListeners();
             this.doNotShowAgainCheckbox.removeAllListeners();
             this.doNotShowAgainCheckbox.destroy();
         }
+        this.emit(IntroScreenEvent_1.IntroScreenEvent.ON_GET_STARTED_CLICKED);
     }
     onCheckboxClicked(value) {
-        localStorage.setItem('skipScreen', value ? 'true' : 'false');
+        const gs = tsyringe_1.container.resolve('GameService');
+        gs.settings.skipScreen = value;
+        gs.saveSettings();
     }
 }
 exports["default"] = IntroScreen;
@@ -16230,6 +16237,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.LoadingScreen = void 0;
+/* eslint-disable @typescript-eslint/no-unused-vars */
 const AssetsManager_1 = __importDefault(__webpack_require__(36353));
 const pixi_js_1 = __webpack_require__(95894);
 const AdjustableLayoutContainer_1 = __importDefault(__webpack_require__(66961));
@@ -26211,6 +26219,10 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
+/* eslint-disable no-prototype-builtins */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 const axios_1 = __importDefault(__webpack_require__(86425));
 const eventemitter3_1 = __importDefault(__webpack_require__(30228));
 const jwt_decode_1 = __importDefault(__webpack_require__(6765));
@@ -26263,6 +26275,7 @@ let GameService = class GameService extends eventemitter3_1.default {
             sound: true,
             introScreen: true,
             spinButtonLock: false,
+            skipScreen: false,
         };
     }
     // PUBLIC API
@@ -27506,7 +27519,7 @@ let GameService = class GameService extends eventemitter3_1.default {
                     LineBet: lineBet,
                     RoundType: this.doubleUpChance ? 3 : roundType,
                 });
-                //  @ts-ignore
+                //  @ts-expect-error
                 if (!res.success && res.status != 200) {
                     throw 'PLEASE_CONTACT_OPERATOR';
                 }
@@ -29453,6 +29466,7 @@ exports["default"] = LayoutElementTextField;
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.saveToLocalStorage = saveToLocalStorage;
 exports.getFromLocalStorage = getFromLocalStorage;
+/* eslint-disable @typescript-eslint/no-explicit-any */
 function saveToLocalStorage(key, data) {
     localStorage.setItem(key, JSON.stringify(data));
 }
@@ -41034,7 +41048,6 @@ const SoundManager_1 = __importDefault(__webpack_require__(6881));
 const ToggleButton_1 = __webpack_require__(19838);
 const GameServiceEvent_1 = __webpack_require__(57515);
 class AdjustSettings extends pixi_js_1.Container {
-    ;
     constructor(le) {
         super();
         LayoutBuilder_1.default.create(le, this, (le) => {
@@ -41057,7 +41070,7 @@ class AdjustSettings extends pixi_js_1.Container {
     customClassElementCreate(le) {
         let instance = null;
         switch (le.customClass) {
-            case "ToggleButton":
+            case 'ToggleButton':
                 instance = new ToggleButton_1.ToggleButton(le);
                 break;
         }
@@ -71072,7 +71085,7 @@ class AutospinPanel extends Panel_1.default {
             // this.slotMachine.emit("AUTO_PLAY_SLIDER_CHANGE", value);
         });
         // this.slotMachine.on("AUTO_PLAY_SLIDER_CHANGE", this.onAutoPlaySliderChange, this);
-        this.slotMachine.on("SKIP_BTN_STATE_CHANGE", this.onSkipBtnStateChange, this);
+        this.slotMachine.on('SKIP_BTN_STATE_CHANGE', this.onSkipBtnStateChange, this);
         this.updateSpinNumbers();
         this.updateView();
         this.gs = tsyringe_1.container.resolve('GameService');
@@ -71162,7 +71175,7 @@ class AutospinPanel extends Panel_1.default {
                     value: 500
                 });
                 break;
-            case "ToggleButton":
+            case 'ToggleButton':
                 instance = new ToggleButton_1.ToggleButton(le);
                 break;
             // case "ToggleButton":
